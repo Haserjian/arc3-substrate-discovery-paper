@@ -2,14 +2,15 @@
 
 Status: preliminary internal check, not legal advice.
 
-The current package candidate declares no runtime dependencies in
-`requirements.txt` and vendors no third-party code.
+This public release is a static artifact/evidence package. It vendors no
+third-party code.
 
 | Dependency | Scope | Runtime required | License status |
 |---|---:|---:|---|
-| arc-agi==0.9.8 | optional repo dependency | no | requires review before runtime packaging |
-| pytest>=8.0.0 | test dependency | no | not runtime required |
-| jsonschema>=4.0.0 | test dependency | no | not runtime required |
+| arc-agi / arcengine | Kaggle competition-provided runtime referenced by the linked notebook | yes, in Kaggle evaluation context | not redistributed in this public release |
+| pandas | Kaggle notebook output helper | yes, in Kaggle notebook context | Kaggle/runtime dependency, not vendored |
+| python-dotenv | Kaggle sample-notebook setup dependency | yes, in Kaggle notebook context | Kaggle/runtime dependency, not vendored |
 
-Re-run this inventory after adding the real submission agent or any runtime
-package modules.
+The package-candidate `requirements.txt` remains intentionally empty because
+the public release does not redistribute runtime wheels or third-party source.
+Review dependency terms separately before creating a new executable package.

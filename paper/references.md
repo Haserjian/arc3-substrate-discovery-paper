@@ -15,7 +15,8 @@ last_checked: 2026-05-22
 
 # References
 
-This bibliography covers external sources cited by `docs/paper/manuscript_v1.md`.
+This bibliography covers external sources cited by the submission manuscript
+(`paper/submission_manuscript.md`).
 Internal evidence remains cited as claim IDs and artifact paths, not as
 external references. This file does not claim a comprehensive literature
 review, state-of-the-art novelty, private-eval capability, or positive Kaggle

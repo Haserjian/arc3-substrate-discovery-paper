@@ -16,29 +16,47 @@ fresh public repository at `https://github.com/Haserjian/arc3-substrate-discover
 - No autonomous substrate discovery claim
 - No all-level capability claim
 
-## Reproducibility Surface
+## What This Repository Is
 
-- `paper/` contains the reader-clean paper candidate and claim-support docs.
-- `kaggle/` contains the package/notebook/submission-record surface tied to the
-  linked Kaggle entry.
-- `artifacts/` and `docs/` contain key receipts and summaries cited by the paper.
-- `tools/` and `tests/` contain local guards for regenerating and checking the
-  paper/release artifacts.
+This is a static **artifact and evidence release**, not a build-from-source
+project. It contains the paper, the linked Kaggle notebook, and the receipts
+and summaries that back the paper's claims. The private development repository
+that generated these artifacts is not included.
 
-## Intentional Exclusion
+- `paper/` — the reader-clean manuscript (`submission_manuscript.md`), the built
+  PDF (`submission_candidate.pdf`), its build metadata, and the claim-support
+  docs.
+- `kaggle/` — the submitted notebook and its agent, plus the Kaggle
+  submission/readiness records for the linked entry.
+- `artifacts/` and `docs/` — the receipts, audits, and summaries cited by the
+  paper.
 
-- `docs/paper/kaggle_linkage_plan.md` is excluded as a historical planning
-  document. The current Kaggle linkage evidence is represented by
-  `kaggle/submission_record/submission_record.json` and the included
-  submission-readiness artifacts.
+### Provenance paths are references, not bundled files
 
-## Suggested Checks
+Receipts and the claim inventory cite evidence by repo-relative path. Some of
+those paths — for example `tests/...` test names and source-oracle paths under
+`arc3_agent/environment_files/...` — point into the private development
+repository where the work was produced. They are provenance references that
+identify what backs each claim; they are not missing files in this release.
 
-From a repository root containing this release candidate:
+## Intentional Exclusions
 
-```bash
-python tools/paper/build_submission_candidate.py --output-dir /tmp/arc3-paper-check
-pytest -q tests/test_paper_submission_candidate.py tests/test_public_release_preflight.py
-```
+The following are deliberately not part of this artifact release:
 
-The original private repository history is intentionally not included.
+- The private draft source (`docs/paper/manuscript_v1.md`) and the build /
+  preflight tooling that assembled this release. The published PDF and
+  reader-clean manuscript under `paper/` are the canonical reader artifacts.
+- `docs/paper/kaggle_linkage_plan.md`, a historical planning document. Current
+  Kaggle linkage evidence lives in
+  `kaggle/submission_record/submission_record.json`.
+- The original private repository git history.
+
+## Reading the Evidence
+
+- Read the paper: `paper/submission_candidate.pdf` (or
+  `paper/submission_manuscript.md`).
+- Check the linked Kaggle result:
+  `kaggle/submission_record/submission_record.json` (submitted, succeeded,
+  Kaggle public score `0.0`).
+- Trace any claim: `paper/claim_inventory.md` maps each claim ID to its backing
+  receipts under `artifacts/`.
