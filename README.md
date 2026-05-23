@@ -1,6 +1,6 @@
 # ARC-AGI-3 Substrate Discovery Paper Release Package
 
-Generated: 2026-05-23T01:12:55.995857+00:00
+Generated: 2026-05-23T01:21:04.984718+00:00
 
 This package is the clean public-release surface for the paper
 **Failure-Driven Substrate Discovery for ARC-AGI-3**. It is prepared for the
@@ -24,6 +24,13 @@ fresh public repository at `https://github.com/Haserjian/arc3-substrate-discover
 - `artifacts/` and `docs/` contain key receipts and summaries cited by the paper.
 - `tools/` and `tests/` contain local guards for regenerating and checking the
   paper/release artifacts.
+
+## Intentional Exclusion
+
+- `docs/paper/kaggle_linkage_plan.md` is excluded as a historical planning
+  document. The current Kaggle linkage evidence is represented by
+  `kaggle/submission_record/submission_record.json` and the included
+  submission-readiness artifacts.
 
 ## Suggested Checks
 

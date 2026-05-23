@@ -577,8 +577,7 @@ def excluded_file_records() -> list[dict[str, str]]:
             "reason": (
                 "Historical planning doc intentionally excluded from the public package; "
                 "submission_record.json and submission_readiness.md supersede it for the "
-                "Kaggle linkage evidence. The paper URL update remains pending until a "
-                "public repo exists."
+                "Kaggle linkage evidence."
             ),
         },
         {
@@ -1115,6 +1114,13 @@ fresh public repository at `{PROPOSED_REPO_URL}` without private git history.
 - `artifacts/` and `docs/` contain key receipts and summaries cited by the paper.
 - `tools/` and `tests/` contain local guards for regenerating and checking the
   paper/release artifacts.
+
+## Intentional Exclusion
+
+- `docs/paper/kaggle_linkage_plan.md` is excluded as a historical planning
+  document. The current Kaggle linkage evidence is represented by
+  `kaggle/submission_record/submission_record.json` and the included
+  submission-readiness artifacts.
 
 ## Suggested Checks
 
