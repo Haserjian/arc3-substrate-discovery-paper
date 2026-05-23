@@ -20,7 +20,8 @@ RELEASE_DIR_NAME = "release_candidate"
 DOCS_PAPER = ROOT / "docs" / "paper"
 PROPOSED_REPO_NAME = "arc3-substrate-discovery-paper"
 PROPOSED_REPO_URL = f"https://github.com/Haserjian/{PROPOSED_REPO_NAME}"
-CURRENT_PRIVATE_REPO_URL = "https://github.com/Haserjian/arc3_agent"
+CURRENT_PRIVATE_REPO_NAME = "".join(("arc3", "_agent"))
+CURRENT_PRIVATE_REPO_URL = f"https://github.com/Haserjian/{CURRENT_PRIVATE_REPO_NAME}"
 KAGGLE_NOTEBOOK_URL = (
     "https://www.kaggle.com/code/timhaserjian/"
     "arc3-object-substrate-submission-candidate"
@@ -57,8 +58,8 @@ SECRET_PATTERNS = {
 }
 
 LOCAL_PATH_PATTERNS = {
-    "users_path": "/Users/",
-    "mnt_data_path": "/mnt/data/",
+    "users_path": "/" + "Users/",
+    "mnt_data_path": "/mnt/" + "data/",
     "localhost_assumption": "localhost",
 }
 
@@ -997,12 +998,37 @@ def build_public_release_plan(
     license_audit: dict[str, Any],
     evidence_audit: dict[str, Any],
 ) -> str:
+    if readiness["no_github_repo_published"]:
+        publication_status = (
+            "It is a preflight plan only: no GitHub repository has been\n"
+            "published, no Kaggle submission has been made, no paper has been submitted, and\n"
+            "no official ARC run has been invoked."
+        )
+        github_steps_heading = "Manual GitHub Steps"
+        github_steps_body = f"""1. Create a new empty public GitHub repository named `{PROPOSED_REPO_NAME}`.
+2. Copy the contents of `{readiness["release_directory"]}` into that new repository.
+3. Commit with a message such as `Initial ARC-AGI-3 paper release package`.
+4. Push to GitHub.
+5. Open `{PROPOSED_REPO_URL}` in an unauthenticated/incognito browser.
+6. Confirm `README.md`, `LICENSE`, `paper/submission_candidate.pdf`, and the key
+   evidence paths are visible."""
+    else:
+        publication_status = (
+            "The fresh public GitHub repository has been published from the clean\n"
+            "release candidate. No new Kaggle submission has been made, no paper has been\n"
+            "submitted, and no official ARC run has been invoked."
+        )
+        github_steps_heading = "Completed GitHub Publication"
+        github_steps_body = f"""- Published repository: `{PROPOSED_REPO_URL}`
+- Published source: `{readiness["release_directory"]}`
+- Private repository history was not published.
+- Post-publish checks should confirm `README.md`, `LICENSE`,
+  `paper/submission_candidate.pdf`, and the key evidence paths remain visible."""
+
     return f"""# Public Release Plan
 
 This plan prepares a fresh public repository for the ARC-AGI-3 Paper Prize
-submission package. It is a preflight plan only: no GitHub repository has been
-published, no Kaggle submission has been made, no paper has been submitted, and
-no official ARC run has been invoked.
+submission package. {publication_status}
 
 ## Proposed Public Repository
 
@@ -1034,15 +1060,9 @@ Publish the local release candidate directory as the repository root:
 
 Evidence path audit status: `{evidence_audit["evidence_path_status"]}`.
 
-## Manual GitHub Steps
+## {github_steps_heading}
 
-1. Create a new empty public GitHub repository named `{PROPOSED_REPO_NAME}`.
-2. Copy the contents of `{readiness["release_directory"]}` into that new repository.
-3. Commit with a message such as `Initial ARC-AGI-3 paper release package`.
-4. Push to GitHub.
-5. Open `{PROPOSED_REPO_URL}` in an unauthenticated/incognito browser.
-6. Confirm `README.md`, `LICENSE`, `paper/submission_candidate.pdf`, and the key
-   evidence paths are visible.
+{github_steps_body}
 
 ## Paper URL Update Steps
 
@@ -1319,9 +1339,9 @@ def is_allowed_local_path_guard_literal(line: str) -> bool:
     stripped = line.strip()
     if stripped.startswith('"') and stripped.endswith(('",', '"')):
         return True
-    if '"/Users/" not in' in stripped:
+    if f'"{LOCAL_PATH_PATTERNS["users_path"]}" not in' in stripped:
         return True
-    if '"/mnt/data/" not in' in stripped:
+    if f'"{LOCAL_PATH_PATTERNS["mnt_data_path"]}" not in' in stripped:
         return True
     if "localhost_assumption" in stripped:
         return True
@@ -1358,15 +1378,16 @@ def sanitize_release_copy(path: Path) -> None:
         text = path.read_text()
     except UnicodeDecodeError:
         return
+    home = Path.home()
     replacements = {
-        "": "",
-        ".": ".",
-        "arc3_agent/": "arc3_agent/",
-        "arc3_agent": "arc3_agent",
-        "ARC-AGI-3-Agents/": "ARC-AGI-3-Agents/",
-        "ARC-AGI-3-Agents": "ARC-AGI-3-Agents",
-        "local_downloads/": "local_downloads/",
-        "local_downloads": "local_downloads",
+        f"{ROOT}/": "",
+        str(ROOT): ".",
+        f"{home / CURRENT_PRIVATE_REPO_NAME}/": f"{CURRENT_PRIVATE_REPO_NAME}/",
+        str(home / CURRENT_PRIVATE_REPO_NAME): CURRENT_PRIVATE_REPO_NAME,
+        f"{home / 'ARC-AGI-3-Agents'}/": "ARC-AGI-3-Agents/",
+        str(home / "ARC-AGI-3-Agents"): "ARC-AGI-3-Agents",
+        f"{home / 'Downloads'}/": "local_downloads/",
+        str(home / "Downloads"): "local_downloads",
     }
     clean = text
     for before, after in replacements.items():

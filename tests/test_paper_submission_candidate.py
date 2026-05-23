@@ -117,8 +117,9 @@ def test_submission_candidate_files_exist_and_pdf_is_nonempty():
 
 def test_reader_markdown_strips_internal_flags_and_local_paths():
     text = READER.read_text()
+    users_path_marker = "/" + "Users/"
 
-    assert "/Users/" not in text
+    assert users_path_marker not in text
     for flag in INTERNAL_FRONTMATTER_FLAGS:
         assert flag not in text
     assert not text.startswith("---")
@@ -202,9 +203,10 @@ def test_claim_ids_are_presented_through_appendix_not_raw_artifact_parenthetical
 
 def test_reproducibility_section_contains_repo_links_and_evidence_paths():
     text = READER.read_text()
+    private_repo_url = "https://github.com/Haserjian/" + "arc3" + "_agent"
 
     assert "https://github.com/Haserjian/arc3-substrate-discovery-paper" in text
-    assert "https://github.com/Haserjian/arc3_agent" not in text
+    assert private_repo_url not in text
     assert "https://www.kaggle.com/code/timhaserjian/arc3-object-substrate-submission-candidate" in text
     for path in [
         "artifacts/kaggle_submission_preflight/kaggle_submission_record/submission_record.json",

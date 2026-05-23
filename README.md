@@ -1,6 +1,6 @@
 # ARC-AGI-3 Substrate Discovery Paper Release Package
 
-Generated: 2026-05-23T01:07:38.179986+00:00
+Generated: 2026-05-23T01:12:55.995857+00:00
 
 This package is the clean public-release surface for the paper
 **Failure-Driven Substrate Discovery for ARC-AGI-3**. It is prepared for the

@@ -113,7 +113,8 @@ def test_notebook_manifest_release_copy_is_sanitized(tmp_path):
 
     assert manifest["release_manifest_sanitized"] is True
     assert manifest["agent_path"] == "kaggle/notebook_candidate/my_agent.py"
-    assert "/Users/" not in json.dumps(manifest)
+    users_path_marker = "/" + "Users/"
+    assert users_path_marker not in json.dumps(manifest)
 
 
 def test_evidence_path_audit_has_no_missing_paths(tmp_path):

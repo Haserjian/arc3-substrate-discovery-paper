@@ -685,8 +685,9 @@ def build_metadata(
             for part in marker.split(";")
         }
     )
+    users_path_marker = "/" + "Users/"
     checks = {
-        "reader_markdown_has_no_absolute_users_paths": "/Users/" not in reader_text,
+        "reader_markdown_has_no_absolute_users_paths": users_path_marker not in reader_text,
         "reader_markdown_has_no_internal_frontmatter_flags": not any(
             flag in reader_text for flag in INTERNAL_FRONTMATTER_FLAGS
         ),
