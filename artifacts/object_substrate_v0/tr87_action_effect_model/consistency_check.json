@@ -1,0 +1,111 @@
+{
+  "analysis_only": true,
+  "architecture_review_carried_forward": true,
+  "consistency_check_passed": true,
+  "empirical_basis": "tr87_traces_via_gamma2b_perception",
+  "generated_at": "2026-05-21T00:00:00+00:00",
+  "kind": "object_substrate_v0_tr87_effect_consistency_check",
+  "lane": "object_substrate_v0",
+  "ls20_substrate_immutable": true,
+  "mismatch_count": 0,
+  "mismatches": [],
+  "no_general_agent_claim": true,
+  "no_kaggle_claim": true,
+  "no_private_eval_claim": true,
+  "no_score_improvement_claim": true,
+  "official_run_attempted": false,
+  "oracle_reference": "tr87.py_step_function",
+  "paper_lane_immutable": true,
+  "parameterization_deferred_until_n_equals_3": true,
+  "pass_count": 80,
+  "pass_rate": 1.0,
+  "per_action_findings": [
+    {
+      "action_name": "ACTION1",
+      "expected_category": "sequence_state_change",
+      "mismatch_count": 0,
+      "mismatches": [],
+      "observed_category_distribution": {
+        "sequence_state_change": 20
+      },
+      "pass_count": 20,
+      "result": "pass",
+      "source_lines": [
+        "tr87.py:1005-1014",
+        "tr87.py:1024-1029"
+      ],
+      "source_semantics": "cycle selected target-sequence slot backward",
+      "transition_count": 20
+    },
+    {
+      "action_name": "ACTION2",
+      "expected_category": "sequence_state_change",
+      "mismatch_count": 0,
+      "mismatches": [],
+      "observed_category_distribution": {
+        "sequence_state_change": 20
+      },
+      "pass_count": 20,
+      "result": "pass",
+      "source_lines": [
+        "tr87.py:1005-1014",
+        "tr87.py:1024-1029"
+      ],
+      "source_semantics": "cycle selected target-sequence slot forward",
+      "transition_count": 20
+    },
+    {
+      "action_name": "ACTION3",
+      "expected_category": "selector_position_change",
+      "mismatch_count": 0,
+      "mismatches": [],
+      "observed_category_distribution": {
+        "selector_position_change": 20
+      },
+      "pass_count": 20,
+      "result": "pass",
+      "source_lines": [
+        "tr87.py:996-1004"
+      ],
+      "source_semantics": "decrement selector index modulo selector slot count",
+      "transition_count": 20
+    },
+    {
+      "action_name": "ACTION4",
+      "expected_category": "selector_position_change",
+      "mismatch_count": 0,
+      "mismatches": [],
+      "observed_category_distribution": {
+        "selector_position_change": 20
+      },
+      "pass_count": 20,
+      "result": "pass",
+      "source_lines": [
+        "tr87.py:996-1004"
+      ],
+      "source_semantics": "increment selector index modulo selector slot count",
+      "transition_count": 20
+    }
+  ],
+  "planner_v0_immutable": true,
+  "schema_version": "v0",
+  "slice_scope": "tr87_action_effect_modeling",
+  "source_line_ranges": {
+    "ACTION1": [
+      "tr87.py:1005-1014",
+      "tr87.py:1024-1029"
+    ],
+    "ACTION2": [
+      "tr87.py:1005-1014",
+      "tr87.py:1024-1029"
+    ],
+    "ACTION3": [
+      "tr87.py:996-1004"
+    ],
+    "ACTION4": [
+      "tr87.py:996-1004"
+    ]
+  },
+  "target_game": "tr87",
+  "transition_count": 80
+}

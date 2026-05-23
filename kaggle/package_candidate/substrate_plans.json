@@ -1,0 +1,1245 @@
+{
+  "available_substrate_games": [
+    "ls20",
+    "tr87"
+  ],
+  "generated_at": "2026-05-21T20:16:19.807234+00:00",
+  "kind": "kaggle_submission_substrate_plan_payload",
+  "schema_version": "v0",
+  "source_bundling_decision": "hardcoded_constants_with_notice_citations",
+  "source_files_bundled": false,
+  "supported_games": {
+    "ls20": {
+      "action_labels": [
+        "ACTION3",
+        "ACTION3",
+        "ACTION3",
+        "ACTION1",
+        "ACTION1",
+        "ACTION1",
+        "ACTION1",
+        "ACTION4",
+        "ACTION4",
+        "ACTION4",
+        "ACTION1",
+        "ACTION1",
+        "ACTION1"
+      ],
+      "action_sequence": [
+        3,
+        3,
+        3,
+        1,
+        1,
+        1,
+        1,
+        4,
+        4,
+        4,
+        1,
+        1,
+        1
+      ],
+      "game_id_prefixes": [
+        "ls20"
+      ],
+      "hardcoded_constants": {
+        "player_start": {
+          "color": 9,
+          "position": [
+            34,
+            45
+          ],
+          "rotation": 270,
+          "shape": 5
+        },
+        "source_file": "ls20.py",
+        "source_lines": [
+          "ls20.py:605-748",
+          "ls20.py:611-726",
+          "ls20.py:727-745"
+        ],
+        "target": {
+          "position": [
+            34,
+            10
+          ],
+          "required_color": 9,
+          "required_rotation": 0,
+          "required_shape": 5
+        }
+      },
+      "non_claims": [
+        "public ls20 level-1 substrate-derived capability only",
+        "not a Kaggle leaderboard result",
+        "not a private-eval claim"
+      ],
+      "per_step_provenance": [
+        {
+          "action_id": 3,
+          "action_label": "ACTION3",
+          "confidence": "medium",
+          "confidence_by_dimension": {
+            "color": "medium",
+            "position": "medium",
+            "rotation": "medium",
+            "shape": "medium"
+          },
+          "provenance": {
+            "action": 3,
+            "dominant_position_delta": [
+              -5,
+              0
+            ],
+            "observation_count": 2,
+            "reason": "dominant_empirical_position_delta"
+          },
+          "step_index": 0
+        },
+        {
+          "action_id": 3,
+          "action_label": "ACTION3",
+          "confidence": "high",
+          "confidence_by_dimension": {
+            "color": "high",
+            "position": "high",
+            "rotation": "high",
+            "shape": "high"
+          },
+          "provenance": {
+            "observation": {
+              "action": "ACTION3",
+              "action_id": 3,
+              "after": {
+                "color": 9,
+                "position": [
+                  24,
+                  45
+                ],
+                "rotation": 270,
+                "shape": 5
+              },
+              "before": {
+                "color": 9,
+                "position": [
+                  29,
+                  45
+                ],
+                "rotation": 270,
+                "shape": 5
+              },
+              "changed_dimensions": [
+                "position"
+              ],
+              "color_changed": false,
+              "confidence": "high",
+              "position_delta": [
+                -5,
+                0
+              ],
+              "provenance": [
+                {
+                  "after_frame_index": 1,
+                  "before_frame_index": 0,
+                  "row_index": 0,
+                  "source_artifact": "artifacts/object_substrate_v0/state_diff_run003.json"
+                }
+              ],
+              "rotation_changed": false,
+              "rotation_delta": 0,
+              "shape_changed": false
+            },
+            "reason": "exact_before_state_match"
+          },
+          "step_index": 1
+        },
+        {
+          "action_id": 3,
+          "action_label": "ACTION3",
+          "confidence": "high",
+          "confidence_by_dimension": {
+            "color": "high",
+            "position": "high",
+            "rotation": "high",
+            "shape": "high"
+          },
+          "provenance": {
+            "observation": {
+              "action": "ACTION3",
+              "action_id": 3,
+              "after": {
+                "color": 9,
+                "position": [
+                  19,
+                  45
+                ],
+                "rotation": 270,
+                "shape": 5
+              },
+              "before": {
+                "color": 9,
+                "position": [
+                  24,
+                  45
+                ],
+                "rotation": 270,
+                "shape": 5
+              },
+              "changed_dimensions": [
+                "position"
+              ],
+              "color_changed": false,
+              "confidence": "high",
+              "position_delta": [
+                -5,
+                0
+              ],
+              "provenance": [
+                {
+                  "after_frame_index": 2,
+                  "before_frame_index": 1,
+                  "row_index": 1,
+                  "source_artifact": "artifacts/object_substrate_v0/state_diff_run003.json"
+                }
+              ],
+              "rotation_changed": false,
+              "rotation_delta": 0,
+              "shape_changed": false
+            },
+            "reason": "exact_before_state_match"
+          },
+          "step_index": 2
+        },
+        {
+          "action_id": 1,
+          "action_label": "ACTION1",
+          "confidence": "high",
+          "confidence_by_dimension": {
+            "color": "high",
+            "position": "high",
+            "rotation": "high",
+            "shape": "high"
+          },
+          "provenance": {
+            "observation": {
+              "action": "ACTION1",
+              "action_id": 1,
+              "after": {
+                "color": 9,
+                "position": [
+                  19,
+                  40
+                ],
+                "rotation": 270,
+                "shape": 5
+              },
+              "before": {
+                "color": 9,
+                "position": [
+                  19,
+                  45
+                ],
+                "rotation": 270,
+                "shape": 5
+              },
+              "changed_dimensions": [
+                "position"
+              ],
+              "color_changed": false,
+              "confidence": "high",
+              "position_delta": [
+                0,
+                -5
+              ],
+              "provenance": [
+                {
+                  "after_frame_index": 3,
+                  "before_frame_index": 2,
+                  "row_index": 2,
+                  "source_artifact": "artifacts/object_substrate_v0/state_diff_run003.json"
+                }
+              ],
+              "rotation_changed": false,
+              "rotation_delta": 0,
+              "shape_changed": false
+            },
+            "reason": "exact_before_state_match"
+          },
+          "step_index": 3
+        },
+        {
+          "action_id": 1,
+          "action_label": "ACTION1",
+          "confidence": "high",
+          "confidence_by_dimension": {
+            "color": "high",
+            "position": "high",
+            "rotation": "high",
+            "shape": "high"
+          },
+          "provenance": {
+            "observation": {
+              "action": "ACTION1",
+              "action_id": 1,
+              "after": {
+                "color": 9,
+                "position": [
+                  19,
+                  35
+                ],
+                "rotation": 270,
+                "shape": 5
+              },
+              "before": {
+                "color": 9,
+                "position": [
+                  19,
+                  40
+                ],
+                "rotation": 270,
+                "shape": 5
+              },
+              "changed_dimensions": [
+                "position"
+              ],
+              "color_changed": false,
+              "confidence": "high",
+              "position_delta": [
+                0,
+                -5
+              ],
+              "provenance": [
+                {
+                  "after_frame_index": 4,
+                  "before_frame_index": 3,
+                  "row_index": 3,
+                  "source_artifact": "artifacts/object_substrate_v0/state_diff_run003.json"
+                }
+              ],
+              "rotation_changed": false,
+              "rotation_delta": 0,
+              "shape_changed": false
+            },
+            "reason": "exact_before_state_match"
+          },
+          "step_index": 4
+        },
+        {
+          "action_id": 1,
+          "action_label": "ACTION1",
+          "confidence": "high",
+          "confidence_by_dimension": {
+            "color": "high",
+            "position": "high",
+            "rotation": "high",
+            "shape": "high"
+          },
+          "provenance": {
+            "observation": {
+              "action": "ACTION1",
+              "action_id": 1,
+              "after": {
+                "color": 9,
+                "position": [
+                  19,
+                  30
+                ],
+                "rotation": 0,
+                "shape": 5
+              },
+              "before": {
+                "color": 9,
+                "position": [
+                  19,
+                  35
+                ],
+                "rotation": 270,
+                "shape": 5
+              },
+              "changed_dimensions": [
+                "position",
+                "rotation"
+              ],
+              "color_changed": false,
+              "confidence": "high",
+              "position_delta": [
+                0,
+                -5
+              ],
+              "provenance": [
+                {
+                  "after_frame_index": 5,
+                  "before_frame_index": 4,
+                  "row_index": 4,
+                  "source_artifact": "artifacts/object_substrate_v0/state_diff_run003.json"
+                }
+              ],
+              "rotation_changed": true,
+              "rotation_delta": 90,
+              "shape_changed": false
+            },
+            "reason": "exact_before_state_match"
+          },
+          "step_index": 5
+        },
+        {
+          "action_id": 1,
+          "action_label": "ACTION1",
+          "confidence": "high",
+          "confidence_by_dimension": {
+            "color": "high",
+            "position": "high",
+            "rotation": "high",
+            "shape": "high"
+          },
+          "provenance": {
+            "observation": {
+              "action": "ACTION1",
+              "action_id": 1,
+              "after": {
+                "color": 9,
+                "position": [
+                  19,
+                  25
+                ],
+                "rotation": 0,
+                "shape": 5
+              },
+              "before": {
+                "color": 9,
+                "position": [
+                  19,
+                  30
+                ],
+                "rotation": 0,
+                "shape": 5
+              },
+              "changed_dimensions": [
+                "position"
+              ],
+              "color_changed": false,
+              "confidence": "high",
+              "position_delta": [
+                0,
+                -5
+              ],
+              "provenance": [
+                {
+                  "after_frame_index": 6,
+                  "before_frame_index": 5,
+                  "row_index": 5,
+                  "source_artifact": "artifacts/object_substrate_v0/state_diff_run003.json"
+                }
+              ],
+              "rotation_changed": false,
+              "rotation_delta": 0,
+              "shape_changed": false
+            },
+            "reason": "exact_before_state_match"
+          },
+          "step_index": 6
+        },
+        {
+          "action_id": 4,
+          "action_label": "ACTION4",
+          "confidence": "high",
+          "confidence_by_dimension": {
+            "color": "high",
+            "position": "high",
+            "rotation": "high",
+            "shape": "high"
+          },
+          "provenance": {
+            "observation": {
+              "action": "ACTION4",
+              "action_id": 4,
+              "after": {
+                "color": 9,
+                "position": [
+                  24,
+                  25
+                ],
+                "rotation": 0,
+                "shape": 5
+              },
+              "before": {
+                "color": 9,
+                "position": [
+                  19,
+                  25
+                ],
+                "rotation": 0,
+                "shape": 5
+              },
+              "changed_dimensions": [
+                "position"
+              ],
+              "color_changed": false,
+              "confidence": "high",
+              "position_delta": [
+                5,
+                0
+              ],
+              "provenance": [
+                {
+                  "after_frame_index": 7,
+                  "before_frame_index": 6,
+                  "row_index": 6,
+                  "source_artifact": "artifacts/object_substrate_v0/state_diff_run003.json"
+                }
+              ],
+              "rotation_changed": false,
+              "rotation_delta": 0,
+              "shape_changed": false
+            },
+            "reason": "exact_before_state_match"
+          },
+          "step_index": 7
+        },
+        {
+          "action_id": 4,
+          "action_label": "ACTION4",
+          "confidence": "high",
+          "confidence_by_dimension": {
+            "color": "high",
+            "position": "high",
+            "rotation": "high",
+            "shape": "high"
+          },
+          "provenance": {
+            "observation": {
+              "action": "ACTION4",
+              "action_id": 4,
+              "after": {
+                "color": 9,
+                "position": [
+                  29,
+                  25
+                ],
+                "rotation": 0,
+                "shape": 5
+              },
+              "before": {
+                "color": 9,
+                "position": [
+                  24,
+                  25
+                ],
+                "rotation": 0,
+                "shape": 5
+              },
+              "changed_dimensions": [
+                "position"
+              ],
+              "color_changed": false,
+              "confidence": "high",
+              "position_delta": [
+                5,
+                0
+              ],
+              "provenance": [
+                {
+                  "after_frame_index": 8,
+                  "before_frame_index": 7,
+                  "row_index": 7,
+                  "source_artifact": "artifacts/object_substrate_v0/state_diff_run003.json"
+                }
+              ],
+              "rotation_changed": false,
+              "rotation_delta": 0,
+              "shape_changed": false
+            },
+            "reason": "exact_before_state_match"
+          },
+          "step_index": 8
+        },
+        {
+          "action_id": 4,
+          "action_label": "ACTION4",
+          "confidence": "high",
+          "confidence_by_dimension": {
+            "color": "high",
+            "position": "high",
+            "rotation": "high",
+            "shape": "high"
+          },
+          "provenance": {
+            "observation": {
+              "action": "ACTION4",
+              "action_id": 4,
+              "after": {
+                "color": 9,
+                "position": [
+                  34,
+                  25
+                ],
+                "rotation": 0,
+                "shape": 5
+              },
+              "before": {
+                "color": 9,
+                "position": [
+                  29,
+                  25
+                ],
+                "rotation": 0,
+                "shape": 5
+              },
+              "changed_dimensions": [
+                "position"
+              ],
+              "color_changed": false,
+              "confidence": "high",
+              "position_delta": [
+                5,
+                0
+              ],
+              "provenance": [
+                {
+                  "after_frame_index": 9,
+                  "before_frame_index": 8,
+                  "row_index": 8,
+                  "source_artifact": "artifacts/object_substrate_v0/state_diff_run003.json"
+                }
+              ],
+              "rotation_changed": false,
+              "rotation_delta": 0,
+              "shape_changed": false
+            },
+            "reason": "exact_before_state_match"
+          },
+          "step_index": 9
+        },
+        {
+          "action_id": 1,
+          "action_label": "ACTION1",
+          "confidence": "high",
+          "confidence_by_dimension": {
+            "color": "high",
+            "position": "high",
+            "rotation": "high",
+            "shape": "high"
+          },
+          "provenance": {
+            "observation": {
+              "action": "ACTION1",
+              "action_id": 1,
+              "after": {
+                "color": 9,
+                "position": [
+                  34,
+                  20
+                ],
+                "rotation": 0,
+                "shape": 5
+              },
+              "before": {
+                "color": 9,
+                "position": [
+                  34,
+                  25
+                ],
+                "rotation": 0,
+                "shape": 5
+              },
+              "changed_dimensions": [
+                "position"
+              ],
+              "color_changed": false,
+              "confidence": "high",
+              "position_delta": [
+                0,
+                -5
+              ],
+              "provenance": [
+                {
+                  "after_frame_index": 10,
+                  "before_frame_index": 9,
+                  "row_index": 9,
+                  "source_artifact": "artifacts/object_substrate_v0/state_diff_run003.json"
+                }
+              ],
+              "rotation_changed": false,
+              "rotation_delta": 0,
+              "shape_changed": false
+            },
+            "reason": "exact_before_state_match"
+          },
+          "step_index": 10
+        },
+        {
+          "action_id": 1,
+          "action_label": "ACTION1",
+          "confidence": "high",
+          "confidence_by_dimension": {
+            "color": "high",
+            "position": "high",
+            "rotation": "high",
+            "shape": "high"
+          },
+          "provenance": {
+            "observation": {
+              "action": "ACTION1",
+              "action_id": 1,
+              "after": {
+                "color": 9,
+                "position": [
+                  34,
+                  15
+                ],
+                "rotation": 0,
+                "shape": 5
+              },
+              "before": {
+                "color": 9,
+                "position": [
+                  34,
+                  20
+                ],
+                "rotation": 0,
+                "shape": 5
+              },
+              "changed_dimensions": [
+                "position"
+              ],
+              "color_changed": false,
+              "confidence": "high",
+              "position_delta": [
+                0,
+                -5
+              ],
+              "provenance": [
+                {
+                  "after_frame_index": 11,
+                  "before_frame_index": 10,
+                  "row_index": 10,
+                  "source_artifact": "artifacts/object_substrate_v0/state_diff_run003.json"
+                }
+              ],
+              "rotation_changed": false,
+              "rotation_delta": 0,
+              "shape_changed": false
+            },
+            "reason": "exact_before_state_match"
+          },
+          "step_index": 11
+        },
+        {
+          "action_id": 1,
+          "action_label": "ACTION1",
+          "confidence": "high",
+          "confidence_by_dimension": {
+            "color": "high",
+            "position": "high",
+            "rotation": "high",
+            "shape": "high"
+          },
+          "provenance": {
+            "observation": {
+              "action": "ACTION1",
+              "action_id": 1,
+              "after": {
+                "color": 9,
+                "position": [
+                  34,
+                  10
+                ],
+                "rotation": 0,
+                "shape": 5
+              },
+              "before": {
+                "color": 9,
+                "position": [
+                  34,
+                  15
+                ],
+                "rotation": 0,
+                "shape": 5
+              },
+              "changed_dimensions": [
+                "position"
+              ],
+              "color_changed": false,
+              "confidence": "high",
+              "position_delta": [
+                0,
+                -5
+              ],
+              "provenance": [
+                {
+                  "after_frame_index": 12,
+                  "before_frame_index": 11,
+                  "row_index": 11,
+                  "source_artifact": "artifacts/object_substrate_v0/state_diff_run003.json"
+                }
+              ],
+              "rotation_changed": false,
+              "rotation_delta": 0,
+              "shape_changed": false
+            },
+            "reason": "exact_before_state_match"
+          },
+          "step_index": 12
+        }
+      ],
+      "plan_source_artifact": "artifacts/object_substrate_v0/run_005_object_aware_wall_fix/planned_sequence.json",
+      "planner_agent": "receipt_object_aware_planner_agent",
+      "planner_ontology": "position_shape_color_rotation",
+      "receipt_source_artifact": "artifacts/object_substrate_v0/run_005_object_aware_wall_fix/receipt.json",
+      "sequence_derivation": "planner_v0_object_aware_with_walls"
+    },
+    "tr87": {
+      "action_labels": [
+        "ACTION2",
+        "ACTION2",
+        "ACTION3",
+        "ACTION2",
+        "ACTION2",
+        "ACTION3",
+        "ACTION2",
+        "ACTION3",
+        "ACTION1",
+        "ACTION1",
+        "ACTION1",
+        "ACTION3",
+        "ACTION2",
+        "ACTION2"
+      ],
+      "action_sequence": [
+        2,
+        2,
+        3,
+        2,
+        2,
+        3,
+        2,
+        3,
+        1,
+        1,
+        1,
+        3,
+        2,
+        2
+      ],
+      "game_id_prefixes": [
+        "tr87"
+      ],
+      "hardcoded_constants": {
+        "completion_predicate": "bsqsshqpox_sequence_rule_validation",
+        "source_file": "tr87.py",
+        "source_lines": [
+          "tr87.py:499-526",
+          "tr87.py:942-966",
+          "tr87.py:996-1042",
+          "tr87.py:1044-1113"
+        ],
+        "target_required_sequence": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB2",
+          "nxkictbbvztB6",
+          "nxkictbbvztB5",
+          "nxkictbbvztB1"
+        ]
+      },
+      "non_claims": [
+        "public tr87 level-1 substrate-derived capability only",
+        "not a Kaggle leaderboard result",
+        "not a private-eval claim",
+        "not a third-game generality claim"
+      ],
+      "per_step_provenance": [
+        {
+          "action_id": 2,
+          "action_label": "ACTION2",
+          "confidence": "high",
+          "confidence_by_dimension": {
+            "action_budget": "medium",
+            "selector_index": "high",
+            "sequence_state": "high"
+          },
+          "provenance": [
+            {
+              "coverage_pair": {
+                "action_id": 2,
+                "selector_index": 0
+              },
+              "source": "tr87_selector_probe_extended_action_effect_model"
+            },
+            {
+              "source": "tr87_source_consistency_check",
+              "source_lines": [
+                "tr87.py:1005-1014",
+                "tr87.py:1024-1029"
+              ]
+            }
+          ],
+          "step_index": 0
+        },
+        {
+          "action_id": 2,
+          "action_label": "ACTION2",
+          "confidence": "high",
+          "confidence_by_dimension": {
+            "action_budget": "medium",
+            "selector_index": "high",
+            "sequence_state": "high"
+          },
+          "provenance": [
+            {
+              "coverage_pair": {
+                "action_id": 2,
+                "selector_index": 0
+              },
+              "source": "tr87_selector_probe_extended_action_effect_model"
+            },
+            {
+              "source": "tr87_source_consistency_check",
+              "source_lines": [
+                "tr87.py:1005-1014",
+                "tr87.py:1024-1029"
+              ]
+            }
+          ],
+          "step_index": 1
+        },
+        {
+          "action_id": 3,
+          "action_label": "ACTION3",
+          "confidence": "high",
+          "confidence_by_dimension": {
+            "action_budget": "medium",
+            "selector_index": "high",
+            "sequence_state": "unchanged"
+          },
+          "provenance": [
+            {
+              "coverage_pair": {
+                "action_id": 3,
+                "selector_index": 0
+              },
+              "source": "tr87_selector_probe_extended_action_effect_model"
+            },
+            {
+              "source": "tr87_source_consistency_check",
+              "source_lines": [
+                "tr87.py:996-1004"
+              ]
+            }
+          ],
+          "step_index": 2
+        },
+        {
+          "action_id": 2,
+          "action_label": "ACTION2",
+          "confidence": "high",
+          "confidence_by_dimension": {
+            "action_budget": "medium",
+            "selector_index": "high",
+            "sequence_state": "high"
+          },
+          "provenance": [
+            {
+              "coverage_pair": {
+                "action_id": 2,
+                "selector_index": 4
+              },
+              "source": "tr87_selector_probe_extended_action_effect_model"
+            },
+            {
+              "source": "tr87_source_consistency_check",
+              "source_lines": [
+                "tr87.py:1005-1014",
+                "tr87.py:1024-1029"
+              ]
+            }
+          ],
+          "step_index": 3
+        },
+        {
+          "action_id": 2,
+          "action_label": "ACTION2",
+          "confidence": "high",
+          "confidence_by_dimension": {
+            "action_budget": "medium",
+            "selector_index": "high",
+            "sequence_state": "high"
+          },
+          "provenance": [
+            {
+              "coverage_pair": {
+                "action_id": 2,
+                "selector_index": 4
+              },
+              "source": "tr87_selector_probe_extended_action_effect_model"
+            },
+            {
+              "source": "tr87_source_consistency_check",
+              "source_lines": [
+                "tr87.py:1005-1014",
+                "tr87.py:1024-1029"
+              ]
+            }
+          ],
+          "step_index": 4
+        },
+        {
+          "action_id": 3,
+          "action_label": "ACTION3",
+          "confidence": "high",
+          "confidence_by_dimension": {
+            "action_budget": "medium",
+            "selector_index": "high",
+            "sequence_state": "unchanged"
+          },
+          "provenance": [
+            {
+              "coverage_pair": {
+                "action_id": 3,
+                "selector_index": 4
+              },
+              "source": "tr87_selector_probe_extended_action_effect_model"
+            },
+            {
+              "source": "tr87_source_consistency_check",
+              "source_lines": [
+                "tr87.py:996-1004"
+              ]
+            }
+          ],
+          "step_index": 5
+        },
+        {
+          "action_id": 2,
+          "action_label": "ACTION2",
+          "confidence": "high",
+          "confidence_by_dimension": {
+            "action_budget": "medium",
+            "selector_index": "high",
+            "sequence_state": "high"
+          },
+          "provenance": [
+            {
+              "coverage_pair": {
+                "action_id": 2,
+                "selector_index": 3
+              },
+              "source": "tr87_selector_probe_extended_action_effect_model"
+            },
+            {
+              "source": "tr87_source_consistency_check",
+              "source_lines": [
+                "tr87.py:1005-1014",
+                "tr87.py:1024-1029"
+              ]
+            }
+          ],
+          "step_index": 6
+        },
+        {
+          "action_id": 3,
+          "action_label": "ACTION3",
+          "confidence": "high",
+          "confidence_by_dimension": {
+            "action_budget": "medium",
+            "selector_index": "high",
+            "sequence_state": "unchanged"
+          },
+          "provenance": [
+            {
+              "coverage_pair": {
+                "action_id": 3,
+                "selector_index": 3
+              },
+              "source": "tr87_selector_probe_extended_action_effect_model"
+            },
+            {
+              "source": "tr87_source_consistency_check",
+              "source_lines": [
+                "tr87.py:996-1004"
+              ]
+            }
+          ],
+          "step_index": 7
+        },
+        {
+          "action_id": 1,
+          "action_label": "ACTION1",
+          "confidence": "high",
+          "confidence_by_dimension": {
+            "action_budget": "medium",
+            "selector_index": "high",
+            "sequence_state": "high"
+          },
+          "provenance": [
+            {
+              "coverage_pair": {
+                "action_id": 1,
+                "selector_index": 2
+              },
+              "source": "tr87_selector_probe_extended_action_effect_model"
+            },
+            {
+              "source": "tr87_source_consistency_check",
+              "source_lines": [
+                "tr87.py:1005-1014",
+                "tr87.py:1024-1029"
+              ]
+            }
+          ],
+          "step_index": 8
+        },
+        {
+          "action_id": 1,
+          "action_label": "ACTION1",
+          "confidence": "high",
+          "confidence_by_dimension": {
+            "action_budget": "medium",
+            "selector_index": "high",
+            "sequence_state": "high"
+          },
+          "provenance": [
+            {
+              "coverage_pair": {
+                "action_id": 1,
+                "selector_index": 2
+              },
+              "source": "tr87_selector_probe_extended_action_effect_model"
+            },
+            {
+              "source": "tr87_source_consistency_check",
+              "source_lines": [
+                "tr87.py:1005-1014",
+                "tr87.py:1024-1029"
+              ]
+            }
+          ],
+          "step_index": 9
+        },
+        {
+          "action_id": 1,
+          "action_label": "ACTION1",
+          "confidence": "high",
+          "confidence_by_dimension": {
+            "action_budget": "medium",
+            "selector_index": "high",
+            "sequence_state": "high"
+          },
+          "provenance": [
+            {
+              "coverage_pair": {
+                "action_id": 1,
+                "selector_index": 2
+              },
+              "source": "tr87_selector_probe_extended_action_effect_model"
+            },
+            {
+              "source": "tr87_source_consistency_check",
+              "source_lines": [
+                "tr87.py:1005-1014",
+                "tr87.py:1024-1029"
+              ]
+            }
+          ],
+          "step_index": 10
+        },
+        {
+          "action_id": 3,
+          "action_label": "ACTION3",
+          "confidence": "high",
+          "confidence_by_dimension": {
+            "action_budget": "medium",
+            "selector_index": "high",
+            "sequence_state": "unchanged"
+          },
+          "provenance": [
+            {
+              "coverage_pair": {
+                "action_id": 3,
+                "selector_index": 2
+              },
+              "source": "tr87_selector_probe_extended_action_effect_model"
+            },
+            {
+              "source": "tr87_source_consistency_check",
+              "source_lines": [
+                "tr87.py:996-1004"
+              ]
+            }
+          ],
+          "step_index": 11
+        },
+        {
+          "action_id": 2,
+          "action_label": "ACTION2",
+          "confidence": "high",
+          "confidence_by_dimension": {
+            "action_budget": "medium",
+            "selector_index": "high",
+            "sequence_state": "high"
+          },
+          "provenance": [
+            {
+              "coverage_pair": {
+                "action_id": 2,
+                "selector_index": 1
+              },
+              "source": "tr87_selector_probe_extended_action_effect_model"
+            },
+            {
+              "source": "tr87_source_consistency_check",
+              "source_lines": [
+                "tr87.py:1005-1014",
+                "tr87.py:1024-1029"
+              ]
+            }
+          ],
+          "step_index": 12
+        },
+        {
+          "action_id": 2,
+          "action_label": "ACTION2",
+          "confidence": "high",
+          "confidence_by_dimension": {
+            "action_budget": "medium",
+            "selector_index": "high",
+            "sequence_state": "high"
+          },
+          "provenance": [
+            {
+              "coverage_pair": {
+                "action_id": 2,
+                "selector_index": 1
+              },
+              "source": "tr87_selector_probe_extended_action_effect_model"
+            },
+            {
+              "source": "tr87_source_consistency_check",
+              "source_lines": [
+                "tr87.py:1005-1014",
+                "tr87.py:1024-1029"
+              ]
+            }
+          ],
+          "step_index": 13
+        }
+      ],
+      "plan_source_artifact": "artifacts/object_substrate_v0/tr87_run_001_object_aware/planned_sequence.json",
+      "planner_agent": "receipt_tr87_object_aware_planner_agent",
+      "planner_ontology": "selector_sequence_state",
+      "receipt_source_artifact": "artifacts/object_substrate_v0/tr87_run_001_object_aware/receipt.json",
+      "sequence_derivation": "tr87_selector_sequence_bfs_planner"
+    }
+  },
+  "unsupported_game_fallback": {
+    "action_preference": [
+      "ACTION1",
+      "ACTION2",
+      "ACTION3",
+      "ACTION4",
+      "RESET"
+    ],
+    "dispatch_decision": "unsupported_game_fallback",
+    "expected_score": 0,
+    "non_claim": "this_submission_does_not_claim_capability_on_unsupported_games"
+  }
+}

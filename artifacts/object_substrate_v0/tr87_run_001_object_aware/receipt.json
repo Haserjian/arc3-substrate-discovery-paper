@@ -1,0 +1,226 @@
+{
+  "actions_taken": 14,
+  "auto_iteration": false,
+  "command": [
+    "ARC3_AGENT_REPO=.",
+    "uv",
+    "run",
+    "main.py",
+    "--agent=receipttr87objectawareplanneragent",
+    "--game=tr87"
+  ],
+  "cross_game_capability_attempt": true,
+  "decision": {
+    "decision": "tr87_level_completed_cross_game_capability_demonstrated",
+    "next_slice": "paper_draft_refresh_and_universality_polish"
+  },
+  "failure_modes": [],
+  "game": "tr87",
+  "generated_at": "2026-05-21T17:07:45.211662+00:00",
+  "kind": "object_substrate_v0_tr87_run_001_receipt",
+  "lane": "object_substrate_v0",
+  "levels_completed": 1,
+  "local_verification_required_before_official_run": true,
+  "local_verifier_pass": true,
+  "ls20_substrate_immutable": true,
+  "no_general_agent_claim": true,
+  "no_kaggle_claim": true,
+  "no_private_eval_claim": true,
+  "no_score_improvement_claim": false,
+  "non_claims": [
+    "tr87 run 001 is not a Kaggle/private-eval claim.",
+    "tr87 run 001 is not a general ARC-AGI-3 agent claim.",
+    "tr87 run 001 does not claim third-game generality.",
+    "The tr87 planner uses selector/sequence state, not ls20 motion state."
+  ],
+  "official_run_attempted": true,
+  "paper_lane_immutable": true,
+  "planned_action_count": 14,
+  "planned_action_labels": [
+    "ACTION2",
+    "ACTION2",
+    "ACTION3",
+    "ACTION2",
+    "ACTION2",
+    "ACTION3",
+    "ACTION2",
+    "ACTION3",
+    "ACTION1",
+    "ACTION1",
+    "ACTION1",
+    "ACTION3",
+    "ACTION2",
+    "ACTION2"
+  ],
+  "planned_sequence": [
+    2,
+    2,
+    3,
+    2,
+    2,
+    3,
+    2,
+    3,
+    1,
+    1,
+    1,
+    3,
+    2,
+    2
+  ],
+  "planner_ontology": "selector_sequence_state",
+  "prediction_mismatch_count": 0,
+  "process": {
+    "duration_seconds": 3.916,
+    "exit_code": 0,
+    "stderr_tail": "",
+    "stdout_tail": "https://three.arcprize.org/api/games\n2026-05-21 10:07:56,165 | INFO | Game list: ['tr87-cd924810']\n2026-05-21 10:07:56 | INFO | Successfully fetched 25 environment(s) from API\n2026-05-21 10:07:56,285 | INFO | Successfully fetched 25 environment(s) from API\n***** MAKING SCORECARD\n{\"card_id\":\"8976c80f-11f5-49f5-a8e7-57af8c895ebe\"}\n\n{'card_id': '8976c80f-11f5-49f5-a8e7-57af8c895ebe'}\n2026-05-21 10:07:56 | INFO | Created new scorecard: 8976c80f-11f5-49f5-a8e7-57af8c895ebe\n2026-05-21 10:07:56,347 | INFO | Created new scorecard: 8976c80f-11f5-49f5-a8e7-57af8c895ebe\n***** MAKING ALL AGENTS with card id: 8976c80f-11f5-49f5-a8e7-57af8c895ebe\n2026-05-21 10:07:56 | INFO | Successfully fetched metadata for game tr87\n2026-05-21 10:07:56,407 | INFO | Successfully fetched metadata for game tr87\n2026-05-21 10:07:56 | INFO | Successfully reset game tr87-cd924810, guid=6055f96a-7c9f-4aeb-ac6a-c26f708fba80, scorecard_id=8976c80f-11f5-49f5-a8e7-57af8c895ebe\n2026-05-21 10:07:56,587 | INFO | Successfully reset game tr87-cd924810, guid=6055f96a-7c9f-4aeb-ac6a-c26f708fba80, scorecard_id=8976c80f-11f5-49f5-a8e7-57af8c895ebe\n2026-05-21 10:07:56,587 | INFO | created new recording for tr87-cd924810.receipttr87objectawareplanneragent into recordings/tr87-cd924810.receipttr87objectawareplanneragent.0c36c8d1-8363-4c21-964d-65bf224d68da.recording.jsonl\n2026-05-21 10:07:56,646 | INFO | tr87-cd924810 - ACTION2: count 0, levels completed 0, avg fps 0.0)\n2026-05-21 10:07:56,754 | INFO | tr87-cd924810 - ACTION2: count 1, levels completed 0, avg fps 6.25)\n2026-05-21 10:07:56,868 | INFO | tr87-cd924810 - ACTION3: count 2, levels completed 0, avg fps 7.41)\n2026-05-21 10:07:56,923 | INFO | tr87-cd924810 - ACTION2: count 3, levels completed 0, avg fps 9.09)\n2026-05-21 10:07:57,030 | INFO | tr87-cd924810 - ACTION2: count 4, levels completed 0, avg fps 9.09)\n2026-05-21 10:07:57,140 | INFO | tr87-cd924810 - ACTION3: count 5, levels completed 0, avg fps 9.09)\n2026-05-21 10:07:57,246 | INFO | tr87-cd924810 - ACTION2: count 6, levels completed 0, avg fps 9.23)\n2026-05-21 10:07:57,304 | INFO | tr87-cd924810 - ACTION3: count 7, levels completed 0, avg fps 9.86)\n2026-05-21 10:07:57,363 | INFO | tr87-cd924810 - ACTION1: count 8, levels completed 0, avg fps 10.39)\n2026-05-21 10:07:57,421 | INFO | tr87-cd924810 - ACTION1: count 9, levels completed 0, avg fps 10.84)\n2026-05-21 10:07:57,478 | INFO | tr87-cd924810 - ACTION1: count 10, levels completed 0, avg fps 11.36)\n2026-05-21 10:07:57,590 | INFO | tr87-cd924810 - ACTION3: count 11, levels completed 0, avg fps 11.0)\n2026-05-21 10:07:57,649 | INFO | tr87-cd924810 - ACTION2: count 12, levels completed 0, avg fps 11.32)\n2026-05-21 10:07:58,020 | INFO | tr87-cd924810 - ACTION2: count 13, levels completed 1, avg fps 9.09)\n2026-05-21 10:07:58,029 | INFO | recording for tr87-cd924810.receipttr87objectawareplanneragent is available in recordings/tr87-cd924810.receipttr87objectawareplanneragent.0c36c8d1-8363-4c21-964d-65bf224d68da.recording.jsonl\n2026-05-21 10:07:58,029 | INFO | Finishing: agent took 14 actions, took 1.44 seconds (9.72 average fps)\n2026-05-21 10:07:58 | INFO | Closed scorecard: 8976c80f-11f5-49f5-a8e7-57af8c895ebe\n2026-05-21 10:07:58,072 | INFO | Closed scorecard: 8976c80f-11f5-49f5-a8e7-57af8c895ebe\n2026-05-21 10:07:58,072 | INFO | --- FINAL SCORECARD REPORT ---\n2026-05-21 10:07:58,073 | INFO | {\n  \"source_url\": null,\n  \"tags\": [\n    \"agent\",\n    \"receipttr87objectawareplanneragent\"\n  ],\n  \"opaque\": null,\n  \"card_id\": \"8976c80f-11f5-49f5-a8e7-57af8c895ebe\",\n  \"api_key\": null,\n  \"score\": 4.761904761904762,\n  \"environments\": [\n    {\n      \"id\": \"tr87-cd924810\",\n      \"runs\": [\n        {\n          \"id\": null,\n          \"guid\": \"6055f96a-7c9f-4aeb-ac6a-c26f708fba80\",\n          \"score\": 4.761904761904762,\n          \"levels_completed\": 1,\n          \"actions\": 14,\n          \"resets\": 0,\n          \"state\": \"NOT_FINISHED\",\n          \"completed\": false,\n          \"level_scores\": [\n            115.0,\n            0.0,\n            0.0,\n            0.0,\n            0.0,\n            0.0\n          ],\n          \"level_actions\": [\n            14,\n            0,\n            0,\n            0,\n            0,\n            0\n          ],\n          \"level_baseline_actions\": [\n            54,\n            58,\n            40,\n            45,\n            71,\n            146\n          ],\n          \"number_of_levels\": null,\n          \"number_of_environments\": 0,\n          \"message\": null\n        }\n      ],\n      \"score\": 4.761904761904762,\n      \"actions\": 14,\n      \"levels_completed\": 1,\n      \"completed\": false,\n      \"level_count\": 6,\n      \"resets\": 0\n    }\n  ],\n  \"tags_scores\": [\n    {\n      \"id\": \"keyboard\",\n      \"guid\": null,\n      \"score\": 4.761904761904762,\n      \"levels_completed\": 1,\n      \"actions\": 14,\n      \"resets\": null,\n      \"state\": null,\n      \"completed\": null,\n      \"level_scores\": null,\n      \"level_actions\": null,\n      \"level_baseline_actions\": null,\n      \"number_of_levels\": 6,\n      \"number_of_environments\": 1,\n      \"message\": null\n    }\n  ],\n  \"total_environments_completed\": 0,\n  \"total_environments\": 1,\n  \"total_levels_completed\": 1,\n  \"total_levels\": 6,\n  \"total_actions\": 14\n}\n2026-05-21 10:07:58,073 | INFO | View your scorecard online: https://three.arcprize.org/scorecards/8976c80f-11f5-49f5-a8e7-57af8c895ebe\n2026-05-21 10:07:58,073 | INFO | Received SIGINT, exiting...\n",
+    "timed_out": false
+  },
+  "provenance_complete": true,
+  "run_count_this_session": 1,
+  "run_dir": "artifacts/object_substrate_v0/tr87_run_001_object_aware",
+  "runner_blocker": {
+    "code": "scorecard_observed",
+    "status": "completed"
+  },
+  "runner_dir": "ARC-AGI-3-Agents",
+  "schema_version": "v0",
+  "score": 4.761904761904762,
+  "scorecard": {
+    "card_id": "8976c80f-11f5-49f5-a8e7-57af8c895ebe",
+    "environments": [
+      {
+        "actions": 14,
+        "completed": false,
+        "id": "tr87-cd924810",
+        "level_count": 6,
+        "levels_completed": 1,
+        "resets": 0,
+        "runs": [
+          {
+            "actions": 14,
+            "completed": false,
+            "guid": "6055f96a-7c9f-4aeb-ac6a-c26f708fba80",
+            "level_actions": [
+              14,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "level_baseline_actions": [
+              54,
+              58,
+              40,
+              45,
+              71,
+              146
+            ],
+            "level_scores": [
+              115.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "levels_completed": 1,
+            "resets": 0,
+            "score": 4.761904761904762,
+            "state": "NOT_FINISHED"
+          }
+        ],
+        "score": 4.761904761904762
+      }
+    ],
+    "max_actions_summary": null,
+    "observed": true,
+    "primary_environment": {
+      "actions": 14,
+      "completed": false,
+      "id": "tr87-cd924810",
+      "level_count": 6,
+      "levels_completed": 1,
+      "resets": 0,
+      "runs": [
+        {
+          "actions": 14,
+          "completed": false,
+          "guid": "6055f96a-7c9f-4aeb-ac6a-c26f708fba80",
+          "level_actions": [
+            14,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "level_baseline_actions": [
+            54,
+            58,
+            40,
+            45,
+            71,
+            146
+          ],
+          "level_scores": [
+            115.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "levels_completed": 1,
+          "resets": 0,
+          "score": 4.761904761904762,
+          "state": "NOT_FINISHED"
+        }
+      ],
+      "score": 4.761904761904762
+    },
+    "primary_run": {
+      "actions": 14,
+      "completed": false,
+      "guid": "6055f96a-7c9f-4aeb-ac6a-c26f708fba80",
+      "level_actions": [
+        14,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "level_baseline_actions": [
+        54,
+        58,
+        40,
+        45,
+        71,
+        146
+      ],
+      "level_scores": [
+        115.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "levels_completed": 1,
+      "resets": 0,
+      "score": 4.761904761904762,
+      "state": "NOT_FINISHED"
+    },
+    "recording_path": "recordings/tr87-cd924810.receipttr87objectawareplanneragent.0c36c8d1-8363-4c21-964d-65bf224d68da.recording.jsonl",
+    "score": 4.761904761904762,
+    "scorecard_url": "https://three.arcprize.org/scorecards/8976c80f-11f5-49f5-a8e7-57af8c895ebe",
+    "total_actions": 14,
+    "total_levels_completed": 1
+  },
+  "slice_scope": "tr87_object_aware_planner_run_001",
+  "step_receipt_count": 14,
+  "target_game": "tr87"
+}

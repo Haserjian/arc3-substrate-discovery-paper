@@ -1,0 +1,39 @@
+{
+  "schema_version": "v0",
+  "kind": "kaggle_submission_record",
+  "generated_at": "2026-05-22T00:12:53Z",
+  "competition": "arc-prize-2026-arc-agi-3",
+  "competition_submissions_url": "https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-3/submissions",
+  "notebook_url": "https://www.kaggle.com/code/timhaserjian/arc3-object-substrate-submission-candidate",
+  "notebook_title": "ARC3 Object Substrate Submission Candidate",
+  "notebook_version": "Version 1",
+  "script_version_id": "321226677",
+  "output_file": "submission.parquet",
+  "submission_description": "Verified object-substrate Kaggle package candidate; scoped ls20/tr87 substrate with honest unsupported-game fallback.",
+  "browser_submission_flow": {
+    "initial_output_file_selection": "my_agent.py",
+    "initial_error": "Could not find provided output file my_agent.py",
+    "corrected_output_file_selection": "submission.parquet",
+    "final_submit_clicked": true,
+    "post_submit_navigation": "https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-3/submissions"
+  },
+  "observed_submission_row": {
+    "label": "ARC3 Object Substrate Submission Candidate - Version 1",
+    "status": "Succeeded",
+    "relative_time_observed": "9 minutes ago",
+    "public_score": 0.0,
+    "error": null
+  },
+  "kaggle_submission_status": "submitted_succeeded",
+  "linked_kaggle_score": 0.0,
+  "kaggle_submission_attempted": true,
+  "official_run_invoked": false,
+  "readiness_verdict_path": "artifacts/kaggle_submission_preflight/kaggle_runtime_verification/readiness_verdict.json",
+  "version_commit_record_path": "artifacts/kaggle_submission_preflight/kaggle_submission_record/notebook_version_commit_record.json",
+  "claim_boundaries": {
+    "no_private_eval_claim": true,
+    "no_general_arc_agi_3_claim": true,
+    "public_scorecards_are_not_kaggle_leaderboard_evidence": true,
+    "score_pending": false
+  }
+}

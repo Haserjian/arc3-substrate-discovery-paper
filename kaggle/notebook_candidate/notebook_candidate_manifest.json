@@ -1,0 +1,18 @@
+{
+  "agent_path": "kaggle/notebook_candidate/my_agent.py",
+  "contract_basis": "Kaggle sample ARC3 Sample Submission - Random Agent, version 13",
+  "generated_at": "2026-05-21T23:28:37.326204+00:00",
+  "kaggle_submission_attempted": false,
+  "kind": "kaggle_notebook_candidate_manifest",
+  "no_general_arc_agi_3_claim": true,
+  "no_private_eval_claim": true,
+  "notebook_path": "kaggle/notebook_candidate/arc3_object_substrate_submission.ipynb",
+  "official_run_invoked": false,
+  "package_payload_path": "kaggle/package_candidate/substrate_plans.json",
+  "release_manifest_sanitized": true,
+  "sha256": {
+    "agent": "34d94337a530e18a7f544114e6893879c4650fffce336ea6daaa83b43c2412c0",
+    "notebook": "92dfe6c2caed3dd95976ba2ae4c32b9c80a404a09469a5a7596d3ee30f87f322"
+  },
+  "source_sample_notebook": "Kaggle sample ARC3 Sample Submission - Random Agent, version 13"
+}

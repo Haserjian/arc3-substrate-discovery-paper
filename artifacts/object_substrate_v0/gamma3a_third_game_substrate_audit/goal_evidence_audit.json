@@ -1,0 +1,106 @@
+{
+  "analysis_only": true,
+  "architecture_review_carried_forward": true,
+  "capability_attempt": false,
+  "details": {
+    "citations": [
+      "cn04.py:1023-1049",
+      "cn04.py:1057-1060"
+    ],
+    "completion_signal": "self.rqolqpqwo then next_level on following step",
+    "hidden_mechanic_evidence": "none beyond source-visible masking, selection, and step budget in this audit",
+    "reset_failure_signal": "lose on MaxSteps exhaustion; no reset bundle analyzed",
+    "rule_context": "sprite overlap/contact-marker geometry",
+    "score_progress_signal": "level completion only; no scorecard claim in gamma3a",
+    "target_state": "all source-defined contact-marker cells covered/rewritten"
+  },
+  "findings": [
+    {
+      "citations": [
+        {
+          "line_end": 994,
+          "line_start": 946,
+          "reason": "visible sprite overlap markers are collected",
+          "source_file_path": "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py",
+          "source_line_ref": "cn04.py:946-994"
+        },
+        {
+          "line_end": 1049,
+          "line_start": 1023,
+          "reason": "completion predicate returns true when no 8/13 markers remain",
+          "source_file_path": "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py",
+          "source_line_ref": "cn04.py:1023-1049"
+        },
+        {
+          "line_end": 1099,
+          "line_start": 1098,
+          "reason": "ACTION5 can set next-level flag after completion",
+          "source_file_path": "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py",
+          "source_line_ref": "cn04.py:1098-1099"
+        },
+        {
+          "line_end": 1128,
+          "line_start": 1127,
+          "reason": "movement actions can set next-level flag after completion",
+          "source_file_path": "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py",
+          "source_line_ref": "cn04.py:1127-1128"
+        }
+      ],
+      "claim": "Completion is source-visible: sjwqloivve rewrites marked overlap cells and returns false while any 8 or 13 marker remains.",
+      "finding_id": "cn04_completion_predicate_checks_marker_elimination"
+    },
+    {
+      "citations": [
+        {
+          "line_end": 710,
+          "line_start": 706,
+          "reason": "level 1 MaxSteps",
+          "source_file_path": "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py",
+          "source_line_ref": "cn04.py:706-710"
+        },
+        {
+          "line_end": 853,
+          "line_start": 848,
+          "reason": "level setup configures MaxSteps",
+          "source_file_path": "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py",
+          "source_line_ref": "cn04.py:848-853"
+        },
+        {
+          "line_end": 1060,
+          "line_start": 1057,
+          "reason": "step budget loss condition",
+          "source_file_path": "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py",
+          "source_line_ref": "cn04.py:1057-1060"
+        }
+      ],
+      "claim": "The game uses a per-level MaxSteps counter and loses when action count reaches that budget.",
+      "finding_id": "cn04_has_explicit_step_budget_and_loss"
+    }
+  ],
+  "generated_at": "2026-05-22T02:49:45.248056+00:00",
+  "input_artifacts": [
+    "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py"
+  ],
+  "kaggle_submission_attempted": false,
+  "kind": "object_substrate_v0_cn04_goal_evidence_audit",
+  "lane": "object_substrate_v0",
+  "ls20_substrate_immutable": true,
+  "no_general_agent_claim": true,
+  "no_general_arc_agi_3_claim": true,
+  "no_private_eval_claim": true,
+  "no_score_improvement_claim": true,
+  "no_third_game_capability_claim": true,
+  "official_run_attempted": false,
+  "paper_lane_immutable": false,
+  "planner_attempt": false,
+  "planner_v0_immutable": true,
+  "result": "target_goal_evidence_present:contact_marker_completion",
+  "result_citations": [
+    "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py"
+  ],
+  "schema_version": "v0",
+  "slice_scope": "gamma3a_third_game_substrate_audit",
+  "source_inspection_mode": "local_static",
+  "target_game": "cn04",
+  "tr87_substrate_immutable": true
+}

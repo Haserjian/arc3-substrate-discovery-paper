@@ -1,0 +1,263 @@
+{
+  "auto_iteration": false,
+  "command": [
+    "ARC3_AGENT_REPO=.",
+    "uv",
+    "run",
+    "main.py",
+    "--agent=receiptobjectawareplanneragent",
+    "--game=ls20"
+  ],
+  "diagnostic_only": false,
+  "execution": {
+    "blocker_classification": {
+      "code": "scorecard_observed",
+      "notes": "The official runner emitted scorecard-related output; inspect logs before claiming any score.",
+      "status": "completed"
+    },
+    "duration_seconds": 3.69398,
+    "exit_code": 0,
+    "stderr_tail": "",
+    "stdout_tail": "https://three.arcprize.org/api/games\n2026-05-20 20:17:23,117 | INFO | Game list: ['ls20-9607627b']\n2026-05-20 20:17:23 | INFO | Successfully fetched 25 environment(s) from API\n2026-05-20 20:17:23,177 | INFO | Successfully fetched 25 environment(s) from API\n***** MAKING SCORECARD\n{\"card_id\":\"30ee5ca3-c0d3-4b6f-b754-c3af7bb6ce72\"}\n\n{'card_id': '30ee5ca3-c0d3-4b6f-b754-c3af7bb6ce72'}\n2026-05-20 20:17:23 | INFO | Created new scorecard: 30ee5ca3-c0d3-4b6f-b754-c3af7bb6ce72\n2026-05-20 20:17:23,336 | INFO | Created new scorecard: 30ee5ca3-c0d3-4b6f-b754-c3af7bb6ce72\n***** MAKING ALL AGENTS with card id: 30ee5ca3-c0d3-4b6f-b754-c3af7bb6ce72\n2026-05-20 20:17:23 | INFO | Successfully fetched metadata for game ls20\n2026-05-20 20:17:23,397 | INFO | Successfully fetched metadata for game ls20\n2026-05-20 20:17:23 | INFO | Successfully reset game ls20-9607627b, guid=fc24eb42-68b3-41c6-af54-4f4e6d5d00ad, scorecard_id=30ee5ca3-c0d3-4b6f-b754-c3af7bb6ce72\n2026-05-20 20:17:23,558 | INFO | Successfully reset game ls20-9607627b, guid=fc24eb42-68b3-41c6-af54-4f4e6d5d00ad, scorecard_id=30ee5ca3-c0d3-4b6f-b754-c3af7bb6ce72\n2026-05-20 20:17:23,559 | INFO | created new recording for ls20-9607627b.receiptobjectawareplanneragent into recordings/ls20-9607627b.receiptobjectawareplanneragent.4e237fb3-0ca9-4681-87fe-7da3af966430.recording.jsonl\n2026-05-20 20:17:23,626 | INFO | ls20-9607627b - ACTION3: count 0, levels completed 0, avg fps 0.0)\n2026-05-20 20:17:23,743 | INFO | ls20-9607627b - ACTION3: count 1, levels completed 0, avg fps 5.56)\n2026-05-20 20:17:23,806 | INFO | ls20-9607627b - ACTION3: count 2, levels completed 0, avg fps 8.33)\n2026-05-20 20:17:23,922 | INFO | ls20-9607627b - ACTION1: count 3, levels completed 0, avg fps 8.33)\n2026-05-20 20:17:24,035 | INFO | ls20-9607627b - ACTION1: count 4, levels completed 0, avg fps 8.51)\n2026-05-20 20:17:24,159 | INFO | ls20-9607627b - ACTION1: count 5, levels completed 0, avg fps 8.47)\n2026-05-20 20:17:24,220 | INFO | ls20-9607627b - ACTION1: count 6, levels completed 0, avg fps 9.23)\n2026-05-20 20:17:24,331 | INFO | ls20-9607627b - ACTION4: count 7, levels completed 0, avg fps 9.21)\n2026-05-20 20:17:24,392 | INFO | ls20-9607627b - ACTION4: count 8, levels completed 0, avg fps 9.64)\n2026-05-20 20:17:24,452 | INFO | ls20-9607627b - ACTION4: count 9, levels completed 0, avg fps 10.11)\n2026-05-20 20:17:24,561 | INFO | ls20-9607627b - ACTION1: count 10, levels completed 0, avg fps 10.1)\n2026-05-20 20:17:24,676 | INFO | ls20-9607627b - ACTION1: count 11, levels completed 0, avg fps 9.91)\n2026-05-20 20:17:24,748 | INFO | ls20-9607627b - ACTION1: count 12, levels completed 1, avg fps 10.17)\n2026-05-20 20:17:24,755 | INFO | recording for ls20-9607627b.receiptobjectawareplanneragent is available in recordings/ls20-9607627b.receiptobjectawareplanneragent.4e237fb3-0ca9-4681-87fe-7da3af966430.recording.jsonl\n2026-05-20 20:17:24,755 | INFO | Finishing: agent took 13 actions, took 1.19 seconds (10.92 average fps)\n2026-05-20 20:17:24 | INFO | Closed scorecard: 30ee5ca3-c0d3-4b6f-b754-c3af7bb6ce72\n2026-05-20 20:17:24,797 | INFO | Closed scorecard: 30ee5ca3-c0d3-4b6f-b754-c3af7bb6ce72\n2026-05-20 20:17:24,797 | INFO | --- FINAL SCORECARD REPORT ---\n2026-05-20 20:17:24,797 | INFO | {\n  \"source_url\": null,\n  \"tags\": [\n    \"agent\",\n    \"receiptobjectawareplanneragent\"\n  ],\n  \"opaque\": null,\n  \"card_id\": \"30ee5ca3-c0d3-4b6f-b754-c3af7bb6ce72\",\n  \"api_key\": null,\n  \"score\": 3.571428571428571,\n  \"environments\": [\n    {\n      \"id\": \"ls20-9607627b\",\n      \"runs\": [\n        {\n          \"id\": null,\n          \"guid\": \"fc24eb42-68b3-41c6-af54-4f4e6d5d00ad\",\n          \"score\": 3.571428571428571,\n          \"levels_completed\": 1,\n          \"actions\": 13,\n          \"resets\": 0,\n          \"state\": \"NOT_FINISHED\",\n          \"completed\": false,\n          \"level_scores\": [\n            115.0,\n            0.0,\n            0.0,\n            0.0,\n            0.0,\n            0.0,\n            0.0\n          ],\n          \"level_actions\": [\n            13,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0\n          ],\n          \"level_baseline_actions\": [\n            22,\n            123,\n            73,\n            84,\n            96,\n            192,\n            186\n          ],\n          \"number_of_levels\": null,\n          \"number_of_environments\": 0,\n          \"message\": null\n        }\n      ],\n      \"score\": 3.571428571428571,\n      \"actions\": 13,\n      \"levels_completed\": 1,\n      \"completed\": false,\n      \"level_count\": 7,\n      \"resets\": 0\n    }\n  ],\n  \"tags_scores\": [\n    {\n      \"id\": \"keyboard\",\n      \"guid\": null,\n      \"score\": 3.571428571428571,\n      \"levels_completed\": 1,\n      \"actions\": 13,\n      \"resets\": null,\n      \"state\": null,\n      \"completed\": null,\n      \"level_scores\": null,\n      \"level_actions\": null,\n      \"level_baseline_actions\": null,\n      \"number_of_levels\": 7,\n      \"number_of_environments\": 1,\n      \"message\": null\n    }\n  ],\n  \"total_environments_completed\": 0,\n  \"total_environments\": 1,\n  \"total_levels_completed\": 1,\n  \"total_levels\": 7,\n  \"total_actions\": 13\n}\n2026-05-20 20:17:24,798 | INFO | View your scorecard online: https://three.arcprize.org/scorecards/30ee5ca3-c0d3-4b6f-b754-c3af7bb6ce72\n2026-05-20 20:17:24,798 | INFO | Received SIGINT, exiting...\n",
+    "timed_out": false
+  },
+  "failure_mode_counts": {},
+  "game": "ls20",
+  "kind": "object_substrate_v0_run_005_receipt",
+  "lane": "object_substrate_v0",
+  "local_verification": {
+    "completion_step_index": 12,
+    "passed": true
+  },
+  "local_verification_required_before_official_run": true,
+  "no_general_agent_claim": true,
+  "no_kaggle_claim": true,
+  "no_private_eval_claim": true,
+  "no_score_improvement_claim": false,
+  "non_claims": [
+    "Run 005 is a public ls20 object-aware substrate experiment with source-informed wall geometry.",
+    "Run 005 is not a Kaggle/private-eval claim.",
+    "Run 005 is not a general ARC-AGI-3 agent claim.",
+    "Run 005 does not claim generalization beyond tested ls20 level-1 evidence.",
+    "Run 005 does not claim multi-level capability.",
+    "Score improvement may be reported only when the official runner reports score > 0 or levels_completed > 0."
+  ],
+  "not_for_policy": false,
+  "object_substrate_lane": true,
+  "official_run_attempted": true,
+  "official_runner": {
+    "branch": "main",
+    "cwd": "ARC-AGI-3-Agents",
+    "source_commit": "f30a2e7ba8b1b8099ef23269454713a721286ec4",
+    "working_tree_status": "M agents/__init__.py\n?? agents/receipt_guard_agent.py\n?? tests/unit/test_receipt_guard_agent.py"
+  },
+  "official_scorecard": {
+    "card_id": "30ee5ca3-c0d3-4b6f-b754-c3af7bb6ce72",
+    "environments": [
+      {
+        "actions": 13,
+        "completed": false,
+        "id": "ls20-9607627b",
+        "level_count": 7,
+        "levels_completed": 1,
+        "resets": 0,
+        "runs": [
+          {
+            "actions": 13,
+            "completed": false,
+            "guid": "fc24eb42-68b3-41c6-af54-4f4e6d5d00ad",
+            "level_actions": [
+              13,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "level_baseline_actions": [
+              22,
+              123,
+              73,
+              84,
+              96,
+              192,
+              186
+            ],
+            "level_scores": [
+              115.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "levels_completed": 1,
+            "resets": 0,
+            "score": 3.571428571428571,
+            "state": "NOT_FINISHED"
+          }
+        ],
+        "score": 3.571428571428571
+      }
+    ],
+    "max_actions_summary": null,
+    "observed": true,
+    "parse_error": null,
+    "primary_environment": {
+      "actions": 13,
+      "completed": false,
+      "id": "ls20-9607627b",
+      "level_count": 7,
+      "levels_completed": 1,
+      "resets": 0,
+      "runs": [
+        {
+          "actions": 13,
+          "completed": false,
+          "guid": "fc24eb42-68b3-41c6-af54-4f4e6d5d00ad",
+          "level_actions": [
+            13,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "level_baseline_actions": [
+            22,
+            123,
+            73,
+            84,
+            96,
+            192,
+            186
+          ],
+          "level_scores": [
+            115.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "levels_completed": 1,
+          "resets": 0,
+          "score": 3.571428571428571,
+          "state": "NOT_FINISHED"
+        }
+      ],
+      "score": 3.571428571428571
+    },
+    "primary_run": {
+      "actions": 13,
+      "completed": false,
+      "guid": "fc24eb42-68b3-41c6-af54-4f4e6d5d00ad",
+      "level_actions": [
+        13,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "level_baseline_actions": [
+        22,
+        123,
+        73,
+        84,
+        96,
+        192,
+        186
+      ],
+      "level_scores": [
+        115.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "levels_completed": 1,
+      "resets": 0,
+      "score": 3.571428571428571,
+      "state": "NOT_FINISHED"
+    },
+    "recording_path": "recordings/ls20-9607627b.receiptobjectawareplanneragent.4e237fb3-0ca9-4681-87fe-7da3af966430.recording.jsonl",
+    "score": 3.571428571428571,
+    "scorecard_url": "https://three.arcprize.org/scorecards/30ee5ca3-c0d3-4b6f-b754-c3af7bb6ce72",
+    "total_actions": 13,
+    "total_environments": 1,
+    "total_environments_completed": 0,
+    "total_levels": 7,
+    "total_levels_completed": 1
+  },
+  "outcome": {
+    "levels_completed": 1,
+    "recording_path": "recordings/ls20-9607627b.receiptobjectawareplanneragent.4e237fb3-0ca9-4681-87fe-7da3af966430.recording.jsonl",
+    "score": 3.571428571428571,
+    "scorecard_observed": true,
+    "scorecard_url": "https://three.arcprize.org/scorecards/30ee5ca3-c0d3-4b6f-b754-c3af7bb6ce72",
+    "total_actions": 13
+  },
+  "paper_lane_immutable": true,
+  "plan": {
+    "action_labels": [
+      "ACTION3",
+      "ACTION3",
+      "ACTION3",
+      "ACTION1",
+      "ACTION1",
+      "ACTION1",
+      "ACTION1",
+      "ACTION4",
+      "ACTION4",
+      "ACTION4",
+      "ACTION1",
+      "ACTION1",
+      "ACTION1"
+    ],
+    "hardcoded_sequence_used": false,
+    "planned_sequence_matches_run_003": true,
+    "refusal_reason": null,
+    "refused": false,
+    "sequence": [
+      3,
+      3,
+      3,
+      1,
+      1,
+      1,
+      1,
+      4,
+      4,
+      4,
+      1,
+      1,
+      1
+    ],
+    "sequence_length": 13
+  },
+  "planner_lane": false,
+  "policy_consumed": true,
+  "previous_failure_mode_addressed": "prediction_actual_after_mismatch_at_step_2",
+  "provenance_chain_complete": true,
+  "run_count_this_session": 1,
+  "run_dir": "artifacts/object_substrate_v0/run_005_object_aware_wall_fix",
+  "run_id": "run_005_object_aware_wall_fix",
+  "schema_version": "v0",
+  "sequence_derivation": "planner_v0_object_aware_with_walls",
+  "slice_scope": "object_aware_planner_run_005_wall_fix",
+  "source_informed": true,
+  "step_receipt_count": 13,
+  "substrate_extension_provenance": "source_geometry_ihdgageizm",
+  "substrate_extension_since_run_004": [
+    "source_geometry.ihdgageizm wall positions"
+  ],
+  "timestamp": "2026-05-21T03:17:21.271772+00:00"
+}

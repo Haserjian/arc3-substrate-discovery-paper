@@ -1,0 +1,168 @@
+{
+  "analysis_only": true,
+  "architecture_review_carried_forward": true,
+  "capability_attempt": false,
+  "details": {
+    "effect_category_summary": {
+      "motion": [
+        "ACTION1",
+        "ACTION2",
+        "ACTION3",
+        "ACTION4"
+      ],
+      "object_transform": [
+        "ACTION5"
+      ],
+      "reset/failure": [],
+      "selection": [
+        "ACTION6"
+      ],
+      "sequence_advance": [],
+      "toggle": [
+        "ACTION5",
+        "ACTION6"
+      ],
+      "unknown": []
+    },
+    "no_planner_attempt": true,
+    "per_action_observed_categories": {
+      "ACTION1": {
+        "citations": [
+          "cn04.py:1102-1128"
+        ],
+        "confidence": "high_source_static",
+        "effect": "move selected sprite up by one cell when selected and in bounds",
+        "evidence_count": 1,
+        "observed_categories": [
+          "motion",
+          "selected_sprite_move"
+        ]
+      },
+      "ACTION2": {
+        "citations": [
+          "cn04.py:1102-1128"
+        ],
+        "confidence": "high_source_static",
+        "effect": "move selected sprite down by one cell when selected and in bounds",
+        "evidence_count": 1,
+        "observed_categories": [
+          "motion",
+          "selected_sprite_move"
+        ]
+      },
+      "ACTION3": {
+        "citations": [
+          "cn04.py:1102-1128"
+        ],
+        "confidence": "high_source_static",
+        "effect": "move selected sprite left by one cell when selected and in bounds",
+        "evidence_count": 1,
+        "observed_categories": [
+          "motion",
+          "selected_sprite_move"
+        ]
+      },
+      "ACTION4": {
+        "citations": [
+          "cn04.py:1102-1128"
+        ],
+        "confidence": "high_source_static",
+        "effect": "move selected sprite right by one cell when selected and in bounds",
+        "evidence_count": 1,
+        "observed_categories": [
+          "motion",
+          "selected_sprite_move"
+        ]
+      },
+      "ACTION5": {
+        "citations": [
+          "cn04.py:1089-1099",
+          "cn04.py:1133-1157"
+        ],
+        "confidence": "high_source_static",
+        "effect": "cycle an overlapping sprite group or rotate a singleton selected sprite by 90 degrees",
+        "evidence_count": 2,
+        "observed_categories": [
+          "object_transform",
+          "toggle",
+          "sprite_variant_cycle"
+        ]
+      },
+      "ACTION6": {
+        "citations": [
+          "cn04.py:1062-1088"
+        ],
+        "confidence": "high_source_static",
+        "effect": "use click coordinates to select, deselect, or cycle a sprite under the cursor",
+        "evidence_count": 1,
+        "observed_categories": [
+          "selection",
+          "toggle"
+        ]
+      }
+    },
+    "source_consistency": "source_available_static_only",
+    "total_transitions_analyzed": 0,
+    "transition_basis": "source_static_handlers_only",
+    "unknown_gap_list": [
+      "No empirical before/after frame trace confirms extractor-visible deltas.",
+      "ACTION6 needs coordinate payload modeling, unlike ls20/tr87 discrete-only action surfaces.",
+      "No gamma3a local verifier proves a complete action sequence."
+    ]
+  },
+  "findings": [
+    {
+      "citations": [
+        {
+          "line_end": 1088,
+          "line_start": 1062,
+          "reason": "ACTION6 click selection",
+          "source_file_path": "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py",
+          "source_line_ref": "cn04.py:1062-1088"
+        },
+        {
+          "line_end": 1099,
+          "line_start": 1089,
+          "reason": "ACTION5 rotation or cycle",
+          "source_file_path": "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py",
+          "source_line_ref": "cn04.py:1089-1099"
+        },
+        {
+          "line_end": 1128,
+          "line_start": 1102,
+          "reason": "ACTION1-4 selected sprite movement",
+          "source_file_path": "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py",
+          "source_line_ref": "cn04.py:1102-1128"
+        }
+      ],
+      "claim": "The action surface mutates whichever sprite is currently selected, including click selection, movement, rotation, and variant cycling.",
+      "finding_id": "cn04_actions_are_selected_sprite_effects_not_global_actor_or_sequence_effects"
+    }
+  ],
+  "generated_at": "2026-05-22T02:49:45.248056+00:00",
+  "input_artifacts": [
+    "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py"
+  ],
+  "kaggle_submission_attempted": false,
+  "kind": "object_substrate_v0_cn04_action_effect_audit",
+  "lane": "object_substrate_v0",
+  "ls20_substrate_immutable": true,
+  "no_general_agent_claim": true,
+  "no_general_arc_agi_3_claim": true,
+  "no_private_eval_claim": true,
+  "no_score_improvement_claim": true,
+  "no_third_game_capability_claim": true,
+  "official_run_attempted": false,
+  "paper_lane_immutable": false,
+  "planner_attempt": false,
+  "planner_v0_immutable": true,
+  "result": "source_visible_action_effects_characterized_without_planner",
+  "result_citations": [
+    "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py"
+  ],
+  "schema_version": "v0",
+  "slice_scope": "gamma3a_third_game_substrate_audit",
+  "source_inspection_mode": "local_static",
+  "target_game": "cn04",
+  "tr87_substrate_immutable": true
+}

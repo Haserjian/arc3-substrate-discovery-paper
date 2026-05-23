@@ -1,0 +1,4045 @@
+{
+  "auto_iteration": false,
+  "completed": true,
+  "cross_game_capability_attempt": true,
+  "failure_modes": [],
+  "final_state": {
+    "action_budget_remaining": 114,
+    "confidence": "high",
+    "evidence": {
+      "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+      "last_action": "ACTION2",
+      "source_lines": [
+        "tr87.py:942-956",
+        "tr87.py:959-966"
+      ]
+    },
+    "provenance": [
+      {
+        "fields": [
+          "target_sequence_slots",
+          "selector_slots"
+        ],
+        "source": "tr87_target_spec"
+      },
+      {
+        "action_id": 2,
+        "source": "tr87_planner_transition_function",
+        "source_lines": [
+          "tr87.py:1005-1014",
+          "tr87.py:1024-1029"
+        ]
+      },
+      {
+        "action_id": 2,
+        "source": "tr87_planner_transition_function",
+        "source_lines": [
+          "tr87.py:1005-1014",
+          "tr87.py:1024-1029"
+        ]
+      },
+      {
+        "action_id": 3,
+        "source": "tr87_planner_transition_function",
+        "source_lines": [
+          "tr87.py:996-1004"
+        ]
+      },
+      {
+        "action_id": 2,
+        "source": "tr87_planner_transition_function",
+        "source_lines": [
+          "tr87.py:1005-1014",
+          "tr87.py:1024-1029"
+        ]
+      },
+      {
+        "action_id": 2,
+        "source": "tr87_planner_transition_function",
+        "source_lines": [
+          "tr87.py:1005-1014",
+          "tr87.py:1024-1029"
+        ]
+      },
+      {
+        "action_id": 3,
+        "source": "tr87_planner_transition_function",
+        "source_lines": [
+          "tr87.py:996-1004"
+        ]
+      },
+      {
+        "action_id": 2,
+        "source": "tr87_planner_transition_function",
+        "source_lines": [
+          "tr87.py:1005-1014",
+          "tr87.py:1024-1029"
+        ]
+      },
+      {
+        "action_id": 3,
+        "source": "tr87_planner_transition_function",
+        "source_lines": [
+          "tr87.py:996-1004"
+        ]
+      },
+      {
+        "action_id": 1,
+        "source": "tr87_planner_transition_function",
+        "source_lines": [
+          "tr87.py:1005-1014",
+          "tr87.py:1024-1029"
+        ]
+      },
+      {
+        "action_id": 1,
+        "source": "tr87_planner_transition_function",
+        "source_lines": [
+          "tr87.py:1005-1014",
+          "tr87.py:1024-1029"
+        ]
+      },
+      {
+        "action_id": 1,
+        "source": "tr87_planner_transition_function",
+        "source_lines": [
+          "tr87.py:1005-1014",
+          "tr87.py:1024-1029"
+        ]
+      },
+      {
+        "action_id": 3,
+        "source": "tr87_planner_transition_function",
+        "source_lines": [
+          "tr87.py:996-1004"
+        ]
+      },
+      {
+        "action_id": 2,
+        "source": "tr87_planner_transition_function",
+        "source_lines": [
+          "tr87.py:1005-1014",
+          "tr87.py:1024-1029"
+        ]
+      },
+      {
+        "action_id": 2,
+        "source": "tr87_planner_transition_function",
+        "source_lines": [
+          "tr87.py:1005-1014",
+          "tr87.py:1024-1029"
+        ]
+      }
+    ],
+    "selector_index": 1,
+    "sequence_slots": [
+      "nxkictbbvztB3",
+      "nxkictbbvztB2",
+      "nxkictbbvztB6",
+      "nxkictbbvztB5",
+      "nxkictbbvztB1"
+    ]
+  },
+  "generated_at": "2026-05-21T17:07:45.211662+00:00",
+  "kind": "object_substrate_v0_tr87_local_verification",
+  "lane": "object_substrate_v0",
+  "local_verification_required_before_official_run": true,
+  "local_verifier_pass": true,
+  "ls20_substrate_immutable": true,
+  "no_general_agent_claim": true,
+  "no_kaggle_claim": true,
+  "no_private_eval_claim": true,
+  "no_score_improvement_claim": true,
+  "non_claims": [
+    "tr87 run 001 is not a Kaggle/private-eval claim.",
+    "tr87 run 001 is not a general ARC-AGI-3 agent claim.",
+    "tr87 run 001 does not claim third-game generality.",
+    "The tr87 planner uses selector/sequence state, not ls20 motion state."
+  ],
+  "official_run_attempted": false,
+  "official_run_authorized": true,
+  "official_run_gate_reason": "local_verifier_completed_tr87_level",
+  "paper_lane_immutable": true,
+  "planned_action_labels": [
+    "ACTION2",
+    "ACTION2",
+    "ACTION3",
+    "ACTION2",
+    "ACTION2",
+    "ACTION3",
+    "ACTION2",
+    "ACTION3",
+    "ACTION1",
+    "ACTION1",
+    "ACTION1",
+    "ACTION3",
+    "ACTION2",
+    "ACTION2"
+  ],
+  "planned_sequence": [
+    2,
+    2,
+    3,
+    2,
+    2,
+    3,
+    2,
+    3,
+    1,
+    1,
+    1,
+    3,
+    2,
+    2
+  ],
+  "planner_ontology": "selector_sequence_state",
+  "run_count_this_session": 1,
+  "schema_version": "v0",
+  "slice_scope": "tr87_object_aware_planner_run_001",
+  "source_oracle_reference_only": true,
+  "step_count": 14,
+  "step_reports": [
+    {
+      "action_id": 2,
+      "action_label": "ACTION2",
+      "after_state": {
+        "action_budget_remaining": 127,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION2",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          }
+        ],
+        "selector_index": 0,
+        "sequence_slots": [
+          "nxkictbbvztB2",
+          "nxkictbbvztB7",
+          "nxkictbbvztB2",
+          "nxkictbbvztB4",
+          "nxkictbbvztB6"
+        ]
+      },
+      "before_state": {
+        "action_budget_remaining": 128,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          }
+        ],
+        "selector_index": 0,
+        "sequence_slots": [
+          "nxkictbbvztB1",
+          "nxkictbbvztB7",
+          "nxkictbbvztB2",
+          "nxkictbbvztB4",
+          "nxkictbbvztB6"
+        ]
+      },
+      "complete_after_step": false,
+      "expected_after": {
+        "action_budget_remaining": 127,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION2",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          }
+        ],
+        "selector_index": 0,
+        "sequence_slots": [
+          "nxkictbbvztB2",
+          "nxkictbbvztB7",
+          "nxkictbbvztB2",
+          "nxkictbbvztB4",
+          "nxkictbbvztB6"
+        ]
+      },
+      "prediction_match": true,
+      "progress_after": {
+        "selector_index": 0,
+        "sequence_slot_count": 5,
+        "sequence_slot_match_count": 0,
+        "sequence_slots_complete": false,
+        "source_lines": [
+          "tr87.py:1044-1113"
+        ]
+      },
+      "source_lines": [
+        "tr87.py:996-1016",
+        "tr87.py:1044-1113"
+      ],
+      "source_oracle_reference_only": true,
+      "step_index": 0
+    },
+    {
+      "action_id": 2,
+      "action_label": "ACTION2",
+      "after_state": {
+        "action_budget_remaining": 126,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION2",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          }
+        ],
+        "selector_index": 0,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB2",
+          "nxkictbbvztB4",
+          "nxkictbbvztB6"
+        ]
+      },
+      "before_state": {
+        "action_budget_remaining": 127,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION2",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          }
+        ],
+        "selector_index": 0,
+        "sequence_slots": [
+          "nxkictbbvztB2",
+          "nxkictbbvztB7",
+          "nxkictbbvztB2",
+          "nxkictbbvztB4",
+          "nxkictbbvztB6"
+        ]
+      },
+      "complete_after_step": false,
+      "expected_after": {
+        "action_budget_remaining": 126,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION2",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          }
+        ],
+        "selector_index": 0,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB2",
+          "nxkictbbvztB4",
+          "nxkictbbvztB6"
+        ]
+      },
+      "prediction_match": true,
+      "progress_after": {
+        "selector_index": 0,
+        "sequence_slot_count": 5,
+        "sequence_slot_match_count": 1,
+        "sequence_slots_complete": false,
+        "source_lines": [
+          "tr87.py:1044-1113"
+        ]
+      },
+      "source_lines": [
+        "tr87.py:996-1016",
+        "tr87.py:1044-1113"
+      ],
+      "source_oracle_reference_only": true,
+      "step_index": 1
+    },
+    {
+      "action_id": 3,
+      "action_label": "ACTION3",
+      "after_state": {
+        "action_budget_remaining": 125,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION3",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          }
+        ],
+        "selector_index": 4,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB2",
+          "nxkictbbvztB4",
+          "nxkictbbvztB6"
+        ]
+      },
+      "before_state": {
+        "action_budget_remaining": 126,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION2",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          }
+        ],
+        "selector_index": 0,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB2",
+          "nxkictbbvztB4",
+          "nxkictbbvztB6"
+        ]
+      },
+      "complete_after_step": false,
+      "expected_after": {
+        "action_budget_remaining": 125,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION3",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          }
+        ],
+        "selector_index": 4,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB2",
+          "nxkictbbvztB4",
+          "nxkictbbvztB6"
+        ]
+      },
+      "prediction_match": true,
+      "progress_after": {
+        "selector_index": 4,
+        "sequence_slot_count": 5,
+        "sequence_slot_match_count": 1,
+        "sequence_slots_complete": false,
+        "source_lines": [
+          "tr87.py:1044-1113"
+        ]
+      },
+      "source_lines": [
+        "tr87.py:996-1016",
+        "tr87.py:1044-1113"
+      ],
+      "source_oracle_reference_only": true,
+      "step_index": 2
+    },
+    {
+      "action_id": 2,
+      "action_label": "ACTION2",
+      "after_state": {
+        "action_budget_remaining": 124,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION2",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          }
+        ],
+        "selector_index": 4,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB2",
+          "nxkictbbvztB4",
+          "nxkictbbvztB7"
+        ]
+      },
+      "before_state": {
+        "action_budget_remaining": 125,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION3",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          }
+        ],
+        "selector_index": 4,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB2",
+          "nxkictbbvztB4",
+          "nxkictbbvztB6"
+        ]
+      },
+      "complete_after_step": false,
+      "expected_after": {
+        "action_budget_remaining": 124,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION2",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          }
+        ],
+        "selector_index": 4,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB2",
+          "nxkictbbvztB4",
+          "nxkictbbvztB7"
+        ]
+      },
+      "prediction_match": true,
+      "progress_after": {
+        "selector_index": 4,
+        "sequence_slot_count": 5,
+        "sequence_slot_match_count": 1,
+        "sequence_slots_complete": false,
+        "source_lines": [
+          "tr87.py:1044-1113"
+        ]
+      },
+      "source_lines": [
+        "tr87.py:996-1016",
+        "tr87.py:1044-1113"
+      ],
+      "source_oracle_reference_only": true,
+      "step_index": 3
+    },
+    {
+      "action_id": 2,
+      "action_label": "ACTION2",
+      "after_state": {
+        "action_budget_remaining": 123,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION2",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          }
+        ],
+        "selector_index": 4,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB2",
+          "nxkictbbvztB4",
+          "nxkictbbvztB1"
+        ]
+      },
+      "before_state": {
+        "action_budget_remaining": 124,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION2",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          }
+        ],
+        "selector_index": 4,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB2",
+          "nxkictbbvztB4",
+          "nxkictbbvztB7"
+        ]
+      },
+      "complete_after_step": false,
+      "expected_after": {
+        "action_budget_remaining": 123,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION2",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          }
+        ],
+        "selector_index": 4,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB2",
+          "nxkictbbvztB4",
+          "nxkictbbvztB1"
+        ]
+      },
+      "prediction_match": true,
+      "progress_after": {
+        "selector_index": 4,
+        "sequence_slot_count": 5,
+        "sequence_slot_match_count": 2,
+        "sequence_slots_complete": false,
+        "source_lines": [
+          "tr87.py:1044-1113"
+        ]
+      },
+      "source_lines": [
+        "tr87.py:996-1016",
+        "tr87.py:1044-1113"
+      ],
+      "source_oracle_reference_only": true,
+      "step_index": 4
+    },
+    {
+      "action_id": 3,
+      "action_label": "ACTION3",
+      "after_state": {
+        "action_budget_remaining": 122,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION3",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          }
+        ],
+        "selector_index": 3,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB2",
+          "nxkictbbvztB4",
+          "nxkictbbvztB1"
+        ]
+      },
+      "before_state": {
+        "action_budget_remaining": 123,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION2",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          }
+        ],
+        "selector_index": 4,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB2",
+          "nxkictbbvztB4",
+          "nxkictbbvztB1"
+        ]
+      },
+      "complete_after_step": false,
+      "expected_after": {
+        "action_budget_remaining": 122,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION3",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          }
+        ],
+        "selector_index": 3,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB2",
+          "nxkictbbvztB4",
+          "nxkictbbvztB1"
+        ]
+      },
+      "prediction_match": true,
+      "progress_after": {
+        "selector_index": 3,
+        "sequence_slot_count": 5,
+        "sequence_slot_match_count": 2,
+        "sequence_slots_complete": false,
+        "source_lines": [
+          "tr87.py:1044-1113"
+        ]
+      },
+      "source_lines": [
+        "tr87.py:996-1016",
+        "tr87.py:1044-1113"
+      ],
+      "source_oracle_reference_only": true,
+      "step_index": 5
+    },
+    {
+      "action_id": 2,
+      "action_label": "ACTION2",
+      "after_state": {
+        "action_budget_remaining": 121,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION2",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          }
+        ],
+        "selector_index": 3,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB2",
+          "nxkictbbvztB5",
+          "nxkictbbvztB1"
+        ]
+      },
+      "before_state": {
+        "action_budget_remaining": 122,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION3",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          }
+        ],
+        "selector_index": 3,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB2",
+          "nxkictbbvztB4",
+          "nxkictbbvztB1"
+        ]
+      },
+      "complete_after_step": false,
+      "expected_after": {
+        "action_budget_remaining": 121,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION2",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          }
+        ],
+        "selector_index": 3,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB2",
+          "nxkictbbvztB5",
+          "nxkictbbvztB1"
+        ]
+      },
+      "prediction_match": true,
+      "progress_after": {
+        "selector_index": 3,
+        "sequence_slot_count": 5,
+        "sequence_slot_match_count": 3,
+        "sequence_slots_complete": false,
+        "source_lines": [
+          "tr87.py:1044-1113"
+        ]
+      },
+      "source_lines": [
+        "tr87.py:996-1016",
+        "tr87.py:1044-1113"
+      ],
+      "source_oracle_reference_only": true,
+      "step_index": 6
+    },
+    {
+      "action_id": 3,
+      "action_label": "ACTION3",
+      "after_state": {
+        "action_budget_remaining": 120,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION3",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          }
+        ],
+        "selector_index": 2,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB2",
+          "nxkictbbvztB5",
+          "nxkictbbvztB1"
+        ]
+      },
+      "before_state": {
+        "action_budget_remaining": 121,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION2",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          }
+        ],
+        "selector_index": 3,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB2",
+          "nxkictbbvztB5",
+          "nxkictbbvztB1"
+        ]
+      },
+      "complete_after_step": false,
+      "expected_after": {
+        "action_budget_remaining": 120,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION3",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          }
+        ],
+        "selector_index": 2,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB2",
+          "nxkictbbvztB5",
+          "nxkictbbvztB1"
+        ]
+      },
+      "prediction_match": true,
+      "progress_after": {
+        "selector_index": 2,
+        "sequence_slot_count": 5,
+        "sequence_slot_match_count": 3,
+        "sequence_slots_complete": false,
+        "source_lines": [
+          "tr87.py:1044-1113"
+        ]
+      },
+      "source_lines": [
+        "tr87.py:996-1016",
+        "tr87.py:1044-1113"
+      ],
+      "source_oracle_reference_only": true,
+      "step_index": 7
+    },
+    {
+      "action_id": 1,
+      "action_label": "ACTION1",
+      "after_state": {
+        "action_budget_remaining": 119,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION1",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          }
+        ],
+        "selector_index": 2,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB1",
+          "nxkictbbvztB5",
+          "nxkictbbvztB1"
+        ]
+      },
+      "before_state": {
+        "action_budget_remaining": 120,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION3",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          }
+        ],
+        "selector_index": 2,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB2",
+          "nxkictbbvztB5",
+          "nxkictbbvztB1"
+        ]
+      },
+      "complete_after_step": false,
+      "expected_after": {
+        "action_budget_remaining": 119,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION1",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          }
+        ],
+        "selector_index": 2,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB1",
+          "nxkictbbvztB5",
+          "nxkictbbvztB1"
+        ]
+      },
+      "prediction_match": true,
+      "progress_after": {
+        "selector_index": 2,
+        "sequence_slot_count": 5,
+        "sequence_slot_match_count": 3,
+        "sequence_slots_complete": false,
+        "source_lines": [
+          "tr87.py:1044-1113"
+        ]
+      },
+      "source_lines": [
+        "tr87.py:996-1016",
+        "tr87.py:1044-1113"
+      ],
+      "source_oracle_reference_only": true,
+      "step_index": 8
+    },
+    {
+      "action_id": 1,
+      "action_label": "ACTION1",
+      "after_state": {
+        "action_budget_remaining": 118,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION1",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          }
+        ],
+        "selector_index": 2,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB7",
+          "nxkictbbvztB5",
+          "nxkictbbvztB1"
+        ]
+      },
+      "before_state": {
+        "action_budget_remaining": 119,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION1",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          }
+        ],
+        "selector_index": 2,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB1",
+          "nxkictbbvztB5",
+          "nxkictbbvztB1"
+        ]
+      },
+      "complete_after_step": false,
+      "expected_after": {
+        "action_budget_remaining": 118,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION1",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          }
+        ],
+        "selector_index": 2,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB7",
+          "nxkictbbvztB5",
+          "nxkictbbvztB1"
+        ]
+      },
+      "prediction_match": true,
+      "progress_after": {
+        "selector_index": 2,
+        "sequence_slot_count": 5,
+        "sequence_slot_match_count": 3,
+        "sequence_slots_complete": false,
+        "source_lines": [
+          "tr87.py:1044-1113"
+        ]
+      },
+      "source_lines": [
+        "tr87.py:996-1016",
+        "tr87.py:1044-1113"
+      ],
+      "source_oracle_reference_only": true,
+      "step_index": 9
+    },
+    {
+      "action_id": 1,
+      "action_label": "ACTION1",
+      "after_state": {
+        "action_budget_remaining": 117,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION1",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          }
+        ],
+        "selector_index": 2,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB6",
+          "nxkictbbvztB5",
+          "nxkictbbvztB1"
+        ]
+      },
+      "before_state": {
+        "action_budget_remaining": 118,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION1",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          }
+        ],
+        "selector_index": 2,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB7",
+          "nxkictbbvztB5",
+          "nxkictbbvztB1"
+        ]
+      },
+      "complete_after_step": false,
+      "expected_after": {
+        "action_budget_remaining": 117,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION1",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          }
+        ],
+        "selector_index": 2,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB6",
+          "nxkictbbvztB5",
+          "nxkictbbvztB1"
+        ]
+      },
+      "prediction_match": true,
+      "progress_after": {
+        "selector_index": 2,
+        "sequence_slot_count": 5,
+        "sequence_slot_match_count": 4,
+        "sequence_slots_complete": false,
+        "source_lines": [
+          "tr87.py:1044-1113"
+        ]
+      },
+      "source_lines": [
+        "tr87.py:996-1016",
+        "tr87.py:1044-1113"
+      ],
+      "source_oracle_reference_only": true,
+      "step_index": 10
+    },
+    {
+      "action_id": 3,
+      "action_label": "ACTION3",
+      "after_state": {
+        "action_budget_remaining": 116,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION3",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          }
+        ],
+        "selector_index": 1,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB6",
+          "nxkictbbvztB5",
+          "nxkictbbvztB1"
+        ]
+      },
+      "before_state": {
+        "action_budget_remaining": 117,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION1",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          }
+        ],
+        "selector_index": 2,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB6",
+          "nxkictbbvztB5",
+          "nxkictbbvztB1"
+        ]
+      },
+      "complete_after_step": false,
+      "expected_after": {
+        "action_budget_remaining": 116,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION3",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          }
+        ],
+        "selector_index": 1,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB6",
+          "nxkictbbvztB5",
+          "nxkictbbvztB1"
+        ]
+      },
+      "prediction_match": true,
+      "progress_after": {
+        "selector_index": 1,
+        "sequence_slot_count": 5,
+        "sequence_slot_match_count": 4,
+        "sequence_slots_complete": false,
+        "source_lines": [
+          "tr87.py:1044-1113"
+        ]
+      },
+      "source_lines": [
+        "tr87.py:996-1016",
+        "tr87.py:1044-1113"
+      ],
+      "source_oracle_reference_only": true,
+      "step_index": 11
+    },
+    {
+      "action_id": 2,
+      "action_label": "ACTION2",
+      "after_state": {
+        "action_budget_remaining": 115,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION2",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          }
+        ],
+        "selector_index": 1,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB1",
+          "nxkictbbvztB6",
+          "nxkictbbvztB5",
+          "nxkictbbvztB1"
+        ]
+      },
+      "before_state": {
+        "action_budget_remaining": 116,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION3",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          }
+        ],
+        "selector_index": 1,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB7",
+          "nxkictbbvztB6",
+          "nxkictbbvztB5",
+          "nxkictbbvztB1"
+        ]
+      },
+      "complete_after_step": false,
+      "expected_after": {
+        "action_budget_remaining": 115,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION2",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          }
+        ],
+        "selector_index": 1,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB1",
+          "nxkictbbvztB6",
+          "nxkictbbvztB5",
+          "nxkictbbvztB1"
+        ]
+      },
+      "prediction_match": true,
+      "progress_after": {
+        "selector_index": 1,
+        "sequence_slot_count": 5,
+        "sequence_slot_match_count": 4,
+        "sequence_slots_complete": false,
+        "source_lines": [
+          "tr87.py:1044-1113"
+        ]
+      },
+      "source_lines": [
+        "tr87.py:996-1016",
+        "tr87.py:1044-1113"
+      ],
+      "source_oracle_reference_only": true,
+      "step_index": 12
+    },
+    {
+      "action_id": 2,
+      "action_label": "ACTION2",
+      "after_state": {
+        "action_budget_remaining": 114,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION2",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          }
+        ],
+        "selector_index": 1,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB2",
+          "nxkictbbvztB6",
+          "nxkictbbvztB5",
+          "nxkictbbvztB1"
+        ]
+      },
+      "before_state": {
+        "action_budget_remaining": 115,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION2",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          }
+        ],
+        "selector_index": 1,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB1",
+          "nxkictbbvztB6",
+          "nxkictbbvztB5",
+          "nxkictbbvztB1"
+        ]
+      },
+      "complete_after_step": true,
+      "expected_after": {
+        "action_budget_remaining": 114,
+        "confidence": "high",
+        "evidence": {
+          "basis": "target_sequence_slots_initialized_by_tr87_target_extractor",
+          "last_action": "ACTION2",
+          "source_lines": [
+            "tr87.py:942-956",
+            "tr87.py:959-966"
+          ]
+        },
+        "provenance": [
+          {
+            "fields": [
+              "target_sequence_slots",
+              "selector_slots"
+            ],
+            "source": "tr87_target_spec"
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 1,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 3,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:996-1004"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          },
+          {
+            "action_id": 2,
+            "source": "tr87_planner_transition_function",
+            "source_lines": [
+              "tr87.py:1005-1014",
+              "tr87.py:1024-1029"
+            ]
+          }
+        ],
+        "selector_index": 1,
+        "sequence_slots": [
+          "nxkictbbvztB3",
+          "nxkictbbvztB2",
+          "nxkictbbvztB6",
+          "nxkictbbvztB5",
+          "nxkictbbvztB1"
+        ]
+      },
+      "prediction_match": true,
+      "progress_after": {
+        "selector_index": 1,
+        "sequence_slot_count": 5,
+        "sequence_slot_match_count": 5,
+        "sequence_slots_complete": true,
+        "source_lines": [
+          "tr87.py:1044-1113"
+        ]
+      },
+      "source_lines": [
+        "tr87.py:996-1016",
+        "tr87.py:1044-1113"
+      ],
+      "source_oracle_reference_only": true,
+      "step_index": 13
+    }
+  ],
+  "substrate_basis": [
+    "tr87_perception_layer",
+    "tr87_selector_probe_extended_action_effect_model"
+  ],
+  "target_game": "tr87",
+  "target_required_sequence": [
+    "nxkictbbvztB3",
+    "nxkictbbvztB2",
+    "nxkictbbvztB6",
+    "nxkictbbvztB5",
+    "nxkictbbvztB1"
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "analysis_only": true,
+  "architecture_review_carried_forward": true,
+  "generated_at": "2026-05-21T06:47:41.188272+00:00",
+  "kind": "object_substrate_v0_tr87_target_spec",
+  "lane": "object_substrate_v0",
+  "ls20_substrate_immutable": true,
+  "no_general_agent_claim": true,
+  "no_kaggle_claim": true,
+  "no_private_eval_claim": true,
+  "no_score_improvement_claim": true,
+  "official_run_attempted": false,
+  "paper_lane_immutable": true,
+  "parameterization_deferred_until_n_equals_3": true,
+  "planner_v0_immutable": true,
+  "schema_version": "v0",
+  "slice_scope": "tr87_perception_layer",
+  "target_game": "tr87",
+  "target_spec": {
+    "action_surface": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "completion_predicate": "bsqsshqpox_sequence_rule_validation",
+    "confidence": "high",
+    "evidence": {
+      "background_y": 34,
+      "completion_source_lines": [
+        "tr87.py:1044-1113"
+      ],
+      "rule_marker_count": 6,
+      "runtime_initialization_source_lines": [
+        "tr87.py:942-956",
+        "tr87.py:1024-1029"
+      ],
+      "selector_source_lines": [
+        "tr87.py:959-966",
+        "tr87.py:996-1004",
+        "tr87.py:1031-1042"
+      ],
+      "target_sequence_count": 5,
+      "tile_slot_count": 22,
+      "working_sequence_count": 5
+    },
+    "level_flags": {
+      "alter_rules": false,
+      "double_translation": false,
+      "tree_translation": false
+    },
+    "level_index": 1,
+    "provenance": [
+      {
+        "parameterization_deferred_until_n_equals_3": true,
+        "source": "tr87_source",
+        "source_file_path": "arc3_agent/environment_files/tr87/cd924810/tr87.py",
+        "source_license": "MIT",
+        "source_lines": [
+          "tr87.py:1-20",
+          "tr87.py:472-878",
+          "tr87.py:908-1113"
+        ]
+      }
+    ],
+    "rule_marker_positions": [
+      [
+        15,
+        7
+      ],
+      [
+        15,
+        16
+      ],
+      [
+        15,
+        25
+      ],
+      [
+        38,
+        16
+      ],
+      [
+        38,
+        7
+      ],
+      [
+        38,
+        25
+      ]
+    ],
+    "selector_slots": [
+      {
+        "name": "nxkictbbvztB1",
+        "position": [
+          15,
+          52
+        ],
+        "role": "target_sequence",
+        "source_name": "nxkictbbvztB6"
+      },
+      {
+        "name": "nxkictbbvztB7",
+        "position": [
+          22,
+          52
+        ],
+        "role": "target_sequence",
+        "source_name": "nxkictbbvztB6"
+      },
+      {
+        "name": "nxkictbbvztB2",
+        "position": [
+          29,
+          52
+        ],
+        "role": "target_sequence",
+        "source_name": "nxkictbbvztB6"
+      },
+      {
+        "name": "nxkictbbvztB4",
+        "position": [
+          36,
+          52
+        ],
+        "role": "target_sequence",
+        "source_name": "nxkictbbvztB6"
+      },
+      {
+        "name": "nxkictbbvztB6",
+        "position": [
+          43,
+          52
+        ],
+        "role": "target_sequence",
+        "source_name": "nxkictbbvztB6"
+      }
+    ],
+    "source_available": true,
+    "source_file_path": "arc3_agent/environment_files/tr87/cd924810/tr87.py",
+    "source_license": "MIT",
+    "target_sequence_slots": [
+      {
+        "name": "nxkictbbvztB1",
+        "position": [
+          15,
+          52
+        ],
+        "role": "target_sequence",
+        "source_name": "nxkictbbvztB6"
+      },
+      {
+        "name": "nxkictbbvztB7",
+        "position": [
+          22,
+          52
+        ],
+        "role": "target_sequence",
+        "source_name": "nxkictbbvztB6"
+      },
+      {
+        "name": "nxkictbbvztB2",
+        "position": [
+          29,
+          52
+        ],
+        "role": "target_sequence",
+        "source_name": "nxkictbbvztB6"
+      },
+      {
+        "name": "nxkictbbvztB4",
+        "position": [
+          36,
+          52
+        ],
+        "role": "target_sequence",
+        "source_name": "nxkictbbvztB6"
+      },
+      {
+        "name": "nxkictbbvztB6",
+        "position": [
+          43,
+          52
+        ],
+        "role": "target_sequence",
+        "source_name": "nxkictbbvztB6"
+      }
+    ],
+    "target_structure": "sequence_rule_matching",
+    "working_sequence_slots": [
+      {
+        "name": "nxkictbbvztA4",
+        "position": [
+          15,
+          41
+        ],
+        "role": "working_sequence",
+        "source_name": "nxkictbbvztA4"
+      },
+      {
+        "name": "nxkictbbvztA2",
+        "position": [
+          22,
+          41
+        ],
+        "role": "working_sequence",
+        "source_name": "nxkictbbvztA2"
+      },
+      {
+        "name": "nxkictbbvztA3",
+        "position": [
+          29,
+          41
+        ],
+        "role": "working_sequence",
+        "source_name": "nxkictbbvztA3"
+      },
+      {
+        "name": "nxkictbbvztA5",
+        "position": [
+          36,
+          41
+        ],
+        "role": "working_sequence",
+        "source_name": "nxkictbbvztA5"
+      },
+      {
+        "name": "nxkictbbvztA1",
+        "position": [
+          43,
+          41
+        ],
+        "role": "working_sequence",
+        "source_name": "nxkictbbvztA1"
+      }
+    ]
+  }
+}

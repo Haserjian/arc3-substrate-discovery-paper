@@ -1,0 +1,32 @@
+{
+  "claim_boundary_note": "public scorecards are not Kaggle leaderboard evidence",
+  "generated_at": "2026-05-21T20:16:19.807234+00:00",
+  "included_files": [
+    "CLAIM_BOUNDARIES.md",
+    "LICENSE",
+    "LICENSE_CHECKLIST.md",
+    "NOTICE",
+    "PACKAGE_MANIFEST.json",
+    "README.md",
+    "README_SUBMISSION.md",
+    "THIRD_PARTY_LICENSES.md",
+    "kaggle_agent_api_contract.json",
+    "public_scorecard_evidence.json",
+    "requirements.txt",
+    "submission_entrypoint.py",
+    "substrate_plans.json"
+  ],
+  "kaggle_submission_status": "not_submitted",
+  "kind": "kaggle_submission_preflight_package_manifest",
+  "linked_kaggle_score": 0.0,
+  "runtime_entrypoint": "submission_entrypoint.py",
+  "runtime_entrypoint_class": "SubmissionAgent",
+  "source_bundling_decision": "hardcoded_constants_with_notice_citations",
+  "source_files_bundled": false,
+  "submission_ready": false,
+  "supported_games": [
+    "ls20",
+    "tr87"
+  ],
+  "unsupported_game_fallback": "one_ACTION1_then_halt"
+}

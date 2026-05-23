@@ -1,0 +1,85 @@
+{
+  "allowed_taxonomy_labels": [
+    "action-effect gap",
+    "frame-format gap",
+    "game-mechanic gap",
+    "local-verifier gap",
+    "perception-ontology gap",
+    "target/goal gap",
+    "unknown"
+  ],
+  "analysis_only": true,
+  "architecture_review_carried_forward": true,
+  "capability_attempt": false,
+  "gaps": [
+    {
+      "boundedness": "bounded_but_unimplemented",
+      "citations": [
+        "cn04.py:888-904",
+        "cn04.py:920-1021"
+      ],
+      "description": "A cn04 extractor must identify selected sprite state, sprite groups, rotation, masking, and contact-marker coverage.",
+      "gap_id": "G3A-PERCEPTION",
+      "label": "perception-ontology gap"
+    },
+    {
+      "boundedness": "bounded_but_needs_empirical_trace",
+      "citations": [
+        "cn04.py:1062-1099",
+        "cn04.py:1133-1157"
+      ],
+      "description": "ACTION6 carries click coordinates, while ACTION5 may rotate or cycle variants depending on group state.",
+      "gap_id": "G3A-ACTION",
+      "label": "action-effect gap"
+    },
+    {
+      "boundedness": "bounded_source_visible",
+      "citations": [
+        "cn04.py:946-994",
+        "cn04.py:1023-1049"
+      ],
+      "description": "Completion is marker-elimination over sprite overlap geometry and is not captured by ls20 target equality or tr87 sequence equality.",
+      "gap_id": "G3A-GOAL",
+      "label": "target/goal gap"
+    },
+    {
+      "boundedness": "unimplemented",
+      "citations": [
+        "cn04.py:1051-1131"
+      ],
+      "description": "No cn04 local verifier or empirical transition trace exists in gamma3a.",
+      "gap_id": "G3A-VERIFIER",
+      "label": "local-verifier gap"
+    }
+  ],
+  "generated_at": "2026-05-22T02:49:45.248056+00:00",
+  "kaggle_submission_attempted": false,
+  "kind": "object_substrate_v0_gamma3a_substrate_gap_classification",
+  "lane": "object_substrate_v0",
+  "ls20_substrate_immutable": true,
+  "no_general_agent_claim": true,
+  "no_general_arc_agi_3_claim": true,
+  "no_private_eval_claim": true,
+  "no_score_improvement_claim": true,
+  "no_third_game_capability_claim": true,
+  "official_run_attempted": false,
+  "paper_lane_immutable": false,
+  "paper_taxonomy_update": "cn04 adds a third ontology and shows that perception/action/target ontology gaps can be characterized without turning them into immediate planner work.",
+  "planner_attempt": false,
+  "planner_v0_immutable": true,
+  "schema_version": "v0",
+  "selected_game": "cn04",
+  "slice_scope": "gamma3a_third_game_substrate_audit",
+  "source_inspection_mode": "local_static",
+  "summary": {
+    "action_effect_gap_present": true,
+    "frame_format_gap_present": false,
+    "game_mechanic_gap_present": false,
+    "local_verifier_gap_present": true,
+    "perception_ontology_gap_present": true,
+    "target_goal_gap_present": true,
+    "unknown_gap_present": false
+  },
+  "target_game": "cn04",
+  "tr87_substrate_immutable": true
+}

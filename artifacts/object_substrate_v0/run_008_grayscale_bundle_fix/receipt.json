@@ -1,0 +1,1366 @@
+{
+  "auto_iteration": false,
+  "command": [
+    "ARC3_AGENT_REPO=.",
+    "uv",
+    "run",
+    "main.py",
+    "--agent=receiptobjectawaremultilevelagent",
+    "--game=ls20"
+  ],
+  "diagnostic_only": false,
+  "execution": {
+    "blocker_classification": {
+      "code": "scorecard_observed",
+      "notes": "The official runner emitted scorecard-related output; inspect logs before claiming any score.",
+      "status": "completed"
+    },
+    "duration_seconds": 5.314245,
+    "exit_code": 0,
+    "stderr_tail": "",
+    "stdout_tail": "https://three.arcprize.org/api/games\n2026-05-20 22:34:21,036 | INFO | Game list: ['ls20-9607627b']\n2026-05-20 22:34:21 | INFO | Successfully fetched 25 environment(s) from API\n2026-05-20 22:34:21,114 | INFO | Successfully fetched 25 environment(s) from API\n***** MAKING SCORECARD\n{\"card_id\":\"965ce91c-c39d-4d11-b1d7-2270c522d233\"}\n\n{'card_id': '965ce91c-c39d-4d11-b1d7-2270c522d233'}\n2026-05-20 22:34:21 | INFO | Created new scorecard: 965ce91c-c39d-4d11-b1d7-2270c522d233\n2026-05-20 22:34:21,236 | INFO | Created new scorecard: 965ce91c-c39d-4d11-b1d7-2270c522d233\n***** MAKING ALL AGENTS with card id: 965ce91c-c39d-4d11-b1d7-2270c522d233\n2026-05-20 22:34:21 | INFO | Successfully fetched metadata for game ls20\n2026-05-20 22:34:21,293 | INFO | Successfully fetched metadata for game ls20\n2026-05-20 22:34:21 | INFO | Successfully reset game ls20-9607627b, guid=d05bc654-c977-416f-b7a5-bfdd262194e0, scorecard_id=965ce91c-c39d-4d11-b1d7-2270c522d233\n2026-05-20 22:34:21,439 | INFO | Successfully reset game ls20-9607627b, guid=d05bc654-c977-416f-b7a5-bfdd262194e0, scorecard_id=965ce91c-c39d-4d11-b1d7-2270c522d233\n2026-05-20 22:34:21,440 | INFO | created new recording for ls20-9607627b.receiptobjectawaremultilevelagent into recordings/ls20-9607627b.receiptobjectawaremultilevelagent.46f51f39-99b1-47df-ab34-d9d10c40a672.recording.jsonl\n2026-05-20 22:34:21,494 | INFO | ls20-9607627b - ACTION3: count 0, levels completed 0, avg fps 0.0)\n2026-05-20 22:34:21,603 | INFO | ls20-9607627b - ACTION3: count 1, levels completed 0, avg fps 6.25)\n2026-05-20 22:34:21,712 | INFO | ls20-9607627b - ACTION3: count 2, levels completed 0, avg fps 7.41)\n2026-05-20 22:34:21,770 | INFO | ls20-9607627b - ACTION1: count 3, levels completed 0, avg fps 9.38)\n2026-05-20 22:34:21,826 | INFO | ls20-9607627b - ACTION1: count 4, levels completed 0, avg fps 10.53)\n2026-05-20 22:34:22,013 | INFO | ls20-9607627b - ACTION1: count 5, levels completed 0, avg fps 8.77)\n2026-05-20 22:34:22,126 | INFO | ls20-9607627b - ACTION1: count 6, levels completed 0, avg fps 8.82)\n2026-05-20 22:34:22,234 | INFO | ls20-9607627b - ACTION4: count 7, levels completed 0, avg fps 8.86)\n2026-05-20 22:34:22,342 | INFO | ls20-9607627b - ACTION4: count 8, levels completed 0, avg fps 8.89)\n2026-05-20 22:34:22,399 | INFO | ls20-9607627b - ACTION4: count 9, levels completed 0, avg fps 9.47)\n2026-05-20 22:34:22,455 | INFO | ls20-9607627b - ACTION1: count 10, levels completed 0, avg fps 9.9)\n2026-05-20 22:34:22,564 | INFO | ls20-9607627b - ACTION1: count 11, levels completed 0, avg fps 9.82)\n2026-05-20 22:34:22,705 | INFO | ls20-9607627b - ACTION1: count 12, levels completed 1, avg fps 9.52)\n2026-05-20 22:34:22,819 | INFO | ls20-9607627b - ACTION1: count 13, levels completed 1, avg fps 9.49)\n2026-05-20 22:34:22,936 | INFO | ls20-9607627b - ACTION4: count 14, levels completed 1, avg fps 9.4)\n2026-05-20 22:34:22,993 | INFO | ls20-9607627b - ACTION1: count 15, levels completed 1, avg fps 9.68)\n2026-05-20 22:34:23,101 | INFO | ls20-9607627b - ACTION1: count 16, levels completed 1, avg fps 9.64)\n2026-05-20 22:34:23,158 | INFO | ls20-9607627b - ACTION1: count 17, levels completed 1, avg fps 9.94)\n2026-05-20 22:34:23,267 | INFO | ls20-9607627b - ACTION1: count 18, levels completed 1, avg fps 9.89)\n2026-05-20 22:34:23,323 | INFO | ls20-9607627b - ACTION1: count 19, levels completed 1, avg fps 10.11)\n2026-05-20 22:34:23,429 | INFO | ls20-9607627b - ACTION4: count 20, levels completed 1, avg fps 10.1)\n2026-05-20 22:34:23,538 | INFO | ls20-9607627b - ACTION4: count 21, levels completed 1, avg fps 10.05)\n2026-05-20 22:34:23,595 | INFO | ls20-9607627b - ACTION2: count 22, levels completed 1, avg fps 10.23)\n2026-05-20 22:34:23,653 | INFO | ls20-9607627b - ACTION4: count 23, levels completed 1, avg fps 10.41)\n2026-05-20 22:34:23,762 | INFO | ls20-9607627b - ACTION2: count 24, levels completed 1, avg fps 10.34)\n2026-05-20 22:34:23,820 | INFO | ls20-9607627b - ACTION2: count 25, levels completed 1, avg fps 10.55)\n2026-05-20 22:34:23,929 | INFO | ls20-9607627b - ACTION2: count 26, levels completed 1, avg fps 10.48)\n2026-05-20 22:34:24,037 | INFO | ls20-9607627b - ACTION2: count 27, levels completed 1, avg fps 10.42)\n2026-05-20 22:34:24,094 | INFO | ls20-9607627b - ACTION2: count 28, levels completed 1, avg fps 10.57)\n2026-05-20 22:34:24,152 | INFO | ls20-9607627b - ACTION2: count 29, levels completed 1, avg fps 10.7)\n2026-05-20 22:34:24,209 | INFO | ls20-9607627b - ACTION1: count 30, levels completed 1, avg fps 10.87)\n2026-05-20 22:34:24,323 | INFO | ls20-9607627b - ACTION2: count 31, levels completed 1, avg fps 10.76)\n2026-05-20 22:34:24,431 | INFO | ls20-9607627b - ACTION1: count 32, levels completed 1, avg fps 10.7)\n2026-05-20 22:34:24,542 | INFO | ls20-9607627b - ACTION2: count 33, levels completed 1, avg fps 10.65)\n2026-05-20 22:34:24,742 | INFO | ls20-9607627b - ACTION1: count 34, levels completed 1, avg fps 10.3)\n2026-05-20 22:34:24,747 | INFO | recording for ls20-9607627b.receiptobjectawaremultilevelagent is available in recordings/ls20-9607627b.receiptobjectawaremultilevelagent.46f51f39-99b1-47df-ab34-d9d10c40a672.recording.jsonl\n2026-05-20 22:34:24,747 | INFO | Finishing: agent took 35 actions, took 3.3 seconds (10.61 average fps)\n2026-05-20 22:34:24 | INFO | Closed scorecard: 965ce91c-c39d-4d11-b1d7-2270c522d233\n2026-05-20 22:34:24,788 | INFO | Closed scorecard: 965ce91c-c39d-4d11-b1d7-2270c522d233\n2026-05-20 22:34:24,788 | INFO | --- FINAL SCORECARD REPORT ---\n2026-05-20 22:34:24,789 | INFO | {\n  \"source_url\": null,\n  \"tags\": [\n    \"agent\",\n    \"receiptobjectawaremultilevelagent\"\n  ],\n  \"opaque\": null,\n  \"card_id\": \"965ce91c-c39d-4d11-b1d7-2270c522d233\",\n  \"api_key\": null,\n  \"score\": 3.571428571428571,\n  \"environments\": [\n    {\n      \"id\": \"ls20-9607627b\",\n      \"runs\": [\n        {\n          \"id\": null,\n          \"guid\": \"d05bc654-c977-416f-b7a5-bfdd262194e0\",\n          \"score\": 3.571428571428571,\n          \"levels_completed\": 1,\n          \"actions\": 35,\n          \"resets\": 0,\n          \"state\": \"NOT_FINISHED\",\n          \"completed\": false,\n          \"level_scores\": [\n            115.0,\n            0.0,\n            0.0,\n            0.0,\n            0.0,\n            0.0,\n            0.0\n          ],\n          \"level_actions\": [\n            13,\n            22,\n            0,\n            0,\n            0,\n            0,\n            0\n          ],\n          \"level_baseline_actions\": [\n            22,\n            123,\n            73,\n            84,\n            96,\n            192,\n            186\n          ],\n          \"number_of_levels\": null,\n          \"number_of_environments\": 0,\n          \"message\": null\n        }\n      ],\n      \"score\": 3.571428571428571,\n      \"actions\": 35,\n      \"levels_completed\": 1,\n      \"completed\": false,\n      \"level_count\": 7,\n      \"resets\": 0\n    }\n  ],\n  \"tags_scores\": [\n    {\n      \"id\": \"keyboard\",\n      \"guid\": null,\n      \"score\": 3.571428571428571,\n      \"levels_completed\": 1,\n      \"actions\": 35,\n      \"resets\": null,\n      \"state\": null,\n      \"completed\": null,\n      \"level_scores\": null,\n      \"level_actions\": null,\n      \"level_baseline_actions\": null,\n      \"number_of_levels\": 7,\n      \"number_of_environments\": 1,\n      \"message\": null\n    }\n  ],\n  \"total_environments_completed\": 0,\n  \"total_environments\": 1,\n  \"total_levels_completed\": 1,\n  \"total_levels\": 7,\n  \"total_actions\": 35\n}\n2026-05-20 22:34:24,789 | INFO | View your scorecard online: https://three.arcprize.org/scorecards/965ce91c-c39d-4d11-b1d7-2270c522d233\n2026-05-20 22:34:24,789 | INFO | Received SIGINT, exiting...\n",
+    "timed_out": false
+  },
+  "failure_mode_counts": {
+    "official_local_online_divergence": 1
+  },
+  "game": "ls20",
+  "kind": "object_substrate_v0_run_008_receipt",
+  "lane": "object_substrate_v0",
+  "local_verification": {
+    "completed_levels_locally": [
+      1,
+      2
+    ],
+    "local_verification_hash": "f46a8eec5610d38875a33319906b1b5f35e9563a1578564f175482b49fa71ad9",
+    "official_run_gate_status": "open"
+  },
+  "local_verification_required_before_official_run": true,
+  "no_general_agent_claim": true,
+  "no_kaggle_claim": true,
+  "no_multigame_claim": true,
+  "no_private_eval_claim": true,
+  "no_score_improvement_claim": true,
+  "non_claims": [
+    "Run 008 is a public ls20 multi-level object-aware substrate retry.",
+    "Run 008 is not a Kaggle/private-eval claim.",
+    "Run 008 is not a general ARC-AGI-3 agent claim.",
+    "Run 008 does not claim multi-game capability.",
+    "Run 008 does not claim gamma1b closure unless all ls20 levels complete.",
+    "Shape dispatch is claimed only for explicitly enumerated frame-shape patterns."
+  ],
+  "not_for_policy": false,
+  "object_substrate_lane": true,
+  "official_run_attempted": true,
+  "official_runner": {
+    "branch": "main",
+    "cwd": "ARC-AGI-3-Agents",
+    "source_commit": "f30a2e7ba8b1b8099ef23269454713a721286ec4",
+    "working_tree_status": "M agents/__init__.py\n?? agents/receipt_guard_agent.py\n?? tests/unit/test_receipt_guard_agent.py"
+  },
+  "official_scorecard": {
+    "card_id": "965ce91c-c39d-4d11-b1d7-2270c522d233",
+    "environments": [
+      {
+        "actions": 35,
+        "completed": false,
+        "id": "ls20-9607627b",
+        "level_count": 7,
+        "levels_completed": 1,
+        "resets": 0,
+        "runs": [
+          {
+            "actions": 35,
+            "completed": false,
+            "guid": "d05bc654-c977-416f-b7a5-bfdd262194e0",
+            "level_actions": [
+              13,
+              22,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "level_baseline_actions": [
+              22,
+              123,
+              73,
+              84,
+              96,
+              192,
+              186
+            ],
+            "level_scores": [
+              115.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "levels_completed": 1,
+            "resets": 0,
+            "score": 3.571428571428571,
+            "state": "NOT_FINISHED"
+          }
+        ],
+        "score": 3.571428571428571
+      }
+    ],
+    "max_actions_summary": null,
+    "observed": true,
+    "parse_error": null,
+    "primary_environment": {
+      "actions": 35,
+      "completed": false,
+      "id": "ls20-9607627b",
+      "level_count": 7,
+      "levels_completed": 1,
+      "resets": 0,
+      "runs": [
+        {
+          "actions": 35,
+          "completed": false,
+          "guid": "d05bc654-c977-416f-b7a5-bfdd262194e0",
+          "level_actions": [
+            13,
+            22,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "level_baseline_actions": [
+            22,
+            123,
+            73,
+            84,
+            96,
+            192,
+            186
+          ],
+          "level_scores": [
+            115.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "levels_completed": 1,
+          "resets": 0,
+          "score": 3.571428571428571,
+          "state": "NOT_FINISHED"
+        }
+      ],
+      "score": 3.571428571428571
+    },
+    "primary_run": {
+      "actions": 35,
+      "completed": false,
+      "guid": "d05bc654-c977-416f-b7a5-bfdd262194e0",
+      "level_actions": [
+        13,
+        22,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "level_baseline_actions": [
+        22,
+        123,
+        73,
+        84,
+        96,
+        192,
+        186
+      ],
+      "level_scores": [
+        115.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "levels_completed": 1,
+      "resets": 0,
+      "score": 3.571428571428571,
+      "state": "NOT_FINISHED"
+    },
+    "recording_path": "recordings/ls20-9607627b.receiptobjectawaremultilevelagent.46f51f39-99b1-47df-ab34-d9d10c40a672.recording.jsonl",
+    "score": 3.571428571428571,
+    "scorecard_url": "https://three.arcprize.org/scorecards/965ce91c-c39d-4d11-b1d7-2270c522d233",
+    "total_actions": 35,
+    "total_environments": 1,
+    "total_environments_completed": 0,
+    "total_levels": 7,
+    "total_levels_completed": 1
+  },
+  "outcome": {
+    "levels_completed": 1,
+    "recording_path": "recordings/ls20-9607627b.receiptobjectawaremultilevelagent.46f51f39-99b1-47df-ab34-d9d10c40a672.recording.jsonl",
+    "score": 3.571428571428571,
+    "scorecard_observed": true,
+    "scorecard_url": "https://three.arcprize.org/scorecards/965ce91c-c39d-4d11-b1d7-2270c522d233",
+    "total_actions": 35
+  },
+  "paper_lane_immutable": true,
+  "plan": {
+    "hardcoded_sequence_used": false,
+    "planned_levels": [
+      1,
+      2
+    ],
+    "refusal_reason": null,
+    "refused": false,
+    "segment_count": 2,
+    "segment_lengths": [
+      13,
+      41
+    ],
+    "segment_plan_hash": "9e2f30447494881a48f389344d980b68e12ec979e880b2f04e8ebd17640c3b3a"
+  },
+  "planner_lane": false,
+  "policy_consumed": true,
+  "provenance_chain_complete": true,
+  "run_count_this_session": 1,
+  "run_dir": "artifacts/object_substrate_v0/run_008_grayscale_bundle_fix",
+  "run_id": "run_008_grayscale_bundle_fix",
+  "schema_version": "v0",
+  "sequence_derivation": "planner_v0_object_aware_multilevel_with_shape_dispatch",
+  "shape_pattern_activations": [
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 1,
+      "new_levels_completed": 0,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 0,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 0
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 1,
+      "level_index_estimate": 1,
+      "new_levels_completed": 0,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 0,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 0
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 1,
+      "new_levels_completed": 0,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 0,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 1
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 1,
+      "level_index_estimate": 1,
+      "new_levels_completed": 0,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 0,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 1
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 1,
+      "new_levels_completed": 0,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 0,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 2
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 1,
+      "level_index_estimate": 1,
+      "new_levels_completed": 0,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 0,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 2
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 1,
+      "new_levels_completed": 0,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 0,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 3
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 1,
+      "level_index_estimate": 1,
+      "new_levels_completed": 0,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 0,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 3
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 1,
+      "new_levels_completed": 0,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 0,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 4
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 1,
+      "level_index_estimate": 1,
+      "new_levels_completed": 0,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 0,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 4
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 1,
+      "new_levels_completed": 0,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 0,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 5
+    },
+    {
+      "detected_shape": [
+        6,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 6,
+      "level_index_estimate": 1,
+      "new_levels_completed": 0,
+      "pattern_classification": "bundle_3d_grayscale",
+      "prev_levels_completed": 0,
+      "selected_index": 5,
+      "source": "last_of_bundle",
+      "step_index": 5
+    },
+    {
+      "detected_shape": [
+        6,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 6,
+      "level_index_estimate": 1,
+      "new_levels_completed": 0,
+      "pattern_classification": "bundle_3d_grayscale",
+      "prev_levels_completed": 0,
+      "selected_index": 5,
+      "source": "last_of_bundle",
+      "step_index": 6
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 1,
+      "level_index_estimate": 1,
+      "new_levels_completed": 0,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 0,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 6
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 1,
+      "new_levels_completed": 0,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 0,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 7
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 1,
+      "level_index_estimate": 1,
+      "new_levels_completed": 0,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 0,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 7
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 1,
+      "new_levels_completed": 0,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 0,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 8
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 1,
+      "level_index_estimate": 1,
+      "new_levels_completed": 0,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 0,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 8
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 1,
+      "new_levels_completed": 0,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 0,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 9
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 1,
+      "level_index_estimate": 1,
+      "new_levels_completed": 0,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 0,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 9
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 1,
+      "new_levels_completed": 0,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 0,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 10
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 1,
+      "level_index_estimate": 1,
+      "new_levels_completed": 0,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 0,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 10
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 1,
+      "new_levels_completed": 0,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 0,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 11
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 1,
+      "level_index_estimate": 1,
+      "new_levels_completed": 0,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 0,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 11
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 1,
+      "new_levels_completed": 0,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 0,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 12
+    },
+    {
+      "detected_shape": [
+        2,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 2,
+      "level_index_estimate": 1,
+      "new_levels_completed": 1,
+      "pattern_classification": "bundle_3d_grayscale",
+      "prev_levels_completed": 0,
+      "selected_index": 1,
+      "source": "last_of_bundle",
+      "step_index": 12
+    },
+    {
+      "detected_shape": [
+        2,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 2,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "bundle_3d_grayscale",
+      "prev_levels_completed": 0,
+      "selected_index": 1,
+      "source": "last_of_bundle",
+      "step_index": 13
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 13
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 14
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 14
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 15
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 15
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 16
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 16
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 17
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 17
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 18
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 18
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 19
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 19
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 20
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 20
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 21
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 21
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 22
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 22
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 23
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 23
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 24
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 24
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 25
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 25
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 26
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 26
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 27
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 27
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 28
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 28
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 29
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 29
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 30
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 30
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 31
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 31
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 32
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 32
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 33
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 33
+    },
+    {
+      "detected_shape": [
+        1,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision",
+      "frame_depth": 1,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "single_3d_batched",
+      "prev_levels_completed": 1,
+      "selected_index": 0,
+      "source": "single",
+      "step_index": 34
+    },
+    {
+      "detected_shape": [
+        6,
+        64,
+        64
+      ],
+      "field": "frame_bundle_handler_decision_after",
+      "frame_depth": 6,
+      "level_index_estimate": 2,
+      "new_levels_completed": 1,
+      "pattern_classification": "bundle_3d_grayscale",
+      "prev_levels_completed": 1,
+      "selected_index": 5,
+      "source": "last_of_bundle",
+      "step_index": 34
+    }
+  ],
+  "slice_scope": "object_aware_multilevel_planner_run_008_grayscale_bundle_fix",
+  "source_informed": true,
+  "step_receipt_count": 35,
+  "substrate_extension_provenance": "defensive_shape_pattern_dispatch_table",
+  "timestamp": "2026-05-21T05:34:16.933662+00:00"
+}

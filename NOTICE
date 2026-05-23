@@ -1,0 +1,25 @@
+Package candidate notice
+
+Generated: 2026-05-21T20:16:19.807234+00:00
+
+This package candidate is not a Kaggle submission. It contains submitter-authored
+and generated preflight files only. No third-party runtime code is vendored in
+the current package candidate.
+
+Source-bundling decision: hardcoded constants with citations. Source files are
+not bundled in this candidate.
+
+Hardcoded constant citations:
+
+- ls20 level-1 wall geometry constants: ls20.py:611-726.
+- ls20 level-1 target and actor-start constants: ls20.py:727-745.
+- tr87 level-1 selector/sequence visual constants: tr87.py:499-526.
+- tr87 level-1 sequence initialization and selector action semantics:
+  tr87.py:942-966 and tr87.py:996-1042.
+- tr87 level-1 completion predicate: tr87.py:1044-1113.
+
+Planner-derived action sequences are cited to package artifacts, not copied from
+source files:
+
+- artifacts/object_substrate_v0/run_005_object_aware_wall_fix/planned_sequence.json
+- artifacts/object_substrate_v0/tr87_run_001_object_aware/planned_sequence.json

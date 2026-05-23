@@ -1,0 +1,45 @@
+{
+  "action_return_shape": {
+    "basis": "runtime/kaggle_harness.py emits dict actions before framework translation",
+    "coordinate_action": {
+      "name": "ACTION6",
+      "x": 0,
+      "y": 0
+    },
+    "normal": {
+      "name": "ACTION*"
+    }
+  },
+  "contract_source": "local_official_runner_and_kaggle_glue_inspection",
+  "expected_class_name": "SubmissionAgent",
+  "generated_at": "2026-05-21T20:16:19.807234+00:00",
+  "input_shape_supported_by_candidate": [
+    "dict with game_id/environment_id and action_mask",
+    "dict with game_id/environment_id and available_actions",
+    "object with game_id/environment_id and available_actions"
+  ],
+  "kaggle_submission_made": false,
+  "kind": "kaggle_submission_agent_api_contract",
+  "official_runner_invoked": false,
+  "required_methods": [
+    {
+      "name": "is_done",
+      "signature": "is_done(frames, latest_frame) -> bool",
+      "source_citations": [
+        "docs/arc_prize_2026_kaggle_plan.md:451-456",
+        "runtime/kaggle_harness.py:8-9",
+        "kaggle_notebook/agent_glue.py:207-212"
+      ]
+    },
+    {
+      "name": "choose_action",
+      "signature": "choose_action(frames, latest_frame) -> dict",
+      "source_citations": [
+        "docs/arc_prize_2026_kaggle_plan.md:451-456",
+        "runtime/kaggle_harness.py:8-9",
+        "kaggle_notebook/agent_glue.py:207-212"
+      ]
+    }
+  ],
+  "schema_version": "v0"
+}

@@ -1,0 +1,277 @@
+{
+  "attempted_in_mode": "online",
+  "auto_iteration": false,
+  "command": [
+    "ARC3_AGENT_REPO=.",
+    "uv",
+    "run",
+    "main.py",
+    "--agent=receiptscriptedls20level1agent",
+    "--game=ls20"
+  ],
+  "derived_in_mode": "local",
+  "diagnostic_inputs_consumed": true,
+  "execution": {
+    "blocker_classification": {
+      "code": "scorecard_observed",
+      "notes": "The official runner emitted scorecard-related output; inspect logs before claiming any score.",
+      "status": "completed"
+    },
+    "duration_seconds": 3.075584,
+    "exit_code": 0,
+    "stderr_tail": "",
+    "stdout_tail": "2026-05-20 18:16:05,771 | INFO | Successfully fetched 25 environment(s) from API\n***** MAKING SCORECARD\n{\"card_id\":\"d24f8abd-7736-4f4e-bf48-df4c9f8800a1\"}\n\n{'card_id': 'd24f8abd-7736-4f4e-bf48-df4c9f8800a1'}\n2026-05-20 18:16:05 | INFO | Created new scorecard: d24f8abd-7736-4f4e-bf48-df4c9f8800a1\n2026-05-20 18:16:05,836 | INFO | Created new scorecard: d24f8abd-7736-4f4e-bf48-df4c9f8800a1\n***** MAKING ALL AGENTS with card id: d24f8abd-7736-4f4e-bf48-df4c9f8800a1\n2026-05-20 18:16:05 | INFO | Successfully fetched metadata for game ls20\n2026-05-20 18:16:05,913 | INFO | Successfully fetched metadata for game ls20\n2026-05-20 18:16:06 | INFO | Successfully reset game ls20-9607627b, guid=b7ad6a02-3f10-4da3-ae98-e5f77cf35c80, scorecard_id=d24f8abd-7736-4f4e-bf48-df4c9f8800a1\n2026-05-20 18:16:06,049 | INFO | Successfully reset game ls20-9607627b, guid=b7ad6a02-3f10-4da3-ae98-e5f77cf35c80, scorecard_id=d24f8abd-7736-4f4e-bf48-df4c9f8800a1\n2026-05-20 18:16:06,050 | INFO | created new recording for ls20-9607627b.receiptscriptedls20level1agent into recordings/ls20-9607627b.receiptscriptedls20level1agent.d41cb469-3db2-494a-90d3-6fb59033548b.recording.jsonl\n2026-05-20 18:16:06,163 | INFO | ls20-9607627b - ACTION3: count 0, levels completed 0, avg fps 0.0)\n2026-05-20 18:16:06,267 | INFO | ls20-9607627b - ACTION3: count 1, levels completed 0, avg fps 4.76)\n2026-05-20 18:16:06,369 | INFO | ls20-9607627b - ACTION3: count 2, levels completed 0, avg fps 6.45)\n2026-05-20 18:16:06,474 | INFO | ls20-9607627b - ACTION1: count 3, levels completed 0, avg fps 7.14)\n2026-05-20 18:16:06,531 | INFO | ls20-9607627b - ACTION1: count 4, levels completed 0, avg fps 8.33)\n2026-05-20 18:16:06,697 | INFO | ls20-9607627b - ACTION1: count 5, levels completed 0, avg fps 7.81)\n2026-05-20 18:16:06,749 | INFO | ls20-9607627b - ACTION1: count 6, levels completed 0, avg fps 8.7)\n2026-05-20 18:16:06,846 | INFO | ls20-9607627b - ACTION4: count 7, levels completed 0, avg fps 8.86)\n2026-05-20 18:16:06,893 | INFO | ls20-9607627b - ACTION4: count 8, levels completed 0, avg fps 9.52)\n2026-05-20 18:16:06,994 | INFO | ls20-9607627b - ACTION4: count 9, levels completed 0, avg fps 9.57)\n2026-05-20 18:16:07,099 | INFO | ls20-9607627b - ACTION1: count 10, levels completed 0, avg fps 9.62)\n2026-05-20 18:16:07,212 | INFO | ls20-9607627b - ACTION1: count 11, levels completed 0, avg fps 9.48)\n2026-05-20 18:16:07,266 | INFO | ls20-9607627b - ACTION1: count 12, levels completed 1, avg fps 9.92)\n2026-05-20 18:16:07,266 | INFO | recording for ls20-9607627b.receiptscriptedls20level1agent is available in recordings/ls20-9607627b.receiptscriptedls20level1agent.d41cb469-3db2-494a-90d3-6fb59033548b.recording.jsonl\n2026-05-20 18:16:07,266 | INFO | Exiting: agent reached MAX_ACTIONS of 13, took 1.21 seconds (10.74 average fps)\n2026-05-20 18:16:07 | INFO | Closed scorecard: d24f8abd-7736-4f4e-bf48-df4c9f8800a1\n2026-05-20 18:16:07,308 | INFO | Closed scorecard: d24f8abd-7736-4f4e-bf48-df4c9f8800a1\n2026-05-20 18:16:07,308 | INFO | --- FINAL SCORECARD REPORT ---\n2026-05-20 18:16:07,308 | INFO | {\n  \"source_url\": null,\n  \"tags\": [\n    \"agent\",\n    \"receiptscriptedls20level1agent\"\n  ],\n  \"opaque\": null,\n  \"card_id\": \"d24f8abd-7736-4f4e-bf48-df4c9f8800a1\",\n  \"api_key\": null,\n  \"score\": 3.571428571428571,\n  \"environments\": [\n    {\n      \"id\": \"ls20-9607627b\",\n      \"runs\": [\n        {\n          \"id\": null,\n          \"guid\": \"b7ad6a02-3f10-4da3-ae98-e5f77cf35c80\",\n          \"score\": 3.571428571428571,\n          \"levels_completed\": 1,\n          \"actions\": 13,\n          \"resets\": 0,\n          \"state\": \"NOT_FINISHED\",\n          \"completed\": false,\n          \"level_scores\": [\n            115.0,\n            0.0,\n            0.0,\n            0.0,\n            0.0,\n            0.0,\n            0.0\n          ],\n          \"level_actions\": [\n            13,\n            0,\n            0,\n            0,\n            0,\n            0,\n            0\n          ],\n          \"level_baseline_actions\": [\n            22,\n            123,\n            73,\n            84,\n            96,\n            192,\n            186\n          ],\n          \"number_of_levels\": null,\n          \"number_of_environments\": 0,\n          \"message\": null\n        }\n      ],\n      \"score\": 3.571428571428571,\n      \"actions\": 13,\n      \"levels_completed\": 1,\n      \"completed\": false,\n      \"level_count\": 7,\n      \"resets\": 0\n    }\n  ],\n  \"tags_scores\": [\n    {\n      \"id\": \"keyboard\",\n      \"guid\": null,\n      \"score\": 3.571428571428571,\n      \"levels_completed\": 1,\n      \"actions\": 13,\n      \"resets\": null,\n      \"state\": null,\n      \"completed\": null,\n      \"level_scores\": null,\n      \"level_actions\": null,\n      \"level_baseline_actions\": null,\n      \"number_of_levels\": 7,\n      \"number_of_environments\": 1,\n      \"message\": null\n    }\n  ],\n  \"total_environments_completed\": 0,\n  \"total_environments\": 1,\n  \"total_levels_completed\": 1,\n  \"total_levels\": 7,\n  \"total_actions\": 13\n}\n2026-05-20 18:16:07,308 | INFO | View your scorecard online: https://three.arcprize.org/scorecards/d24f8abd-7736-4f4e-bf48-df4c9f8800a1\n2026-05-20 18:16:07,308 | INFO | Received SIGINT, exiting...",
+    "timed_out": false
+  },
+  "failure_mode_counts": {},
+  "game": "ls20",
+  "invalid_unavailable_action_encountered": false,
+  "kind": "planner_v0_run_003_source_derived_receipt",
+  "local_simulation_result_ref": {
+    "evidence_type": "planning_evidence_only_not_official_score",
+    "level_index": 1,
+    "score": 1
+  },
+  "no_general_agent_claim": true,
+  "no_kaggle_claim": true,
+  "no_private_eval_claim": true,
+  "no_score_improvement_claim": false,
+  "non_claims": [
+    "Run 003 is a source-derived local-to-online transfer check.",
+    "Run 003 is not a Kaggle/private-eval claim.",
+    "Run 003 is not a general ARC-AGI-3 agent claim.",
+    "Run 003 does not claim the diagnostic planner discovered the solution.",
+    "Run 003 does not claim object-aware substrate works.",
+    "Score improvement may be reported only if the official runner reports score > 0 or levels_completed > 0."
+  ],
+  "official_run_attempted": true,
+  "official_runner": {
+    "branch": "main",
+    "cwd": "ARC-AGI-3-Agents",
+    "source_commit": "f30a2e7ba8b1b8099ef23269454713a721286ec4",
+    "working_tree_status": "M agents/__init__.py\n?? agents/receipt_guard_agent.py\n?? tests/unit/test_receipt_guard_agent.py"
+  },
+  "official_scorecard": {
+    "card_id": "d24f8abd-7736-4f4e-bf48-df4c9f8800a1",
+    "environments": [
+      {
+        "actions": 13,
+        "completed": false,
+        "id": "ls20-9607627b",
+        "level_count": 7,
+        "levels_completed": 1,
+        "resets": 0,
+        "runs": [
+          {
+            "actions": 13,
+            "completed": false,
+            "guid": "b7ad6a02-3f10-4da3-ae98-e5f77cf35c80",
+            "level_actions": [
+              13,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "level_baseline_actions": [
+              22,
+              123,
+              73,
+              84,
+              96,
+              192,
+              186
+            ],
+            "level_scores": [
+              115.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "levels_completed": 1,
+            "resets": 0,
+            "score": 3.571428571428571,
+            "state": "NOT_FINISHED"
+          }
+        ],
+        "score": 3.571428571428571
+      }
+    ],
+    "max_actions_summary": {
+      "average_fps": 10.74,
+      "duration_seconds": 1.21,
+      "max_actions": 13
+    },
+    "observed": true,
+    "parse_error": null,
+    "primary_environment": {
+      "actions": 13,
+      "completed": false,
+      "id": "ls20-9607627b",
+      "level_count": 7,
+      "levels_completed": 1,
+      "resets": 0,
+      "runs": [
+        {
+          "actions": 13,
+          "completed": false,
+          "guid": "b7ad6a02-3f10-4da3-ae98-e5f77cf35c80",
+          "level_actions": [
+            13,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "level_baseline_actions": [
+            22,
+            123,
+            73,
+            84,
+            96,
+            192,
+            186
+          ],
+          "level_scores": [
+            115.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "levels_completed": 1,
+          "resets": 0,
+          "score": 3.571428571428571,
+          "state": "NOT_FINISHED"
+        }
+      ],
+      "score": 3.571428571428571
+    },
+    "primary_run": {
+      "actions": 13,
+      "completed": false,
+      "guid": "b7ad6a02-3f10-4da3-ae98-e5f77cf35c80",
+      "level_actions": [
+        13,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "level_baseline_actions": [
+        22,
+        123,
+        73,
+        84,
+        96,
+        192,
+        186
+      ],
+      "level_scores": [
+        115.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "levels_completed": 1,
+      "resets": 0,
+      "score": 3.571428571428571,
+      "state": "NOT_FINISHED"
+    },
+    "recording_path": "recordings/ls20-9607627b.receiptscriptedls20level1agent.d41cb469-3db2-494a-90d3-6fb59033548b.recording.jsonl",
+    "score": 3.571428571428571,
+    "scorecard_url": "https://three.arcprize.org/scorecards/d24f8abd-7736-4f4e-bf48-df4c9f8800a1",
+    "total_actions": 13,
+    "total_environments": 1,
+    "total_environments_completed": 0,
+    "total_levels": 7,
+    "total_levels_completed": 1
+  },
+  "outcome": {
+    "levels_completed": 1,
+    "recording_path": "recordings/ls20-9607627b.receiptscriptedls20level1agent.d41cb469-3db2-494a-90d3-6fb59033548b.recording.jsonl",
+    "score": 3.571428571428571,
+    "scorecard_observed": true,
+    "scorecard_url": "https://three.arcprize.org/scorecards/d24f8abd-7736-4f4e-bf48-df4c9f8800a1",
+    "total_actions": 13
+  },
+  "paper_lane_immutable": true,
+  "planner_lane": true,
+  "policy_consumed_by_planner": true,
+  "provenance_chain_complete": true,
+  "run_count_this_session": 1,
+  "run_dir": "artifacts/planner_v0/run_003_source_derived",
+  "run_id": "run_003_source_derived",
+  "schema_version": "v0",
+  "sequence": {
+    "attempted_labels": [
+      "ACTION3",
+      "ACTION3",
+      "ACTION3",
+      "ACTION1",
+      "ACTION1",
+      "ACTION1",
+      "ACTION1",
+      "ACTION4",
+      "ACTION4",
+      "ACTION4",
+      "ACTION1",
+      "ACTION1",
+      "ACTION1"
+    ],
+    "executed_exactly": true,
+    "expected_ids": [
+      3,
+      3,
+      3,
+      1,
+      1,
+      1,
+      1,
+      4,
+      4,
+      4,
+      1,
+      1,
+      1
+    ],
+    "expected_labels": [
+      "ACTION3",
+      "ACTION3",
+      "ACTION3",
+      "ACTION1",
+      "ACTION1",
+      "ACTION1",
+      "ACTION1",
+      "ACTION4",
+      "ACTION4",
+      "ACTION4",
+      "ACTION1",
+      "ACTION1",
+      "ACTION1"
+    ]
+  },
+  "sequence_kaggle_competition_eligible": false,
+  "slice_scope": "official_run_003_source_derived_transfer",
+  "source_derived": true,
+  "source_file_ref": "arc3_agent/environment_files/ls20/9607627b/ls20.py",
+  "source_license": "MIT",
+  "step_receipt_count": 13,
+  "strategy": "scripted_source_derived_ls20_level1_transfer",
+  "timestamp": "2026-05-21T01:16:07.478787+00:00",
+  "transfer_success_signal_present": true
+}

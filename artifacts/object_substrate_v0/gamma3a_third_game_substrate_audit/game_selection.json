@@ -1,0 +1,89 @@
+{
+  "analysis_only": true,
+  "architecture_review_carried_forward": true,
+  "capability_attempt": false,
+  "expected_risk": "medium: source-visible ontology is clean, but no third-game empirical trace was run",
+  "generated_at": "2026-05-22T02:49:45.248056+00:00",
+  "kaggle_submission_attempted": false,
+  "kind": "object_substrate_v0_gamma3a_game_selection",
+  "lane": "object_substrate_v0",
+  "ls20_substrate_immutable": true,
+  "no_general_agent_claim": true,
+  "no_general_arc_agi_3_claim": true,
+  "no_official_run": true,
+  "no_private_eval_claim": true,
+  "no_score_improvement_claim": true,
+  "no_third_game_capability_claim": true,
+  "official_run_attempted": false,
+  "ontology_difference_hypothesis": "selected_sprite + sprite_group_variant + rotation + contact-marker-completion",
+  "paper_lane_immutable": false,
+  "planner_attempt": false,
+  "planner_v0_immutable": true,
+  "reason_selected": "cn04 exposes a click-selected sprite manipulation ontology: ACTION6 selects/deselects sprites, ACTION1-4 move the selected sprite on a 20x20 grid, and ACTION5 rotates or cycles overlapping sprite variants. This is structurally distinct from ls20 motion/target matching and tr87 selector/sequence-rule construction.",
+  "rejected_candidates": [
+    {
+      "game": "bp35",
+      "reason": "compact but less clearly distinct from object-manipulation without deeper source audit",
+      "risk": "medium: ontology signal weaker than cn04 from initial static scan"
+    },
+    {
+      "game": "cd82",
+      "reason": "visually rich candidate, but source scan did not expose as clean an action ontology within the timebox",
+      "risk": "medium: audit likely needs additional trace data"
+    },
+    {
+      "game": "wa30",
+      "reason": "initial scan suggested more motion-like mechanics, reducing ontology contrast with ls20",
+      "risk": "medium"
+    },
+    {
+      "game": "dc22",
+      "reason": "large source surface would exceed the bounded audit before establishing distinctness",
+      "risk": "high: 10000+ source lines"
+    }
+  ],
+  "schema_version": "v0",
+  "selected_game": "cn04",
+  "selected_source": "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py",
+  "selection_citations": [
+    {
+      "line_end": 34,
+      "line_start": 26,
+      "reason": "arcengine imports include ActionInput and GameAction",
+      "source_file_path": "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py",
+      "source_line_ref": "cn04.py:26-34"
+    },
+    {
+      "line_end": 846,
+      "line_start": 833,
+      "reason": "cn04 game class and game_id",
+      "source_file_path": "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py",
+      "source_line_ref": "cn04.py:833-846"
+    },
+    {
+      "line_end": 904,
+      "line_start": 888,
+      "reason": "selected-sprite highlighting",
+      "source_file_path": "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py",
+      "source_line_ref": "cn04.py:888-904"
+    },
+    {
+      "line_end": 1131,
+      "line_start": 1051,
+      "reason": "ACTION6, ACTION5, and ACTION1-4 dispatch",
+      "source_file_path": "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py",
+      "source_line_ref": "cn04.py:1051-1131"
+    }
+  ],
+  "slice_scope": "gamma3a_third_game_substrate_audit",
+  "source_counts": {
+    "grid_size_20_count": 6,
+    "level_count": 6,
+    "max_steps_entries": 7,
+    "sys_click_sprite_definitions": 47
+  },
+  "source_inspection_mode": "local_static",
+  "source_license_basis": "cn04.py:1-21",
+  "target_game": "cn04",
+  "tr87_substrate_immutable": true
+}

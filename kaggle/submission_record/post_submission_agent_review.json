@@ -1,0 +1,43 @@
+{
+  "schema_version": "v0",
+  "kind": "post_submission_agent_review",
+  "generated_at": "2026-05-22T00:20:00Z",
+  "reviewed_artifact": "artifacts/kaggle_submission_preflight/kaggle_notebook_candidate/my_agent.py",
+  "submitted_version_record": "artifacts/kaggle_submission_preflight/kaggle_submission_record/submission_record.json",
+  "kaggle_submission_status": "submitted_succeeded",
+  "linked_kaggle_score": 0.0,
+  "package_mutated_after_submission": false,
+  "review_source": "external_browser_review_pasted_by_tim",
+  "findings": [
+    {
+      "id": "receipt_file_write_oserror_swallowed",
+      "classification": "future_hardening",
+      "severity_for_submitted_v1": "low",
+      "reason": "The submitted agent keeps receipts in memory before attempting the file append. A file-write failure would reduce disk auditability but would not change the chosen action sequence. Changing the artifact after submission would break the submitted-version boundary.",
+      "recommended_v2_change": "Record receipt_write_error in memory and emit a stderr diagnostic if the Kaggle harness exposes stderr safely."
+    },
+    {
+      "id": "planned_action_unavailable_runtime_error",
+      "classification": "future_hardening",
+      "severity_for_submitted_v1": "medium",
+      "reason": "The hard failure is limited to supported-game branches when a locally verified planned action is unavailable. Unsupported games already use a one-action fallback and halt. For v1, raising on provenance break is preferable to silently substituting an unsupported action after submission.",
+      "recommended_v2_change": "Consider returning RESET with provenance_chain_complete=false if Kaggle harness behavior shows container-level penalties for exceptions."
+    },
+    {
+      "id": "per_step_receipt_file_io",
+      "classification": "acceptable_current_risk",
+      "severity_for_submitted_v1": "low",
+      "reason": "The supported action sequences are short, and runtime verification passed timing constraints. Buffering could be useful for longer future sequences but is not a post-submission patch reason.",
+      "recommended_v2_change": "Batch flush receipts on terminal state for longer sequence packages."
+    }
+  ],
+  "decision": "do_not_mutate_submitted_artifact",
+  "decision_reasoning": "The review identifies legitimate future hardening, but not a blocker for the already submitted, Kaggle-succeeded Version 1. The next safe step is documentation and claim-ledger update, not package mutation.",
+  "claim_boundaries": {
+    "no_private_eval_claim": true,
+    "no_general_arc_agi_3_claim": true,
+    "no_new_capability_claim": true,
+    "linked_kaggle_score_recorded": true,
+    "public_scorecards_are_not_kaggle_leaderboard_evidence": true
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "analysis_only": true,
+  "architecture_review_carried_forward": true,
+  "audit_results": {
+    "action_effect_modeling": "actions_unmodelable_from_current_extractor",
+    "actor_extraction": "extractor_needs_architectural_redesign",
+    "frame_format": "same_conventions",
+    "game_mechanic_gap": "unique_game_mechanic_and_level_semantics_layers",
+    "target_goal_evidence": "different_target_structure:sequence_rule_matching"
+  },
+  "citations": [
+    {
+      "artifact_field": "summary",
+      "artifact_path": "artifacts/official_agent_smoke/tr87_action_effect_trace.json"
+    },
+    {
+      "artifact_field": "rows",
+      "artifact_path": "artifacts/official_agent_smoke/tr87_region_semantics_trace.json"
+    },
+    {
+      "artifact_field": "motion_vs_anomaly_comparison",
+      "artifact_path": "artifacts/official_agent_smoke/tr87_anomaly_classification.json"
+    },
+    {
+      "source_file_path": "arc3_agent/environment_files/tr87/cd924810/tr87.py",
+      "source_line_ref": "tr87.py:901-1113"
+    }
+  ],
+  "evidence_strength": "moderate",
+  "generated_at": "2026-05-21T06:32:24.781828+00:00",
+  "kind": "object_substrate_v0_cross_game_substrate_report",
+  "lane": "object_substrate_v0",
+  "layer_transferability": {
+    "action_effect_modeling": "needs_redesign",
+    "actor_extraction": "fails",
+    "frame_bundle_dispatch": "transferable_unchanged",
+    "target_extraction": "needs_rewrite",
+    "wall_geometry": "source_dependent_per_game"
+  },
+  "ls20_substrate_immutable": true,
+  "methodology_generalization_finding": "method_transfers_ontology_doesnt",
+  "no_kaggle_claim": true,
+  "no_private_eval_claim": true,
+  "no_score_improvement_claim": true,
+  "official_run_attempted": false,
+  "paper_lane_immutable": true,
+  "planner_v0_immutable": true,
+  "schema_version": "v0",
+  "shared_substrate_layers": [
+    "diagnostic_trace_receipts",
+    "action_surface_enumeration",
+    "frame_shape_dispatch",
+    "region_delta_semantics_method"
+  ],
+  "slice_scope": "gamma2a_cross_game_substrate_audit",
+  "target_game": "tr87",
+  "tr87_unique_substrate_layers": [
+    "selector_index_state",
+    "tile_variant_cycling",
+    "sequence_rule_target_semantics",
+    "randomized_initial_rule_state",
+    "action_budget_timer",
+    "double_tree_translation_rules"
+  ]
+}

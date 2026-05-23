@@ -1,0 +1,162 @@
+{
+  "analysis_only": true,
+  "architecture_review_carried_forward": true,
+  "empirical_basis": "tr87_traces_via_gamma2b_perception",
+  "gaps": [
+    {
+      "action_id": 1,
+      "action_name": "ACTION1",
+      "gap_type": "unobserved_action_state_pair",
+      "reason": "ACTION1 changes the selected sequence slot; selector_index:1 may be needed for target construction and has no empirical transition.",
+      "recommendation": "blocks_gamma2d",
+      "state_class": "selector_index:1"
+    },
+    {
+      "action_id": 1,
+      "action_name": "ACTION1",
+      "gap_type": "unobserved_action_state_pair",
+      "reason": "ACTION1 changes the selected sequence slot; selector_index:2 may be needed for target construction and has no empirical transition.",
+      "recommendation": "blocks_gamma2d",
+      "state_class": "selector_index:2"
+    },
+    {
+      "action_id": 1,
+      "action_name": "ACTION1",
+      "gap_type": "unobserved_action_state_pair",
+      "reason": "ACTION1 changes the selected sequence slot; selector_index:3 may be needed for target construction and has no empirical transition.",
+      "recommendation": "blocks_gamma2d",
+      "state_class": "selector_index:3"
+    },
+    {
+      "action_id": 1,
+      "action_name": "ACTION1",
+      "gap_type": "unobserved_action_state_pair",
+      "reason": "ACTION1 changes the selected sequence slot; selector_index:4 may be needed for target construction and has no empirical transition.",
+      "recommendation": "blocks_gamma2d",
+      "state_class": "selector_index:4"
+    },
+    {
+      "action_id": 2,
+      "action_name": "ACTION2",
+      "gap_type": "unobserved_action_state_pair",
+      "reason": "ACTION2 changes the selected sequence slot; selector_index:1 may be needed for target construction and has no empirical transition.",
+      "recommendation": "blocks_gamma2d",
+      "state_class": "selector_index:1"
+    },
+    {
+      "action_id": 2,
+      "action_name": "ACTION2",
+      "gap_type": "unobserved_action_state_pair",
+      "reason": "ACTION2 changes the selected sequence slot; selector_index:2 may be needed for target construction and has no empirical transition.",
+      "recommendation": "blocks_gamma2d",
+      "state_class": "selector_index:2"
+    },
+    {
+      "action_id": 2,
+      "action_name": "ACTION2",
+      "gap_type": "unobserved_action_state_pair",
+      "reason": "ACTION2 changes the selected sequence slot; selector_index:3 may be needed for target construction and has no empirical transition.",
+      "recommendation": "blocks_gamma2d",
+      "state_class": "selector_index:3"
+    },
+    {
+      "action_id": 2,
+      "action_name": "ACTION2",
+      "gap_type": "unobserved_action_state_pair",
+      "reason": "ACTION2 changes the selected sequence slot; selector_index:4 may be needed for target construction and has no empirical transition.",
+      "recommendation": "blocks_gamma2d",
+      "state_class": "selector_index:4"
+    },
+    {
+      "action_id": 3,
+      "action_name": "ACTION3",
+      "gap_type": "unobserved_action_state_pair",
+      "reason": "ACTION3 moves the selector; selector_index:1 has no empirical transition in the current cyclic probe.",
+      "recommendation": "targeted_probe_needed",
+      "state_class": "selector_index:1"
+    },
+    {
+      "action_id": 3,
+      "action_name": "ACTION3",
+      "gap_type": "unobserved_action_state_pair",
+      "reason": "ACTION3 moves the selector; selector_index:2 has no empirical transition in the current cyclic probe.",
+      "recommendation": "targeted_probe_needed",
+      "state_class": "selector_index:2"
+    },
+    {
+      "action_id": 3,
+      "action_name": "ACTION3",
+      "gap_type": "unobserved_action_state_pair",
+      "reason": "ACTION3 moves the selector; selector_index:3 has no empirical transition in the current cyclic probe.",
+      "recommendation": "targeted_probe_needed",
+      "state_class": "selector_index:3"
+    },
+    {
+      "action_id": 3,
+      "action_name": "ACTION3",
+      "gap_type": "unobserved_action_state_pair",
+      "reason": "ACTION3 moves the selector; selector_index:4 has no empirical transition in the current cyclic probe.",
+      "recommendation": "targeted_probe_needed",
+      "state_class": "selector_index:4"
+    },
+    {
+      "action_id": 4,
+      "action_name": "ACTION4",
+      "gap_type": "unobserved_action_state_pair",
+      "reason": "ACTION4 moves the selector; selector_index:0 has no empirical transition in the current cyclic probe.",
+      "recommendation": "targeted_probe_needed",
+      "state_class": "selector_index:0"
+    },
+    {
+      "action_id": 4,
+      "action_name": "ACTION4",
+      "gap_type": "unobserved_action_state_pair",
+      "reason": "ACTION4 moves the selector; selector_index:1 has no empirical transition in the current cyclic probe.",
+      "recommendation": "targeted_probe_needed",
+      "state_class": "selector_index:1"
+    },
+    {
+      "action_id": 4,
+      "action_name": "ACTION4",
+      "gap_type": "unobserved_action_state_pair",
+      "reason": "ACTION4 moves the selector; selector_index:2 has no empirical transition in the current cyclic probe.",
+      "recommendation": "targeted_probe_needed",
+      "state_class": "selector_index:2"
+    },
+    {
+      "action_id": 4,
+      "action_name": "ACTION4",
+      "gap_type": "unobserved_action_state_pair",
+      "reason": "ACTION4 moves the selector; selector_index:3 has no empirical transition in the current cyclic probe.",
+      "recommendation": "targeted_probe_needed",
+      "state_class": "selector_index:3"
+    }
+  ],
+  "generated_at": "2026-05-21T00:00:00+00:00",
+  "kind": "object_substrate_v0_tr87_known_gaps",
+  "known_gap_count": 16,
+  "lane": "object_substrate_v0",
+  "ls20_substrate_immutable": true,
+  "next_slice_recommendation": "gamma2c_1_targeted_selector_probe",
+  "no_general_agent_claim": true,
+  "no_kaggle_claim": true,
+  "no_private_eval_claim": true,
+  "no_score_improvement_claim": true,
+  "observed_action_state_pair_count": 4,
+  "official_run_attempted": false,
+  "oracle_reference": "tr87.py_step_function",
+  "paper_lane_immutable": true,
+  "parameterization_deferred_until_n_equals_3": true,
+  "planner_v0_immutable": true,
+  "possible_action_state_pair_count": 20,
+  "readiness_reason": "consistency passed but action/state coverage has gaps needed for sequence-slot planning",
+  "ready_for_gamma2d_planner": false,
+  "recommendation_counts": {
+    "blocks_gamma2d": 8,
+    "targeted_probe_needed": 8
+  },
+  "schema_version": "v0",
+  "selector_state_count": 5,
+  "slice_scope": "tr87_action_effect_modeling",
+  "target_game": "tr87"
+}

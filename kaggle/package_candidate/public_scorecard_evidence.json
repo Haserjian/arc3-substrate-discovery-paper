@@ -1,0 +1,21 @@
+{
+  "kaggle_submission_status": "not_submitted",
+  "linked_kaggle_score": 0.0,
+  "public_scorecard_evidence": [
+    {
+      "artifact": "artifacts/object_substrate_v0/run_005_object_aware_wall_fix/receipt.json",
+      "game": "ls20",
+      "levels_completed": 1,
+      "run": "run_005",
+      "score": 3.571428571428571
+    },
+    {
+      "artifact": "artifacts/object_substrate_v0/tr87_run_001_object_aware/receipt.json",
+      "game": "tr87",
+      "levels_completed": 1,
+      "run": "tr87_run_001",
+      "score": 4.761904761904762
+    }
+  ],
+  "scorecards_are_kaggle_leaderboard_evidence": false
+}

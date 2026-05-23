@@ -1,0 +1,190 @@
+{
+  "analysis_only": true,
+  "architecture_review_carried_forward": true,
+  "capability_attempt": false,
+  "details": {
+    "confidence": "moderate",
+    "coverage_count": {
+      "empirical_frames_analyzed": 0,
+      "levels_scanned": 6,
+      "observable_state_variable_count": 5,
+      "source_lines_scanned": 1182,
+      "sys_click_sprite_definitions": 47
+    },
+    "coverage_limitation": "No official or diagnostic cn04 trace was run in gamma3a; coverage is source-static.",
+    "frame_format_conventions": {
+      "citations": [
+        "cn04.py:700-798",
+        "cn04.py:861-871"
+      ],
+      "grey_masking_levels_present": true,
+      "grid_size": "20x20 source grid",
+      "levels_scanned": 6
+    },
+    "observed_state_variables": [
+      {
+        "citations": [
+          "cn04.py:836",
+          "cn04.py:888-904"
+        ],
+        "confidence": "high",
+        "evidence": "self.xseexqzst is the selected Sprite and is changed by selection handlers",
+        "name": "selected_sprite_identity"
+      },
+      {
+        "citations": [
+          "cn04.py:1102-1125"
+        ],
+        "confidence": "high",
+        "evidence": "ACTION1-4 mutate the selected sprite position inside grid bounds",
+        "name": "selected_sprite_position"
+      },
+      {
+        "citations": [
+          "cn04.py:1089-1097"
+        ],
+        "confidence": "high",
+        "evidence": "ACTION5 rotates singleton selected sprites by 90 degrees",
+        "name": "selected_sprite_rotation"
+      },
+      {
+        "citations": [
+          "cn04.py:872-879",
+          "cn04.py:1075-1081",
+          "cn04.py:1133-1157"
+        ],
+        "confidence": "medium",
+        "evidence": "overlapping sprites are grouped and ACTION5/ACTION6 can cycle the visible selection",
+        "name": "sprite_group_variant"
+      },
+      {
+        "citations": [
+          "cn04.py:946-994",
+          "cn04.py:1023-1049"
+        ],
+        "confidence": "medium",
+        "evidence": "source tracks overlapping 8/13 marker cells and rewrites them during rendering and completion checks",
+        "name": "contact_marker_coverage"
+      }
+    ],
+    "stable_visual_entities": [
+      "clickable sprites tagged sys_click",
+      "selected sprite highlighted through pixel remapping",
+      "overlapping sprite groups",
+      "contact marker pixels 8 and 13",
+      "step-budget interface bar"
+    ],
+    "target_goal_evidence_candidates": [
+      {
+        "candidate": "all contact-marker pixels consumed or rewritten",
+        "citations": [
+          "cn04.py:1023-1049"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "findings": [
+    {
+      "citations": [
+        {
+          "line_end": 49,
+          "line_start": 37,
+          "reason": "sprite definitions include clickable tags",
+          "source_file_path": "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py",
+          "source_line_ref": "cn04.py:37-49"
+        },
+        {
+          "line_end": 798,
+          "line_start": 700,
+          "reason": "six 20x20 levels with sprite placements, rotations, masking, and step budgets",
+          "source_file_path": "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py",
+          "source_line_ref": "cn04.py:700-798"
+        },
+        {
+          "line_end": 846,
+          "line_start": 833,
+          "reason": "game class state includes selected sprite and camera/interface setup",
+          "source_file_path": "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py",
+          "source_line_ref": "cn04.py:833-846"
+        },
+        {
+          "line_end": 886,
+          "line_start": 848,
+          "reason": "level setup builds overlapping sprite groups and selects an initial visible sprite",
+          "source_file_path": "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py",
+          "source_line_ref": "cn04.py:848-886"
+        },
+        {
+          "line_end": 904,
+          "line_start": 888,
+          "reason": "selection visual state rewrites the chosen sprite pixels",
+          "source_file_path": "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py",
+          "source_line_ref": "cn04.py:888-904"
+        },
+        {
+          "line_end": 1021,
+          "line_start": 920,
+          "reason": "visual recomputation marks contact-marker overlaps and gray masking",
+          "source_file_path": "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py",
+          "source_line_ref": "cn04.py:920-1021"
+        }
+      ],
+      "claim": "cn04 requires a selected-sprite perception ontology rather than ls20 actor extraction or tr87 selector-index extraction.",
+      "finding_id": "cn04_has_click_selected_sprite_perception_surface"
+    },
+    {
+      "citations": [
+        {
+          "line_end": 737,
+          "line_start": 733,
+          "reason": "level 3 GreyMasking",
+          "source_file_path": "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py",
+          "source_line_ref": "cn04.py:733-737"
+        },
+        {
+          "line_end": 871,
+          "line_start": 861,
+          "reason": "level setup applies GreyMasking",
+          "source_file_path": "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py",
+          "source_line_ref": "cn04.py:861-871"
+        },
+        {
+          "line_end": 1021,
+          "line_start": 1019,
+          "reason": "non-selected sprites are masked",
+          "source_file_path": "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py",
+          "source_line_ref": "cn04.py:1019-1021"
+        }
+      ],
+      "claim": "Later levels use GreyMasking but keep the same selected-sprite manipulation surface.",
+      "finding_id": "cn04_later_levels_add_masking_but_preserve_sprite_manipulation_surface"
+    }
+  ],
+  "generated_at": "2026-05-22T02:49:45.248056+00:00",
+  "input_artifacts": [
+    "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py"
+  ],
+  "kaggle_submission_attempted": false,
+  "kind": "object_substrate_v0_cn04_perception_audit",
+  "lane": "object_substrate_v0",
+  "ls20_substrate_immutable": true,
+  "no_general_agent_claim": true,
+  "no_general_arc_agi_3_claim": true,
+  "no_private_eval_claim": true,
+  "no_score_improvement_claim": true,
+  "no_third_game_capability_claim": true,
+  "official_run_attempted": false,
+  "paper_lane_immutable": false,
+  "planner_attempt": false,
+  "planner_v0_immutable": true,
+  "result": "third_ontology_characterized:click_selected_sprite_manipulation",
+  "result_citations": [
+    "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py"
+  ],
+  "schema_version": "v0",
+  "slice_scope": "gamma3a_third_game_substrate_audit",
+  "source_inspection_mode": "local_static",
+  "target_game": "cn04",
+  "tr87_substrate_immutable": true
+}

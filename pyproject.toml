@@ -1,0 +1,29 @@
+[project]
+name = "arc3-agent"
+version = "0.1.0"
+description = "Action-efficient ARC-AGI-3 research agent scaffold"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[project.optional-dependencies]
+arc = [
+    "arc-agi==0.9.8",
+]
+paper = [
+    "pypdf>=6.10.0",
+    "reportlab>=4.4.9",
+]
+test = [
+    "pytest>=8.0.0",
+    "jsonschema>=4.0.0",
+    "pypdf>=6.10.0",
+    "reportlab>=4.4.9",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+markers = [
+    "slow: marks tests as slow integration proofs (deselect with '-m \"not slow\"')",
+]

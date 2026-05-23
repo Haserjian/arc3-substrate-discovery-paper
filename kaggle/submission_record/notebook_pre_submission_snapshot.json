@@ -1,0 +1,37 @@
+{
+  "claim_boundaries": {
+    "kaggle_submission_status": "not_submitted",
+    "linked_kaggle_score": 0.0,
+    "no_general_arc_agi_3_claim": true,
+    "no_private_eval_claim": true,
+    "public_scorecards_are_not_kaggle_leaderboard_evidence": true
+  },
+  "file_count": 3,
+  "files": [
+    {
+      "path": "artifacts/kaggle_submission_preflight/kaggle_notebook_candidate/arc3_object_substrate_submission.ipynb",
+      "sha256": "92dfe6c2caed3dd95976ba2ae4c32b9c80a404a09469a5a7596d3ee30f87f322",
+      "size_bytes": 33639
+    },
+    {
+      "path": "artifacts/kaggle_submission_preflight/kaggle_notebook_candidate/my_agent.py",
+      "sha256": "34d94337a530e18a7f544114e6893879c4650fffce336ea6daaa83b43c2412c0",
+      "size_bytes": 27618
+    },
+    {
+      "path": "artifacts/kaggle_submission_preflight/kaggle_notebook_candidate/notebook_candidate_manifest.json",
+      "sha256": "b406080db3def5f3f728f9eed125c3f0f20ad6643822b0eab34e07143f5baec1",
+      "size_bytes": 1097
+    }
+  ],
+  "generated_at": "2026-05-21T23:36:05.133035+00:00",
+  "kaggle_notebook_url": "https://www.kaggle.com/code/timhaserjian/arc3-object-substrate-submission-candidate/edit",
+  "kaggle_submission_attempted": false,
+  "kind": "kaggle_notebook_pre_submission_snapshot",
+  "notes": [
+    "This snapshot records the exact notebook candidate imported into Kaggle before saving/submitting a version.",
+    "Final competition submission remains a separate action-time confirmation."
+  ],
+  "official_run_invoked": false,
+  "schema_version": "v0"
+}

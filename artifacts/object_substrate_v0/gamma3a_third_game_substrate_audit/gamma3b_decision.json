@@ -1,0 +1,54 @@
+{
+  "analysis_only": true,
+  "architecture_review_carried_forward": true,
+  "basic_extraction_failed": false,
+  "bounded_planner_path_looks_feasible": false,
+  "capability_attempt": false,
+  "citations": [
+    {
+      "artifact_path": "artifacts/object_substrate_v0/gamma3a_third_game_substrate_audit/game_selection.json"
+    },
+    {
+      "artifact_path": "artifacts/object_substrate_v0/gamma3a_third_game_substrate_audit/transferability_map_vs_ls20_tr87.json"
+    },
+    {
+      "artifact_path": "artifacts/object_substrate_v0/gamma3a_third_game_substrate_audit/substrate_gap_classification.json"
+    }
+  ],
+  "decision": "audit_only_sufficient",
+  "decision_reasoning": "The third ontology is characterized cleanly enough to strengthen R14 as method-transfer evidence, but gamma3a has no empirical cn04 trace, no coordinate-action model, and no local verifier. A capability attempt would be premature.",
+  "decision_rule_applied": {
+    "audit_only_sufficient_when_ontology_characterized_but_planner_high_risk": true,
+    "gamma3b_allowed_requires_bounded_planner_path": true,
+    "no_official_run": true
+  },
+  "distinct_ontology_added": true,
+  "generated_at": "2026-05-22T02:49:45.248056+00:00",
+  "kaggle_submission_attempted": false,
+  "kind": "object_substrate_v0_gamma3a_gamma3b_decision",
+  "lane": "object_substrate_v0",
+  "ls20_substrate_immutable": true,
+  "next_slice_recommendation": "update paper R14, then final polish unless Tim explicitly wants a cn04 capability slice",
+  "no_general_agent_claim": true,
+  "no_general_arc_agi_3_claim": true,
+  "no_private_eval_claim": true,
+  "no_score_improvement_claim": true,
+  "no_third_game_capability_claim": true,
+  "official_run_attempted": false,
+  "ontology_characterized": true,
+  "paper_lane_immutable": false,
+  "planner_attempt": false,
+  "planner_v0_immutable": true,
+  "r14_update_recommendation": "strong",
+  "remaining_gaps": [
+    "G3A-PERCEPTION",
+    "G3A-ACTION",
+    "G3A-GOAL",
+    "G3A-VERIFIER"
+  ],
+  "schema_version": "v0",
+  "slice_scope": "gamma3a_third_game_substrate_audit",
+  "source_inspection_mode": "local_static",
+  "target_game": "cn04",
+  "tr87_substrate_immutable": true
+}

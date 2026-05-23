@@ -1,0 +1,167 @@
+{
+  "analysis_only": true,
+  "architectural_implication": "Frame-format handling is not the blocker; ls20 level 2 now requires event semantics that include dynamic environment state and budgeted planning over refill/reset mechanics.",
+  "bounded_primitive_evaluation": {
+    "bounded_primitive_found": false,
+    "bounded_primitive_spec": {
+      "estimated_loc": 220,
+      "event_graph_path_validated": false,
+      "name": "dynamic_trigger_bound_sprite_automata",
+      "source_lines": [
+        "ls20.py:1674-1762",
+        "ls20.py:1851-1856",
+        "ls20.py:1958-1969"
+      ],
+      "substrate_modules_to_extend": [
+        "object_substrate_v0/local_counterfactual_simulator.py",
+        "object_substrate_v0/local_event_graph_planner.py"
+      ]
+    },
+    "criteria": {
+      "domain_well_defined": true,
+      "estimated_loc_under_150": false,
+      "event_graph_path_validated": false,
+      "single_run_observable": true,
+      "source_explicit": true
+    },
+    "definition": [
+      "source explicitly defines a specific named mechanic",
+      "mechanic can be added in fewer than about 150 LOC",
+      "local event graph with the primitive finds a reset-free level-2 path",
+      "primitive domain is well-defined",
+      "empirical signature is observable in a single official run"
+    ]
+  },
+  "bounded_primitive_found": false,
+  "bounded_primitive_spec": null,
+  "decision": "architecture_review_required",
+  "decision_reasoning": "A source-visible dynamic mechanic is missing from the event graph, but it fails bounded-primitive criteria because no path has been validated and estimated implementation exceeds the bounded slice.",
+  "decision_rule_applied": "source_visible_mechanic_not_bounded",
+  "eligibility_basis": "https://docs.arcprize.org/local-vs-online",
+  "event_graph_bug_found": true,
+  "generated_at": "2026-05-21T06:17:33.150355+00:00",
+  "kind": "object_substrate_v0_level2_source_mechanic_next_decision",
+  "lane": "object_substrate_v0",
+  "last_ls20_only_analysis_before_gamma2_pivot": true,
+  "next_slice_recommendation": "pivot_gamma2_with_architecture_review_notes",
+  "no_general_agent_claim": true,
+  "no_kaggle_claim": true,
+  "no_private_eval_claim": true,
+  "official_run_attempted": false,
+  "paper_lane_immutable": true,
+  "planner_patch_applied": false,
+  "planner_v0_immutable": true,
+  "schema_version": "v0",
+  "slice_scope": "level2_source_mechanic_review",
+  "source_inspection_mode": "local",
+  "source_license": "MIT",
+  "source_license_citation": "ls20.py:1",
+  "source_lines_inspected": [
+    {
+      "line_end": 35,
+      "line_start": 27,
+      "reason": "GameAction import surface",
+      "source_file_path": "arc3_agent/environment_files/ls20/9607627b/ls20.py",
+      "source_line_ref": "ls20.py:27-35"
+    },
+    {
+      "line_end": 858,
+      "line_start": 852,
+      "reason": "level-2 collectible, rotation trigger, target, and player start positions",
+      "source_file_path": "arc3_agent/environment_files/ls20/9607627b/ls20.py",
+      "source_line_ref": "ls20.py:852-858"
+    },
+    {
+      "line_end": 865,
+      "line_start": 865,
+      "reason": "level-2 StepCounter value",
+      "source_file_path": "arc3_agent/environment_files/ls20/9607627b/ls20.py",
+      "source_line_ref": "ls20.py:865"
+    },
+    {
+      "line_end": 871,
+      "line_start": 865,
+      "reason": "level-2 target and start form requirements",
+      "source_file_path": "arc3_agent/environment_files/ls20/9607627b/ls20.py",
+      "source_line_ref": "ls20.py:865-871"
+    },
+    {
+      "line_end": 1512,
+      "line_start": 1497,
+      "reason": "step counter current_steps and decrement semantics",
+      "source_file_path": "arc3_agent/environment_files/ls20/9607627b/ls20.py",
+      "source_line_ref": "ls20.py:1497-1512"
+    },
+    {
+      "line_end": 1762,
+      "line_start": 1674,
+      "reason": "dynamic trigger-bound sprite automata implementation",
+      "source_file_path": "arc3_agent/environment_files/ls20/9607627b/ls20.py",
+      "source_line_ref": "ls20.py:1674-1762"
+    },
+    {
+      "line_end": 1787,
+      "line_start": 1787,
+      "reason": "runtime available_actions declaration",
+      "source_file_path": "arc3_agent/environment_files/ls20/9607627b/ls20.py",
+      "source_line_ref": "ls20.py:1787"
+    },
+    {
+      "line_end": 1856,
+      "line_start": 1851,
+      "reason": "dynamic trigger-bound sprite registration",
+      "source_file_path": "arc3_agent/environment_files/ls20/9607627b/ls20.py",
+      "source_line_ref": "ls20.py:1851-1856"
+    },
+    {
+      "line_end": 1910,
+      "line_start": 1872,
+      "reason": "tile collision and state-modifier handler",
+      "source_file_path": "arc3_agent/environment_files/ls20/9607627b/ls20.py",
+      "source_line_ref": "ls20.py:1872-1910"
+    },
+    {
+      "line_end": 1887,
+      "line_start": 1882,
+      "reason": "target collision mismatch branch",
+      "source_file_path": "arc3_agent/environment_files/ls20/9607627b/ls20.py",
+      "source_line_ref": "ls20.py:1882-1887"
+    },
+    {
+      "line_end": 1892,
+      "line_start": 1888,
+      "reason": "collectible refill handler",
+      "source_file_path": "arc3_agent/environment_files/ls20/9607627b/ls20.py",
+      "source_line_ref": "ls20.py:1888-1892"
+    },
+    {
+      "line_end": 1957,
+      "line_start": 1943,
+      "reason": "step() action dispatch branch",
+      "source_file_path": "arc3_agent/environment_files/ls20/9607627b/ls20.py",
+      "source_line_ref": "ls20.py:1943-1957"
+    },
+    {
+      "line_end": 1969,
+      "line_start": 1958,
+      "reason": "dynamic trigger-bound sprites step before player collision resolution",
+      "source_file_path": "arc3_agent/environment_files/ls20/9607627b/ls20.py",
+      "source_line_ref": "ls20.py:1958-1969"
+    },
+    {
+      "line_end": 2005,
+      "line_start": 1972,
+      "reason": "reset branch after step counter expiry",
+      "source_file_path": "arc3_agent/environment_files/ls20/9607627b/ls20.py",
+      "source_line_ref": "ls20.py:1972-2005"
+    },
+    {
+      "line_end": 2060,
+      "line_start": 2039,
+      "reason": "target equality validation and level completion",
+      "source_file_path": "arc3_agent/environment_files/ls20/9607627b/ls20.py",
+      "source_line_ref": "ls20.py:2039-2060"
+    }
+  ],
+  "total_source_lines_inspected": 257
+}

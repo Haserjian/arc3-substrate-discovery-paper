@@ -1,0 +1,4529 @@
+{
+  "auto_iteration": false,
+  "coverage_complete": true,
+  "coverage_fraction": "20/20",
+  "coverage_probe": true,
+  "decision_rule": {
+    "coverage_complete_and_consistency_passes": "gamma2d_tr87_planner_attempt",
+    "empirical_source_disagreement": "halt_and_investigate_extractor_or_perception",
+    "partial_coverage_but_source_confirmed": "may_proceed_with_confidence_downgrade",
+    "unexpected_mid_game_mechanism": "document_new_substrate_gap"
+  },
+  "extended_transition_count": 100,
+  "generated_at": "2026-05-21T16:40:18.420432+00:00",
+  "kind": "object_substrate_v0_tr87_selector_probe_extended_action_effect_model",
+  "lane": "object_substrate_v0",
+  "ls20_substrate_immutable": true,
+  "missing_action_state_pairs": [],
+  "next_slice_recommendation": "gamma2d_tr87_planner_attempt",
+  "no_general_agent_claim": true,
+  "no_kaggle_claim": true,
+  "no_private_eval_claim": true,
+  "no_score_improvement_claim": true,
+  "non_claims": [
+    "This is not a tr87 planner attempt.",
+    "This is not a score-improvement claim.",
+    "No private-eval or Kaggle claim is made.",
+    "No general ARC-AGI-3 agent claim is made."
+  ],
+  "observed_action_state_pair_count": 20,
+  "official_run_attempted": true,
+  "paper_lane_immutable": true,
+  "per_action_coverage": {
+    "ACTION1": {
+      "action_id": 1,
+      "coverage_complete": true,
+      "observed_selector_count": 5,
+      "observed_selector_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "selector_count": 5
+    },
+    "ACTION2": {
+      "action_id": 2,
+      "coverage_complete": true,
+      "observed_selector_count": 5,
+      "observed_selector_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "selector_count": 5
+    },
+    "ACTION3": {
+      "action_id": 3,
+      "coverage_complete": true,
+      "observed_selector_count": 5,
+      "observed_selector_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "selector_count": 5
+    },
+    "ACTION4": {
+      "action_id": 4,
+      "coverage_complete": true,
+      "observed_selector_count": 5,
+      "observed_selector_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "selector_count": 5
+    }
+  },
+  "planner_attempt": false,
+  "possible_action_state_pair_count": 20,
+  "prior_model_artifact": "artifacts/object_substrate_v0/tr87_action_effect_model/action_effect_model.json",
+  "prior_transition_count": 80,
+  "probe_effect_entries": [
+    {
+      "action_budget_delta": null,
+      "action_id": 1,
+      "action_name": "ACTION1",
+      "after_state": {
+        "action_budget_pixels_remaining": 64,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              15,
+              59,
+              19,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              15,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              15,
+              48,
+              19,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          15,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 1,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          15,
+          52
+        ],
+        "selector_index": 0,
+        "selector_span": 5
+      },
+      "before_state": {
+        "action_budget_pixels_remaining": 64,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              15,
+              59,
+              19,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              15,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              15,
+              48,
+              19,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          15,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 0,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          15,
+          52
+        ],
+        "selector_index": 0,
+        "selector_span": 5
+      },
+      "confidence": "high",
+      "effect_category": "sequence_state_change",
+      "no_observable_change": false,
+      "probe_sequence_index": 0,
+      "provenance": [
+        {
+          "probe_role": "coverage_probe",
+          "source": "tr87_selector_probe_step_receipt",
+          "step_receipt": "steps/step_000.json"
+        },
+        {
+          "source": "tr87_source_oracle",
+          "source_file_path": "arc3_agent/environment_files/tr87/cd924810/tr87.py",
+          "source_lines": [
+            "tr87.py:1005-1014",
+            "tr87.py:1024-1029"
+          ]
+        },
+        {
+          "artifact": "artifacts/object_substrate_v0/tr87_action_effect_model/known_gaps.json",
+          "source": "gamma2c_known_gaps"
+        }
+      ],
+      "rule_context_change": {
+        "basis": "no rule-context visual state modeled in selector coverage probe",
+        "changed": false
+      },
+      "selector_position_change": {
+        "after_position": [
+          15,
+          52
+        ],
+        "after_selector_index": 0,
+        "before_position": [
+          15,
+          52
+        ],
+        "before_selector_index": 0,
+        "changed": false,
+        "selector_delta_mod": 0,
+        "selector_slot_count": 5
+      },
+      "sequence_state_change": {
+        "changed": true,
+        "changed_slot_indexes": [
+          0
+        ]
+      },
+      "state_class": "selector_index:0",
+      "trace_index": 0
+    },
+    {
+      "action_budget_delta": null,
+      "action_id": 2,
+      "action_name": "ACTION2",
+      "after_state": {
+        "action_budget_pixels_remaining": 63,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              15,
+              59,
+              19,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              15,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              15,
+              48,
+              19,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          15,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 2,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          15,
+          52
+        ],
+        "selector_index": 0,
+        "selector_span": 5
+      },
+      "before_state": {
+        "action_budget_pixels_remaining": 64,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              15,
+              59,
+              19,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              15,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              15,
+              48,
+              19,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          15,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 1,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          15,
+          52
+        ],
+        "selector_index": 0,
+        "selector_span": 5
+      },
+      "confidence": "high",
+      "effect_category": "sequence_state_change",
+      "no_observable_change": false,
+      "probe_sequence_index": 1,
+      "provenance": [
+        {
+          "probe_role": "coverage_probe",
+          "source": "tr87_selector_probe_step_receipt",
+          "step_receipt": "steps/step_001.json"
+        },
+        {
+          "source": "tr87_source_oracle",
+          "source_file_path": "arc3_agent/environment_files/tr87/cd924810/tr87.py",
+          "source_lines": [
+            "tr87.py:1005-1014",
+            "tr87.py:1024-1029"
+          ]
+        },
+        {
+          "artifact": "artifacts/object_substrate_v0/tr87_action_effect_model/known_gaps.json",
+          "source": "gamma2c_known_gaps"
+        }
+      ],
+      "rule_context_change": {
+        "basis": "no rule-context visual state modeled in selector coverage probe",
+        "changed": false
+      },
+      "selector_position_change": {
+        "after_position": [
+          15,
+          52
+        ],
+        "after_selector_index": 0,
+        "before_position": [
+          15,
+          52
+        ],
+        "before_selector_index": 0,
+        "changed": false,
+        "selector_delta_mod": 0,
+        "selector_slot_count": 5
+      },
+      "sequence_state_change": {
+        "changed": true,
+        "changed_slot_indexes": [
+          0
+        ]
+      },
+      "state_class": "selector_index:0",
+      "trace_index": 1
+    },
+    {
+      "action_budget_delta": null,
+      "action_id": 4,
+      "action_name": "ACTION4",
+      "after_state": {
+        "action_budget_pixels_remaining": 63,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              22,
+              59,
+              26,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              22,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              22,
+              48,
+              26,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          22,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 3,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          22,
+          52
+        ],
+        "selector_index": 1,
+        "selector_span": 5
+      },
+      "before_state": {
+        "action_budget_pixels_remaining": 63,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              15,
+              59,
+              19,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              15,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              15,
+              48,
+              19,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          15,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 2,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          15,
+          52
+        ],
+        "selector_index": 0,
+        "selector_span": 5
+      },
+      "confidence": "high",
+      "effect_category": "selector_position_change",
+      "no_observable_change": false,
+      "probe_sequence_index": 2,
+      "provenance": [
+        {
+          "probe_role": "coverage_probe",
+          "source": "tr87_selector_probe_step_receipt",
+          "step_receipt": "steps/step_002.json"
+        },
+        {
+          "source": "tr87_source_oracle",
+          "source_file_path": "arc3_agent/environment_files/tr87/cd924810/tr87.py",
+          "source_lines": [
+            "tr87.py:996-1004"
+          ]
+        },
+        {
+          "artifact": "artifacts/object_substrate_v0/tr87_action_effect_model/known_gaps.json",
+          "source": "gamma2c_known_gaps"
+        }
+      ],
+      "rule_context_change": {
+        "basis": "no rule-context visual state modeled in selector coverage probe",
+        "changed": false
+      },
+      "selector_position_change": {
+        "after_position": [
+          22,
+          52
+        ],
+        "after_selector_index": 1,
+        "before_position": [
+          15,
+          52
+        ],
+        "before_selector_index": 0,
+        "changed": true,
+        "selector_delta_mod": 1,
+        "selector_slot_count": 5
+      },
+      "sequence_state_change": {
+        "changed": false,
+        "changed_slot_indexes": []
+      },
+      "state_class": "selector_index:0",
+      "trace_index": 2
+    },
+    {
+      "action_budget_delta": null,
+      "action_id": 1,
+      "action_name": "ACTION1",
+      "after_state": {
+        "action_budget_pixels_remaining": 62,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              22,
+              59,
+              26,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              22,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              22,
+              48,
+              26,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          22,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 4,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          22,
+          52
+        ],
+        "selector_index": 1,
+        "selector_span": 5
+      },
+      "before_state": {
+        "action_budget_pixels_remaining": 63,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              22,
+              59,
+              26,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              22,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              22,
+              48,
+              26,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          22,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 3,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          22,
+          52
+        ],
+        "selector_index": 1,
+        "selector_span": 5
+      },
+      "confidence": "high",
+      "effect_category": "sequence_state_change",
+      "no_observable_change": false,
+      "probe_sequence_index": 3,
+      "provenance": [
+        {
+          "probe_role": "coverage_probe",
+          "source": "tr87_selector_probe_step_receipt",
+          "step_receipt": "steps/step_003.json"
+        },
+        {
+          "source": "tr87_source_oracle",
+          "source_file_path": "arc3_agent/environment_files/tr87/cd924810/tr87.py",
+          "source_lines": [
+            "tr87.py:1005-1014",
+            "tr87.py:1024-1029"
+          ]
+        },
+        {
+          "artifact": "artifacts/object_substrate_v0/tr87_action_effect_model/known_gaps.json",
+          "source": "gamma2c_known_gaps"
+        }
+      ],
+      "rule_context_change": {
+        "basis": "no rule-context visual state modeled in selector coverage probe",
+        "changed": false
+      },
+      "selector_position_change": {
+        "after_position": [
+          22,
+          52
+        ],
+        "after_selector_index": 1,
+        "before_position": [
+          22,
+          52
+        ],
+        "before_selector_index": 1,
+        "changed": false,
+        "selector_delta_mod": 0,
+        "selector_slot_count": 5
+      },
+      "sequence_state_change": {
+        "changed": true,
+        "changed_slot_indexes": [
+          1
+        ]
+      },
+      "state_class": "selector_index:1",
+      "trace_index": 3
+    },
+    {
+      "action_budget_delta": null,
+      "action_id": 2,
+      "action_name": "ACTION2",
+      "after_state": {
+        "action_budget_pixels_remaining": 62,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              22,
+              59,
+              26,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              22,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              22,
+              48,
+              26,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          22,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 5,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          22,
+          52
+        ],
+        "selector_index": 1,
+        "selector_span": 5
+      },
+      "before_state": {
+        "action_budget_pixels_remaining": 62,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              22,
+              59,
+              26,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              22,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              22,
+              48,
+              26,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          22,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 4,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          22,
+          52
+        ],
+        "selector_index": 1,
+        "selector_span": 5
+      },
+      "confidence": "high",
+      "effect_category": "sequence_state_change",
+      "no_observable_change": false,
+      "probe_sequence_index": 4,
+      "provenance": [
+        {
+          "probe_role": "coverage_probe",
+          "source": "tr87_selector_probe_step_receipt",
+          "step_receipt": "steps/step_004.json"
+        },
+        {
+          "source": "tr87_source_oracle",
+          "source_file_path": "arc3_agent/environment_files/tr87/cd924810/tr87.py",
+          "source_lines": [
+            "tr87.py:1005-1014",
+            "tr87.py:1024-1029"
+          ]
+        },
+        {
+          "artifact": "artifacts/object_substrate_v0/tr87_action_effect_model/known_gaps.json",
+          "source": "gamma2c_known_gaps"
+        }
+      ],
+      "rule_context_change": {
+        "basis": "no rule-context visual state modeled in selector coverage probe",
+        "changed": false
+      },
+      "selector_position_change": {
+        "after_position": [
+          22,
+          52
+        ],
+        "after_selector_index": 1,
+        "before_position": [
+          22,
+          52
+        ],
+        "before_selector_index": 1,
+        "changed": false,
+        "selector_delta_mod": 0,
+        "selector_slot_count": 5
+      },
+      "sequence_state_change": {
+        "changed": true,
+        "changed_slot_indexes": [
+          1
+        ]
+      },
+      "state_class": "selector_index:1",
+      "trace_index": 4
+    },
+    {
+      "action_budget_delta": null,
+      "action_id": 4,
+      "action_name": "ACTION4",
+      "after_state": {
+        "action_budget_pixels_remaining": 61,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              29,
+              59,
+              33,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              29,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              29,
+              48,
+              33,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          29,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 6,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          29,
+          52
+        ],
+        "selector_index": 2,
+        "selector_span": 5
+      },
+      "before_state": {
+        "action_budget_pixels_remaining": 62,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              22,
+              59,
+              26,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              22,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              22,
+              48,
+              26,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          22,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 5,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          22,
+          52
+        ],
+        "selector_index": 1,
+        "selector_span": 5
+      },
+      "confidence": "high",
+      "effect_category": "selector_position_change",
+      "no_observable_change": false,
+      "probe_sequence_index": 5,
+      "provenance": [
+        {
+          "probe_role": "coverage_probe",
+          "source": "tr87_selector_probe_step_receipt",
+          "step_receipt": "steps/step_005.json"
+        },
+        {
+          "source": "tr87_source_oracle",
+          "source_file_path": "arc3_agent/environment_files/tr87/cd924810/tr87.py",
+          "source_lines": [
+            "tr87.py:996-1004"
+          ]
+        },
+        {
+          "artifact": "artifacts/object_substrate_v0/tr87_action_effect_model/known_gaps.json",
+          "source": "gamma2c_known_gaps"
+        }
+      ],
+      "rule_context_change": {
+        "basis": "no rule-context visual state modeled in selector coverage probe",
+        "changed": false
+      },
+      "selector_position_change": {
+        "after_position": [
+          29,
+          52
+        ],
+        "after_selector_index": 2,
+        "before_position": [
+          22,
+          52
+        ],
+        "before_selector_index": 1,
+        "changed": true,
+        "selector_delta_mod": 1,
+        "selector_slot_count": 5
+      },
+      "sequence_state_change": {
+        "changed": false,
+        "changed_slot_indexes": []
+      },
+      "state_class": "selector_index:1",
+      "trace_index": 5
+    },
+    {
+      "action_budget_delta": null,
+      "action_id": 1,
+      "action_name": "ACTION1",
+      "after_state": {
+        "action_budget_pixels_remaining": 61,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              29,
+              59,
+              33,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              29,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              29,
+              48,
+              33,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          29,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 7,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          29,
+          52
+        ],
+        "selector_index": 2,
+        "selector_span": 5
+      },
+      "before_state": {
+        "action_budget_pixels_remaining": 61,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              29,
+              59,
+              33,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              29,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              29,
+              48,
+              33,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          29,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 6,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          29,
+          52
+        ],
+        "selector_index": 2,
+        "selector_span": 5
+      },
+      "confidence": "high",
+      "effect_category": "sequence_state_change",
+      "no_observable_change": false,
+      "probe_sequence_index": 6,
+      "provenance": [
+        {
+          "probe_role": "coverage_probe",
+          "source": "tr87_selector_probe_step_receipt",
+          "step_receipt": "steps/step_006.json"
+        },
+        {
+          "source": "tr87_source_oracle",
+          "source_file_path": "arc3_agent/environment_files/tr87/cd924810/tr87.py",
+          "source_lines": [
+            "tr87.py:1005-1014",
+            "tr87.py:1024-1029"
+          ]
+        },
+        {
+          "artifact": "artifacts/object_substrate_v0/tr87_action_effect_model/known_gaps.json",
+          "source": "gamma2c_known_gaps"
+        }
+      ],
+      "rule_context_change": {
+        "basis": "no rule-context visual state modeled in selector coverage probe",
+        "changed": false
+      },
+      "selector_position_change": {
+        "after_position": [
+          29,
+          52
+        ],
+        "after_selector_index": 2,
+        "before_position": [
+          29,
+          52
+        ],
+        "before_selector_index": 2,
+        "changed": false,
+        "selector_delta_mod": 0,
+        "selector_slot_count": 5
+      },
+      "sequence_state_change": {
+        "changed": true,
+        "changed_slot_indexes": [
+          2
+        ]
+      },
+      "state_class": "selector_index:2",
+      "trace_index": 6
+    },
+    {
+      "action_budget_delta": null,
+      "action_id": 2,
+      "action_name": "ACTION2",
+      "after_state": {
+        "action_budget_pixels_remaining": 60,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              29,
+              59,
+              33,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              29,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              29,
+              48,
+              33,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          29,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 8,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          29,
+          52
+        ],
+        "selector_index": 2,
+        "selector_span": 5
+      },
+      "before_state": {
+        "action_budget_pixels_remaining": 61,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              29,
+              59,
+              33,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              29,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              29,
+              48,
+              33,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          29,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 7,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          29,
+          52
+        ],
+        "selector_index": 2,
+        "selector_span": 5
+      },
+      "confidence": "high",
+      "effect_category": "sequence_state_change",
+      "no_observable_change": false,
+      "probe_sequence_index": 7,
+      "provenance": [
+        {
+          "probe_role": "coverage_probe",
+          "source": "tr87_selector_probe_step_receipt",
+          "step_receipt": "steps/step_007.json"
+        },
+        {
+          "source": "tr87_source_oracle",
+          "source_file_path": "arc3_agent/environment_files/tr87/cd924810/tr87.py",
+          "source_lines": [
+            "tr87.py:1005-1014",
+            "tr87.py:1024-1029"
+          ]
+        },
+        {
+          "artifact": "artifacts/object_substrate_v0/tr87_action_effect_model/known_gaps.json",
+          "source": "gamma2c_known_gaps"
+        }
+      ],
+      "rule_context_change": {
+        "basis": "no rule-context visual state modeled in selector coverage probe",
+        "changed": false
+      },
+      "selector_position_change": {
+        "after_position": [
+          29,
+          52
+        ],
+        "after_selector_index": 2,
+        "before_position": [
+          29,
+          52
+        ],
+        "before_selector_index": 2,
+        "changed": false,
+        "selector_delta_mod": 0,
+        "selector_slot_count": 5
+      },
+      "sequence_state_change": {
+        "changed": true,
+        "changed_slot_indexes": [
+          2
+        ]
+      },
+      "state_class": "selector_index:2",
+      "trace_index": 7
+    },
+    {
+      "action_budget_delta": null,
+      "action_id": 4,
+      "action_name": "ACTION4",
+      "after_state": {
+        "action_budget_pixels_remaining": 60,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              36,
+              59,
+              40,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              36,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              36,
+              48,
+              40,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          36,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 9,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          36,
+          52
+        ],
+        "selector_index": 3,
+        "selector_span": 5
+      },
+      "before_state": {
+        "action_budget_pixels_remaining": 60,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              29,
+              59,
+              33,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              29,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              29,
+              48,
+              33,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          29,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 8,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          29,
+          52
+        ],
+        "selector_index": 2,
+        "selector_span": 5
+      },
+      "confidence": "high",
+      "effect_category": "selector_position_change",
+      "no_observable_change": false,
+      "probe_sequence_index": 8,
+      "provenance": [
+        {
+          "probe_role": "coverage_probe",
+          "source": "tr87_selector_probe_step_receipt",
+          "step_receipt": "steps/step_008.json"
+        },
+        {
+          "source": "tr87_source_oracle",
+          "source_file_path": "arc3_agent/environment_files/tr87/cd924810/tr87.py",
+          "source_lines": [
+            "tr87.py:996-1004"
+          ]
+        },
+        {
+          "artifact": "artifacts/object_substrate_v0/tr87_action_effect_model/known_gaps.json",
+          "source": "gamma2c_known_gaps"
+        }
+      ],
+      "rule_context_change": {
+        "basis": "no rule-context visual state modeled in selector coverage probe",
+        "changed": false
+      },
+      "selector_position_change": {
+        "after_position": [
+          36,
+          52
+        ],
+        "after_selector_index": 3,
+        "before_position": [
+          29,
+          52
+        ],
+        "before_selector_index": 2,
+        "changed": true,
+        "selector_delta_mod": 1,
+        "selector_slot_count": 5
+      },
+      "sequence_state_change": {
+        "changed": false,
+        "changed_slot_indexes": []
+      },
+      "state_class": "selector_index:2",
+      "trace_index": 8
+    },
+    {
+      "action_budget_delta": null,
+      "action_id": 1,
+      "action_name": "ACTION1",
+      "after_state": {
+        "action_budget_pixels_remaining": 59,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              36,
+              59,
+              40,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              36,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              36,
+              48,
+              40,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          36,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 10,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          36,
+          52
+        ],
+        "selector_index": 3,
+        "selector_span": 5
+      },
+      "before_state": {
+        "action_budget_pixels_remaining": 60,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              36,
+              59,
+              40,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              36,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              36,
+              48,
+              40,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          36,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 9,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          36,
+          52
+        ],
+        "selector_index": 3,
+        "selector_span": 5
+      },
+      "confidence": "high",
+      "effect_category": "sequence_state_change",
+      "no_observable_change": false,
+      "probe_sequence_index": 9,
+      "provenance": [
+        {
+          "probe_role": "coverage_probe",
+          "source": "tr87_selector_probe_step_receipt",
+          "step_receipt": "steps/step_009.json"
+        },
+        {
+          "source": "tr87_source_oracle",
+          "source_file_path": "arc3_agent/environment_files/tr87/cd924810/tr87.py",
+          "source_lines": [
+            "tr87.py:1005-1014",
+            "tr87.py:1024-1029"
+          ]
+        },
+        {
+          "artifact": "artifacts/object_substrate_v0/tr87_action_effect_model/known_gaps.json",
+          "source": "gamma2c_known_gaps"
+        }
+      ],
+      "rule_context_change": {
+        "basis": "no rule-context visual state modeled in selector coverage probe",
+        "changed": false
+      },
+      "selector_position_change": {
+        "after_position": [
+          36,
+          52
+        ],
+        "after_selector_index": 3,
+        "before_position": [
+          36,
+          52
+        ],
+        "before_selector_index": 3,
+        "changed": false,
+        "selector_delta_mod": 0,
+        "selector_slot_count": 5
+      },
+      "sequence_state_change": {
+        "changed": true,
+        "changed_slot_indexes": [
+          3
+        ]
+      },
+      "state_class": "selector_index:3",
+      "trace_index": 9
+    },
+    {
+      "action_budget_delta": null,
+      "action_id": 2,
+      "action_name": "ACTION2",
+      "after_state": {
+        "action_budget_pixels_remaining": 59,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              36,
+              59,
+              40,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              36,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              36,
+              48,
+              40,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          36,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 11,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          36,
+          52
+        ],
+        "selector_index": 3,
+        "selector_span": 5
+      },
+      "before_state": {
+        "action_budget_pixels_remaining": 59,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              36,
+              59,
+              40,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              36,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              36,
+              48,
+              40,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          36,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 10,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          36,
+          52
+        ],
+        "selector_index": 3,
+        "selector_span": 5
+      },
+      "confidence": "high",
+      "effect_category": "sequence_state_change",
+      "no_observable_change": false,
+      "probe_sequence_index": 10,
+      "provenance": [
+        {
+          "probe_role": "coverage_probe",
+          "source": "tr87_selector_probe_step_receipt",
+          "step_receipt": "steps/step_010.json"
+        },
+        {
+          "source": "tr87_source_oracle",
+          "source_file_path": "arc3_agent/environment_files/tr87/cd924810/tr87.py",
+          "source_lines": [
+            "tr87.py:1005-1014",
+            "tr87.py:1024-1029"
+          ]
+        },
+        {
+          "artifact": "artifacts/object_substrate_v0/tr87_action_effect_model/known_gaps.json",
+          "source": "gamma2c_known_gaps"
+        }
+      ],
+      "rule_context_change": {
+        "basis": "no rule-context visual state modeled in selector coverage probe",
+        "changed": false
+      },
+      "selector_position_change": {
+        "after_position": [
+          36,
+          52
+        ],
+        "after_selector_index": 3,
+        "before_position": [
+          36,
+          52
+        ],
+        "before_selector_index": 3,
+        "changed": false,
+        "selector_delta_mod": 0,
+        "selector_slot_count": 5
+      },
+      "sequence_state_change": {
+        "changed": true,
+        "changed_slot_indexes": [
+          3
+        ]
+      },
+      "state_class": "selector_index:3",
+      "trace_index": 10
+    },
+    {
+      "action_budget_delta": null,
+      "action_id": 4,
+      "action_name": "ACTION4",
+      "after_state": {
+        "action_budget_pixels_remaining": 58,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              43,
+              59,
+              47,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              43,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              43,
+              48,
+              47,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          43,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 12,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          43,
+          52
+        ],
+        "selector_index": 4,
+        "selector_span": 5
+      },
+      "before_state": {
+        "action_budget_pixels_remaining": 59,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              36,
+              59,
+              40,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              36,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              36,
+              48,
+              40,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          36,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 11,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          36,
+          52
+        ],
+        "selector_index": 3,
+        "selector_span": 5
+      },
+      "confidence": "high",
+      "effect_category": "selector_position_change",
+      "no_observable_change": false,
+      "probe_sequence_index": 11,
+      "provenance": [
+        {
+          "probe_role": "coverage_probe",
+          "source": "tr87_selector_probe_step_receipt",
+          "step_receipt": "steps/step_011.json"
+        },
+        {
+          "source": "tr87_source_oracle",
+          "source_file_path": "arc3_agent/environment_files/tr87/cd924810/tr87.py",
+          "source_lines": [
+            "tr87.py:996-1004"
+          ]
+        },
+        {
+          "artifact": "artifacts/object_substrate_v0/tr87_action_effect_model/known_gaps.json",
+          "source": "gamma2c_known_gaps"
+        }
+      ],
+      "rule_context_change": {
+        "basis": "no rule-context visual state modeled in selector coverage probe",
+        "changed": false
+      },
+      "selector_position_change": {
+        "after_position": [
+          43,
+          52
+        ],
+        "after_selector_index": 4,
+        "before_position": [
+          36,
+          52
+        ],
+        "before_selector_index": 3,
+        "changed": true,
+        "selector_delta_mod": 1,
+        "selector_slot_count": 5
+      },
+      "sequence_state_change": {
+        "changed": false,
+        "changed_slot_indexes": []
+      },
+      "state_class": "selector_index:3",
+      "trace_index": 11
+    },
+    {
+      "action_budget_delta": null,
+      "action_id": 1,
+      "action_name": "ACTION1",
+      "after_state": {
+        "action_budget_pixels_remaining": 58,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              43,
+              59,
+              47,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              43,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              43,
+              48,
+              47,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          43,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 13,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          43,
+          52
+        ],
+        "selector_index": 4,
+        "selector_span": 5
+      },
+      "before_state": {
+        "action_budget_pixels_remaining": 58,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              43,
+              59,
+              47,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              43,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              43,
+              48,
+              47,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          43,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 12,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          43,
+          52
+        ],
+        "selector_index": 4,
+        "selector_span": 5
+      },
+      "confidence": "high",
+      "effect_category": "sequence_state_change",
+      "no_observable_change": false,
+      "probe_sequence_index": 12,
+      "provenance": [
+        {
+          "probe_role": "coverage_probe",
+          "source": "tr87_selector_probe_step_receipt",
+          "step_receipt": "steps/step_012.json"
+        },
+        {
+          "source": "tr87_source_oracle",
+          "source_file_path": "arc3_agent/environment_files/tr87/cd924810/tr87.py",
+          "source_lines": [
+            "tr87.py:1005-1014",
+            "tr87.py:1024-1029"
+          ]
+        },
+        {
+          "artifact": "artifacts/object_substrate_v0/tr87_action_effect_model/known_gaps.json",
+          "source": "gamma2c_known_gaps"
+        }
+      ],
+      "rule_context_change": {
+        "basis": "no rule-context visual state modeled in selector coverage probe",
+        "changed": false
+      },
+      "selector_position_change": {
+        "after_position": [
+          43,
+          52
+        ],
+        "after_selector_index": 4,
+        "before_position": [
+          43,
+          52
+        ],
+        "before_selector_index": 4,
+        "changed": false,
+        "selector_delta_mod": 0,
+        "selector_slot_count": 5
+      },
+      "sequence_state_change": {
+        "changed": true,
+        "changed_slot_indexes": [
+          4
+        ]
+      },
+      "state_class": "selector_index:4",
+      "trace_index": 12
+    },
+    {
+      "action_budget_delta": null,
+      "action_id": 2,
+      "action_name": "ACTION2",
+      "after_state": {
+        "action_budget_pixels_remaining": 57,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              43,
+              59,
+              47,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              43,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              43,
+              48,
+              47,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          43,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 14,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          43,
+          52
+        ],
+        "selector_index": 4,
+        "selector_span": 5
+      },
+      "before_state": {
+        "action_budget_pixels_remaining": 58,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              43,
+              59,
+              47,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              43,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              43,
+              48,
+              47,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          43,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 13,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          43,
+          52
+        ],
+        "selector_index": 4,
+        "selector_span": 5
+      },
+      "confidence": "high",
+      "effect_category": "sequence_state_change",
+      "no_observable_change": false,
+      "probe_sequence_index": 13,
+      "provenance": [
+        {
+          "probe_role": "coverage_probe",
+          "source": "tr87_selector_probe_step_receipt",
+          "step_receipt": "steps/step_013.json"
+        },
+        {
+          "source": "tr87_source_oracle",
+          "source_file_path": "arc3_agent/environment_files/tr87/cd924810/tr87.py",
+          "source_lines": [
+            "tr87.py:1005-1014",
+            "tr87.py:1024-1029"
+          ]
+        },
+        {
+          "artifact": "artifacts/object_substrate_v0/tr87_action_effect_model/known_gaps.json",
+          "source": "gamma2c_known_gaps"
+        }
+      ],
+      "rule_context_change": {
+        "basis": "no rule-context visual state modeled in selector coverage probe",
+        "changed": false
+      },
+      "selector_position_change": {
+        "after_position": [
+          43,
+          52
+        ],
+        "after_selector_index": 4,
+        "before_position": [
+          43,
+          52
+        ],
+        "before_selector_index": 4,
+        "changed": false,
+        "selector_delta_mod": 0,
+        "selector_slot_count": 5
+      },
+      "sequence_state_change": {
+        "changed": true,
+        "changed_slot_indexes": [
+          4
+        ]
+      },
+      "state_class": "selector_index:4",
+      "trace_index": 13
+    },
+    {
+      "action_budget_delta": null,
+      "action_id": 4,
+      "action_name": "ACTION4",
+      "after_state": {
+        "action_budget_pixels_remaining": 57,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              15,
+              59,
+              19,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              15,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              15,
+              48,
+              19,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          15,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 15,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          15,
+          52
+        ],
+        "selector_index": 0,
+        "selector_span": 5
+      },
+      "before_state": {
+        "action_budget_pixels_remaining": 57,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              43,
+              59,
+              47,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              43,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              43,
+              48,
+              47,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          43,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 14,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          43,
+          52
+        ],
+        "selector_index": 4,
+        "selector_span": 5
+      },
+      "confidence": "high",
+      "effect_category": "selector_position_change",
+      "no_observable_change": false,
+      "probe_sequence_index": 14,
+      "provenance": [
+        {
+          "probe_role": "coverage_probe",
+          "source": "tr87_selector_probe_step_receipt",
+          "step_receipt": "steps/step_014.json"
+        },
+        {
+          "source": "tr87_source_oracle",
+          "source_file_path": "arc3_agent/environment_files/tr87/cd924810/tr87.py",
+          "source_lines": [
+            "tr87.py:996-1004"
+          ]
+        },
+        {
+          "artifact": "artifacts/object_substrate_v0/tr87_action_effect_model/known_gaps.json",
+          "source": "gamma2c_known_gaps"
+        }
+      ],
+      "rule_context_change": {
+        "basis": "no rule-context visual state modeled in selector coverage probe",
+        "changed": false
+      },
+      "selector_position_change": {
+        "after_position": [
+          15,
+          52
+        ],
+        "after_selector_index": 0,
+        "before_position": [
+          43,
+          52
+        ],
+        "before_selector_index": 4,
+        "changed": true,
+        "selector_delta_mod": 1,
+        "selector_slot_count": 5
+      },
+      "sequence_state_change": {
+        "changed": false,
+        "changed_slot_indexes": []
+      },
+      "state_class": "selector_index:4",
+      "trace_index": 14
+    },
+    {
+      "action_budget_delta": null,
+      "action_id": 3,
+      "action_name": "ACTION3",
+      "after_state": {
+        "action_budget_pixels_remaining": 56,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              43,
+              59,
+              47,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              43,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              43,
+              48,
+              47,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          43,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 16,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          43,
+          52
+        ],
+        "selector_index": 4,
+        "selector_span": 5
+      },
+      "before_state": {
+        "action_budget_pixels_remaining": 57,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              15,
+              59,
+              19,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              15,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              15,
+              48,
+              19,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          15,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 15,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          15,
+          52
+        ],
+        "selector_index": 0,
+        "selector_span": 5
+      },
+      "confidence": "high",
+      "effect_category": "selector_position_change",
+      "no_observable_change": false,
+      "probe_sequence_index": 15,
+      "provenance": [
+        {
+          "probe_role": "coverage_probe",
+          "source": "tr87_selector_probe_step_receipt",
+          "step_receipt": "steps/step_015.json"
+        },
+        {
+          "source": "tr87_source_oracle",
+          "source_file_path": "arc3_agent/environment_files/tr87/cd924810/tr87.py",
+          "source_lines": [
+            "tr87.py:996-1004"
+          ]
+        },
+        {
+          "artifact": "artifacts/object_substrate_v0/tr87_action_effect_model/known_gaps.json",
+          "source": "gamma2c_known_gaps"
+        }
+      ],
+      "rule_context_change": {
+        "basis": "no rule-context visual state modeled in selector coverage probe",
+        "changed": false
+      },
+      "selector_position_change": {
+        "after_position": [
+          43,
+          52
+        ],
+        "after_selector_index": 4,
+        "before_position": [
+          15,
+          52
+        ],
+        "before_selector_index": 0,
+        "changed": true,
+        "selector_delta_mod": 4,
+        "selector_slot_count": 5
+      },
+      "sequence_state_change": {
+        "changed": false,
+        "changed_slot_indexes": []
+      },
+      "state_class": "selector_index:0",
+      "trace_index": 15
+    },
+    {
+      "action_budget_delta": null,
+      "action_id": 3,
+      "action_name": "ACTION3",
+      "after_state": {
+        "action_budget_pixels_remaining": 56,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              36,
+              59,
+              40,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              36,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              36,
+              48,
+              40,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          36,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 17,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          36,
+          52
+        ],
+        "selector_index": 3,
+        "selector_span": 5
+      },
+      "before_state": {
+        "action_budget_pixels_remaining": 56,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              43,
+              59,
+              47,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              43,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              43,
+              48,
+              47,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          43,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 16,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          43,
+          52
+        ],
+        "selector_index": 4,
+        "selector_span": 5
+      },
+      "confidence": "high",
+      "effect_category": "selector_position_change",
+      "no_observable_change": false,
+      "probe_sequence_index": 16,
+      "provenance": [
+        {
+          "probe_role": "coverage_probe",
+          "source": "tr87_selector_probe_step_receipt",
+          "step_receipt": "steps/step_016.json"
+        },
+        {
+          "source": "tr87_source_oracle",
+          "source_file_path": "arc3_agent/environment_files/tr87/cd924810/tr87.py",
+          "source_lines": [
+            "tr87.py:996-1004"
+          ]
+        },
+        {
+          "artifact": "artifacts/object_substrate_v0/tr87_action_effect_model/known_gaps.json",
+          "source": "gamma2c_known_gaps"
+        }
+      ],
+      "rule_context_change": {
+        "basis": "no rule-context visual state modeled in selector coverage probe",
+        "changed": false
+      },
+      "selector_position_change": {
+        "after_position": [
+          36,
+          52
+        ],
+        "after_selector_index": 3,
+        "before_position": [
+          43,
+          52
+        ],
+        "before_selector_index": 4,
+        "changed": true,
+        "selector_delta_mod": 4,
+        "selector_slot_count": 5
+      },
+      "sequence_state_change": {
+        "changed": false,
+        "changed_slot_indexes": []
+      },
+      "state_class": "selector_index:4",
+      "trace_index": 16
+    },
+    {
+      "action_budget_delta": null,
+      "action_id": 3,
+      "action_name": "ACTION3",
+      "after_state": {
+        "action_budget_pixels_remaining": 55,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              29,
+              59,
+              33,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              29,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              29,
+              48,
+              33,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          29,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 18,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          29,
+          52
+        ],
+        "selector_index": 2,
+        "selector_span": 5
+      },
+      "before_state": {
+        "action_budget_pixels_remaining": 56,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              36,
+              59,
+              40,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              36,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              36,
+              48,
+              40,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          36,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 17,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          36,
+          52
+        ],
+        "selector_index": 3,
+        "selector_span": 5
+      },
+      "confidence": "high",
+      "effect_category": "selector_position_change",
+      "no_observable_change": false,
+      "probe_sequence_index": 17,
+      "provenance": [
+        {
+          "probe_role": "coverage_probe",
+          "source": "tr87_selector_probe_step_receipt",
+          "step_receipt": "steps/step_017.json"
+        },
+        {
+          "source": "tr87_source_oracle",
+          "source_file_path": "arc3_agent/environment_files/tr87/cd924810/tr87.py",
+          "source_lines": [
+            "tr87.py:996-1004"
+          ]
+        },
+        {
+          "artifact": "artifacts/object_substrate_v0/tr87_action_effect_model/known_gaps.json",
+          "source": "gamma2c_known_gaps"
+        }
+      ],
+      "rule_context_change": {
+        "basis": "no rule-context visual state modeled in selector coverage probe",
+        "changed": false
+      },
+      "selector_position_change": {
+        "after_position": [
+          29,
+          52
+        ],
+        "after_selector_index": 2,
+        "before_position": [
+          36,
+          52
+        ],
+        "before_selector_index": 3,
+        "changed": true,
+        "selector_delta_mod": 4,
+        "selector_slot_count": 5
+      },
+      "sequence_state_change": {
+        "changed": false,
+        "changed_slot_indexes": []
+      },
+      "state_class": "selector_index:3",
+      "trace_index": 17
+    },
+    {
+      "action_budget_delta": null,
+      "action_id": 3,
+      "action_name": "ACTION3",
+      "after_state": {
+        "action_budget_pixels_remaining": 55,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              22,
+              59,
+              26,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              22,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              22,
+              48,
+              26,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          22,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 19,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          22,
+          52
+        ],
+        "selector_index": 1,
+        "selector_span": 5
+      },
+      "before_state": {
+        "action_budget_pixels_remaining": 55,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              29,
+              59,
+              33,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              29,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              29,
+              48,
+              33,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          29,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 18,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          29,
+          52
+        ],
+        "selector_index": 2,
+        "selector_span": 5
+      },
+      "confidence": "high",
+      "effect_category": "selector_position_change",
+      "no_observable_change": false,
+      "probe_sequence_index": 18,
+      "provenance": [
+        {
+          "probe_role": "coverage_probe",
+          "source": "tr87_selector_probe_step_receipt",
+          "step_receipt": "steps/step_018.json"
+        },
+        {
+          "source": "tr87_source_oracle",
+          "source_file_path": "arc3_agent/environment_files/tr87/cd924810/tr87.py",
+          "source_lines": [
+            "tr87.py:996-1004"
+          ]
+        },
+        {
+          "artifact": "artifacts/object_substrate_v0/tr87_action_effect_model/known_gaps.json",
+          "source": "gamma2c_known_gaps"
+        }
+      ],
+      "rule_context_change": {
+        "basis": "no rule-context visual state modeled in selector coverage probe",
+        "changed": false
+      },
+      "selector_position_change": {
+        "after_position": [
+          22,
+          52
+        ],
+        "after_selector_index": 1,
+        "before_position": [
+          29,
+          52
+        ],
+        "before_selector_index": 2,
+        "changed": true,
+        "selector_delta_mod": 4,
+        "selector_slot_count": 5
+      },
+      "sequence_state_change": {
+        "changed": false,
+        "changed_slot_indexes": []
+      },
+      "state_class": "selector_index:2",
+      "trace_index": 18
+    },
+    {
+      "action_budget_delta": null,
+      "action_id": 3,
+      "action_name": "ACTION3",
+      "after_state": {
+        "action_budget_pixels_remaining": 54,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              15,
+              59,
+              19,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              15,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              15,
+              48,
+              19,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          15,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 20,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          15,
+          52
+        ],
+        "selector_index": 0,
+        "selector_span": 5
+      },
+      "before_state": {
+        "action_budget_pixels_remaining": 55,
+        "confidence": "high",
+        "evidence": {
+          "frame_bundle_selection": {
+            "detected_shape": [
+              1,
+              64,
+              64
+            ],
+            "frame_depth": 1,
+            "new_levels_completed": 0,
+            "pattern_classification": "single_3d_batched",
+            "prev_levels_completed": 0,
+            "provenance": {
+              "detected_shape": [
+                1,
+                64,
+                64
+              ],
+              "generic_over_bundle_depth": true,
+              "level_delta": 0,
+              "pattern_classification": "single_3d_batched",
+              "pattern_reasoning": "[1,H,W] single grayscale frame with leading batch dim",
+              "reason": "[1,H,W] single grayscale frame with leading batch dim",
+              "selector": "object_substrate_v0.frame_bundle_handler.select_frame_for_extraction"
+            },
+            "selected_index": 0,
+            "source": "single"
+          },
+          "missing_dimensions": [],
+          "selector_marker": {
+            "bottom_bbox": [
+              22,
+              59,
+              26,
+              60
+            ],
+            "component_count": 2,
+            "selected_slot_position": [
+              22,
+              52
+            ],
+            "span": 5,
+            "top_bbox": [
+              22,
+              48,
+              26,
+              49
+            ]
+          },
+          "selector_source": "qvtymdcqear_black_marker_pair"
+        },
+        "frame_shape": [
+          1,
+          64,
+          64
+        ],
+        "position": [
+          22,
+          52
+        ],
+        "provenance": [
+          {
+            "frame_index": 19,
+            "method": "tr87_selector_marker_pair_extraction",
+            "source": "rendered_frame",
+            "source_artifact": "official_runner_live_frame",
+            "source_basis": [
+              "tr87.py:444-470",
+              "tr87.py:959-966",
+              "tr87.py:1031-1042"
+            ]
+          }
+        ],
+        "selected_slot_position": [
+          22,
+          52
+        ],
+        "selector_index": 1,
+        "selector_span": 5
+      },
+      "confidence": "high",
+      "effect_category": "selector_position_change",
+      "no_observable_change": false,
+      "probe_sequence_index": 19,
+      "provenance": [
+        {
+          "probe_role": "coverage_probe",
+          "source": "tr87_selector_probe_step_receipt",
+          "step_receipt": "steps/step_019.json"
+        },
+        {
+          "source": "tr87_source_oracle",
+          "source_file_path": "arc3_agent/environment_files/tr87/cd924810/tr87.py",
+          "source_lines": [
+            "tr87.py:996-1004"
+          ]
+        },
+        {
+          "artifact": "artifacts/object_substrate_v0/tr87_action_effect_model/known_gaps.json",
+          "source": "gamma2c_known_gaps"
+        }
+      ],
+      "rule_context_change": {
+        "basis": "no rule-context visual state modeled in selector coverage probe",
+        "changed": false
+      },
+      "selector_position_change": {
+        "after_position": [
+          15,
+          52
+        ],
+        "after_selector_index": 0,
+        "before_position": [
+          22,
+          52
+        ],
+        "before_selector_index": 1,
+        "changed": true,
+        "selector_delta_mod": 4,
+        "selector_slot_count": 5
+      },
+      "sequence_state_change": {
+        "changed": false,
+        "changed_slot_indexes": []
+      },
+      "state_class": "selector_index:1",
+      "trace_index": 19
+    }
+  ],
+  "probe_transition_count": 20,
+  "ready_for_gamma2d_planner": true,
+  "run_count_this_session": 1,
+  "run_dir": "artifacts/object_substrate_v0/tr87_selector_probe",
+  "schema_version": "v0",
+  "slice_scope": "tr87_selector_coverage_probe",
+  "source_consistency": {
+    "consistency_check_passed": true,
+    "effect_category_distribution": {
+      "selector_position_change": 50,
+      "sequence_state_change": 50
+    },
+    "mismatch_count": 0,
+    "mismatches": [],
+    "pass_count": 100,
+    "pass_rate": 1.0,
+    "per_action_findings": [
+      {
+        "action_name": "ACTION1",
+        "expected_category": "sequence_state_change",
+        "mismatch_count": 0,
+        "mismatches": [],
+        "observed_category_distribution": {
+          "sequence_state_change": 25
+        },
+        "pass_count": 25,
+        "result": "pass",
+        "source_lines": [
+          "tr87.py:1005-1014",
+          "tr87.py:1024-1029"
+        ],
+        "source_semantics": "cycle selected target-sequence slot backward",
+        "transition_count": 25
+      },
+      {
+        "action_name": "ACTION2",
+        "expected_category": "sequence_state_change",
+        "mismatch_count": 0,
+        "mismatches": [],
+        "observed_category_distribution": {
+          "sequence_state_change": 25
+        },
+        "pass_count": 25,
+        "result": "pass",
+        "source_lines": [
+          "tr87.py:1005-1014",
+          "tr87.py:1024-1029"
+        ],
+        "source_semantics": "cycle selected target-sequence slot forward",
+        "transition_count": 25
+      },
+      {
+        "action_name": "ACTION3",
+        "expected_category": "selector_position_change",
+        "mismatch_count": 0,
+        "mismatches": [],
+        "observed_category_distribution": {
+          "selector_position_change": 25
+        },
+        "pass_count": 25,
+        "result": "pass",
+        "source_lines": [
+          "tr87.py:996-1004"
+        ],
+        "source_semantics": "decrement selector index modulo selector slot count",
+        "transition_count": 25
+      },
+      {
+        "action_name": "ACTION4",
+        "expected_category": "selector_position_change",
+        "mismatch_count": 0,
+        "mismatches": [],
+        "observed_category_distribution": {
+          "selector_position_change": 25
+        },
+        "pass_count": 25,
+        "result": "pass",
+        "source_lines": [
+          "tr87.py:996-1004"
+        ],
+        "source_semantics": "increment selector index modulo selector slot count",
+        "transition_count": 25
+      }
+    ],
+    "transition_count": 100
+  },
+  "target_game": "tr87"
+}

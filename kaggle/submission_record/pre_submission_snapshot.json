@@ -1,0 +1,85 @@
+{
+  "claim_boundaries": {
+    "kaggle_submission_status": "not_submitted",
+    "linked_kaggle_score": 0.0,
+    "no_general_arc_agi_3_claim": true,
+    "no_private_eval_claim": true,
+    "public_scorecards_are_not_kaggle_leaderboard_evidence": true
+  },
+  "file_count": 13,
+  "files": [
+    {
+      "path": "CLAIM_BOUNDARIES.md",
+      "sha256": "4bf4d9485bba62152700bbf7cba8545277973e000eb47032bbb3810c40155f57",
+      "size_bytes": 355
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "b98e8b167528fa8455effeeb1ae708670dcd89ded0cc7b004e63430849538a07",
+      "size_bytes": 822
+    },
+    {
+      "path": "LICENSE_CHECKLIST.md",
+      "sha256": "fd8193f189209aedeadb3380ffb3301c720b15df86c45bf2d580ab1749ab98dd",
+      "size_bytes": 358
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "0949995f281a916a8fb580e46325d51a053ec52d94025ed16c8be5d1ad14f28e",
+      "size_bytes": 1024
+    },
+    {
+      "path": "PACKAGE_MANIFEST.json",
+      "sha256": "89b66afe67502be6c0c1412d4722e5990a08bab38da1151086484802c209522b",
+      "size_bytes": 994
+    },
+    {
+      "path": "README.md",
+      "sha256": "dc56e21ff47728f7221b3053fd5630addf1b61e1bd9af8441943696d41b9d341",
+      "size_bytes": 672
+    },
+    {
+      "path": "README_SUBMISSION.md",
+      "sha256": "2050691c4abf595927bf8609d7c9751fd1faa3b0c2d7d14b78708fc3630fb577",
+      "size_bytes": 461
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES.md",
+      "sha256": "41d06b10a5000743ed031957c1022953ddc2928ad7846d208365b9cff4d24d3c",
+      "size_bytes": 606
+    },
+    {
+      "path": "kaggle_agent_api_contract.json",
+      "sha256": "c84e850251ecd5b506a6a2c04b95eed27f2f09a2b933997570157d1cdf73c70d",
+      "size_bytes": 1397
+    },
+    {
+      "path": "public_scorecard_evidence.json",
+      "sha256": "f42122930ffa64822e7321661770189acbf879c621508fe90012f691d52b581e",
+      "size_bytes": 603
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "a673bce55b9d655034def81d59fe170cbba91fe652f6c317babcf1f2c243397c",
+      "size_bytes": 73
+    },
+    {
+      "path": "submission_entrypoint.py",
+      "sha256": "1eb8ea5c04503c3555d34b869a1404ec6bfc7335443006137ee7a06d6dd3ef8d",
+      "size_bytes": 7218
+    },
+    {
+      "path": "substrate_plans.json",
+      "sha256": "aa2d5c65000ed142c9d857f50686246a9123f4797e3c32716c8f006b4c7e2c17",
+      "size_bytes": 34677
+    }
+  ],
+  "generated_at": "2026-05-21T21:22:38.736731+00:00",
+  "kaggle_submission_attempted": false,
+  "kind": "kaggle_pre_submission_snapshot",
+  "official_run_invoked": false,
+  "package_candidate_path": "artifacts/kaggle_submission_preflight/package_candidate",
+  "schema_version": "v0",
+  "upload_archive_path": "artifacts/kaggle_submission_preflight/kaggle_submission_record/object_substrate_kaggle_candidate_upload.zip",
+  "upload_archive_sha256": "3dfaf969e2b98f2fccf9dc839cd234ead1b90a58d4b6acc04583c304ddd00fc2"
+}

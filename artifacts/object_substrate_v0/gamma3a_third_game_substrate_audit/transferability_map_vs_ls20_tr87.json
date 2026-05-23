@@ -1,0 +1,125 @@
+{
+  "analysis_only": true,
+  "architecture_review_carried_forward": true,
+  "capability_attempt": false,
+  "capability_claim": "none",
+  "citations": [
+    {
+      "line_end": 886,
+      "line_start": 833,
+      "reason": "selected sprite and level setup",
+      "source_file_path": "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py",
+      "source_line_ref": "cn04.py:833-886"
+    },
+    {
+      "line_end": 1157,
+      "line_start": 1051,
+      "reason": "action effects",
+      "source_file_path": "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py",
+      "source_line_ref": "cn04.py:1051-1157"
+    },
+    {
+      "line_end": 1049,
+      "line_start": 1023,
+      "reason": "completion predicate",
+      "source_file_path": "arc3_agent/environment_files/cn04/2fe56bfb/cn04.py",
+      "source_line_ref": "cn04.py:1023-1049"
+    }
+  ],
+  "comparison_games": [
+    "ls20",
+    "tr87"
+  ],
+  "evidence_strength": "moderate",
+  "generated_at": "2026-05-22T02:49:45.248056+00:00",
+  "kaggle_submission_attempted": false,
+  "kind": "object_substrate_v0_gamma3a_transferability_map",
+  "lane": "object_substrate_v0",
+  "layers": {
+    "action-effect ontology": {
+      "citations": [
+        "cn04.py:1062-1157"
+      ],
+      "explanation": "ACTION1-4 resemble movement, but effects are conditioned on selected sprite; ACTION5/ACTION6 add transform, cycling, and click selection.",
+      "new_substrate_required": "yes",
+      "transfers_from_ls20": "partial",
+      "transfers_from_tr87": "partial"
+    },
+    "actor/state ontology": {
+      "citations": [
+        "cn04.py:1062-1128"
+      ],
+      "explanation": "Movement exists, but the controlled object is a click-selected sprite rather than a persistent ls20 actor or tr87 selector index.",
+      "new_substrate_required": "yes",
+      "transfers_from_ls20": "partial",
+      "transfers_from_tr87": "no"
+    },
+    "frame/bundle handling": {
+      "citations": [
+        "cn04.py:700-798",
+        "cn04.py:861-871"
+      ],
+      "explanation": "Basic frame/bundle discipline transfers, but cn04 adds source-visible 20x20 sprite layouts, masking, and click-selected sprite visual states that need cn04-specific extraction.",
+      "new_substrate_required": "yes",
+      "transfers_from_ls20": "partial",
+      "transfers_from_tr87": "partial"
+    },
+    "local verification feasibility": {
+      "citations": [
+        "cn04.py:1051-1131"
+      ],
+      "explanation": "Source-visible semantics make a verifier plausible, but gamma3a did not build or execute one.",
+      "new_substrate_required": "yes",
+      "transfers_from_ls20": "partial",
+      "transfers_from_tr87": "partial"
+    },
+    "perception extraction": {
+      "citations": [
+        "cn04.py:888-904",
+        "cn04.py:920-1021"
+      ],
+      "explanation": "cn04 needs selected-sprite, sprite-group, rotation, and marker-coverage extraction.",
+      "new_substrate_required": "yes",
+      "transfers_from_ls20": "no",
+      "transfers_from_tr87": "no"
+    },
+    "planner feasibility": {
+      "citations": [
+        "cn04.py:1062-1088",
+        "cn04.py:1133-1157"
+      ],
+      "explanation": "A planner would need click coordinate actions plus selected-object state; no planner is attempted.",
+      "new_substrate_required": "yes",
+      "transfers_from_ls20": "partial",
+      "transfers_from_tr87": "partial"
+    },
+    "target/goal ontology": {
+      "citations": [
+        "cn04.py:946-994",
+        "cn04.py:1023-1049"
+      ],
+      "explanation": "Completion depends on marker coverage/elimination across sprites, not target equality or sequence equality.",
+      "new_substrate_required": "yes",
+      "transfers_from_ls20": "no",
+      "transfers_from_tr87": "no"
+    }
+  },
+  "ls20_substrate_immutable": true,
+  "methodology_transfer_finding": "method_transfers_across_three_ontologies_while_ontology_remains_game_specific",
+  "no_general_agent_claim": true,
+  "no_general_arc_agi_3_claim": true,
+  "no_private_eval_claim": true,
+  "no_score_improvement_claim": true,
+  "no_third_game_capability_claim": true,
+  "official_run_attempted": false,
+  "paper_lane_immutable": false,
+  "planner_attempt": false,
+  "planner_v0_immutable": true,
+  "schema_version": "v0",
+  "selected_game": "cn04",
+  "slice_scope": "gamma3a_third_game_substrate_audit",
+  "source_inspection_mode": "local_static",
+  "target_game": "cn04",
+  "third_ontology_summary": "click-selected sprite manipulation with movement, rotation/cycling, masking, and marker completion",
+  "tr87_substrate_immutable": true
+}
